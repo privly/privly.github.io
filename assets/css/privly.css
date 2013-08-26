@@ -15,6 +15,9 @@ body {
 }
 
 /* Bootstrap Tweaks */
+div.container-narrow {
+  max-width:800px;
+}
 div.navbar-inner {
   background: #242424; 
   border: none;
@@ -61,4 +64,40 @@ div.navbar .nav > .active > a:focus {
   display:block;
   color:#999;
   font:bold 16px/17px "Trebuchet MS",Arial,Helvetica,sans-serif !important;
+}
+
+/* Home Page */
+
+ /* Main marketing message and sign up button */
+.jumbotron {
+  margin: 60px 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+/* End Home Page */
+
+/* News Side Block */
+#side_block {
+  background:white;
+  border-radius:6px;
+  padding:13px;
+}
+#side_block h3 {
+  font-size:13px;
+  border-bottom:1px solid #242424;
 }

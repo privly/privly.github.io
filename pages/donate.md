@@ -967,33 +967,35 @@ Scott Crelin
 Woodenfox
   
 ## Community Sponsors
-  
-<%= link_to("http://www.google-melange.com/gsoc/org/google/gsoc2013/privly") do  %><%= image_tag("sponsors/google.png", :width => "50%", :title => "Google logo") %><% end %>
+ 
+<a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/privly">
+	<img src="/assets/sponsors/google.png" title="Google logo" />
+</a>  
 
-Supports student work on Privly projects through the <%= link_to "Google Summer of Code", "http://www.google-melange.com/gsoc/homepage/google/gsoc2013" %>.
+
+Supports student work on Privly projects through the [Google Summer of Code](http://www.google-melange.com/gsoc/homepage/google/gsoc2013).
 
 
 
 
 ## In-Kind Contributors
 
-<%= link_to("http://www.rackspace.com/") do  %><%= image_tag("sponsors/rackspace.png", :width => "60%", :title => "Rackspace logo") %><% end %>
+<a href="http://www.rackspace.com/">
+	<img src="/assets/sponsors/rackspace.png" />
+</a>
 
 Provides complementary hosting to Privly's development servers.
 
-
-
-
-
-<%= link_to("http://www.jetbrains.com/") do  %><%= image_tag("sponsors/logo_jetbrains.gif", :width => "50%", :title => "Jetbrains logo") %><% end %>
+<a href="http://www.jetbrains.com/">
+	<img src="/assets/sponsors/logo_jetbrains.gif" />
+</a>
 
 Provides Open Source licenses to Privly developers.
 
+<a href="https://airbrake.io/pages/home">
+	<img src="/assets/sponsors/thoughtbot.png" title="Thoughtbot logo"/>
+</a>
 
-
-
-
-<%= link_to("https://airbrake.io/pages/home") do %><%= image_tag("sponsors/thoughtbot.png", :width => "50%", :title => "Thoughtbot logo") %><% end %>
 
 Provides their error logging and notification service for Privly development.
 
