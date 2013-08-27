@@ -68,7 +68,7 @@ An internationally known community manager, speaker and author, [Leslie Hawthorn
 Privly is about creating a square deal for users, and that can't be done with a closed-source, proprietary platform. Anyone can add their skills to the project and their contribution will be protected.
 
 _**Maintainers:**_  
-[Sean McGregor](https://github.com/smcgregor/): [Firefox](https://github.com/privly/privly-firefox) [Chrome](https://github.com/privly/privly-chrome) [Content Server](https://github.com/privly/privly-web) [Test Cases](https://github.com/privly/privly-test)  
+[Sean McGregor](https://github.com/smcgregor/): [Firefox](https://github.com/privly/privly-firefox), [Chrome](https://github.com/privly/privly-chrome), [Content Server](https://github.com/privly/privly-web), [Test Cases](https://github.com/privly/privly-test)  
 [Jen Davidson](https://github.com/jewifer): [Privly.org](http://www.privly.org)  
 [Balaji Athreya](https://github.com/balajiathreya)  
 [Sanchit Karve](https://github.com/born2c0ded): [Opera](https://github.com/privly/privly-opera)  
@@ -79,23 +79,22 @@ _**Contributors:**_
 [Daniel Reichert](https://github.com/irdan)  
 [Hanno Wagner](http://de.linkedin.com/pub/hanno-wagner/6/33/305) (System Administration)  
 [Quazi Marufur Rahman](https://github.com/qmaruf)  
-[Tyler Dugon](http://www.linkedin.com/profile/view?id=204119935) (Graphics)  
+[Tyler Dugoni](http://www.linkedin.com/profile/view?id=204119935) (Graphics)  
 [Jesse Hostetler](https://github.com/jhostetler)  
 [Jesse Markowitz](https://github.com/JesseMarkowitz)  
 Jared Howe (User Docs)
 
-
 _**Past Contributors:**_  
 [Swetal Patel](http://www.linkedin.com/in/teamswetd)  
 [Jason Jacob](https://github.com/jayco)  
-[Jesse Pollak](https://github.com/jessepollak): Commits to [Safari](https://github.com/privly/privly-safari) and [Content Server](https://github.com/privly/privly-web)  
+[Jesse Pollak](https://github.com/jessepollak)  
 [Ravneet Singh](https://github.com/dreamrulez07)  
 [Rohan Durve](https://github.com/Decode141)  
 [Jordan Vrvilo](https://github.com/gordyvision)   
 [Joseph Selman](https://github.com/selmanj)  
-Charles Martin: Commits to [Firefox](https://github.com/privly/privly-firefox)  
+Charles Martin
 
-For a more thorough treatment of Privly as a whole, visit [the overview](https://github.com/privly/privly-organization/wiki/Privly-System-and-Organization-Overview). For development discussion, join the [Development Mailing List](https://groups.google.com/group/privly). Many [repositories](https://github.com/privly/) have their own wikis, but content not specific to a single repository will be in the [central wiki](https://github.com/privly/privly-organization/wiki/). Official announcements are found on [www.privly.org](http://www.privly.org). Live versions of the content server can be found at [privlyalpha.org](https://privlyalpha.org) and [dev.privly.org](https://dev.privly.org) (development). Auto-generated documentation can be found at [doc.privly.org](http://doc.privly.org). Extension test cases can be found at [test.privly.org](http://test.privly.org). 
+For a more thorough treatment of Privly as a whole, visit [the overview](https://github.com/privly/privly-organization/wiki/Privly-System-and-Organization-Overview). For development discussion, join the [Development Mailing List](https://groups.google.com/group/privly). Many [repositories](https://github.com/privly/) have their own wikis, but content not specific to a single repository will be in the [central wiki](https://github.com/privly/privly-organization/wiki/). Official announcements are found on [www.privly.org](http://www.privly.org). Live versions of the content server can be found at [privlyalpha.org](https://privlyalpha.org) and [dev.privly.org](https://dev.privly.org) (development). Extension-host page integration test cases can be found at [test.privly.org](http://test.privly.org). 
 
 
 Privly developers gather on IRC in the #Privly room on irc.freenode.net
