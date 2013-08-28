@@ -74,6 +74,7 @@ _**Maintainers:**_
 [Sanchit Karve](https://github.com/born2c0ded): [Opera](https://github.com/privly/privly-opera)  
 [Hery Ratsimihah](https://github.com/hery): [iOS](https://github.com/privly/privly-iosd)  
 [Shivam Vermah](https://github.com/vshivamd): [Android](https://github.com/privly/privly-android)  
+[Garrett Seward](https://github.com/spectralsun): [Priv.ly](https://github.com/privly/privly.github.io)
 
 _**Contributors:**_  
 [Daniel Reichert](https://github.com/irdan)  
