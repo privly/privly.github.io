@@ -9,19 +9,21 @@ weight: 2
 
 The extensions are under active development. Check back later if you do not like change and filing [bug reports](http://www.privly.org/content/bug-report). We will announce developments on Privly's [Twitter account](http://twitter.com/#!/Privly).
 
-<span style="color:#FF0000">
+<div style="color:#FF0000">
   
   
-Please note that the extension does **not** currently offer:
-- Protection from governments
-- Protection from our hosting provider (currently US based Rackspace)
-- Protection from the domain name system
-- Or security of any kind
-    
-We made the extension available so you can test it out with your favorite site, but until we tell you otherwise, post with the expectation that it is public.
-  
-  
-</span>
+<p>
+  Please note that the extension does <strong>not</strong> currently offer:
+  <ul>
+    <li>Protection from governments</li>
+    <li>Protection from the domain name system</li>
+    <li>Or security of any kind</li>
+  </ul>
+</p>
+
+<p>We made the extension available so you can test it out with your favorite site, but until we tell you otherwise, post with the expectation that it is public.</p>
+
+</div>
 
 <div class="row-fluid">
   <span class="span4">
@@ -36,7 +38,7 @@ We made the extension available so you can test it out with your favorite site, 
     <br/>
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/">Firefox Extension</a>
     <br/>
-     <p>(Alpha) The Firefox extension supports viewing Privly links, and uploading new content directly to the Privly servers.</p>
+     <p>(Alpha) The Firefox extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
   </span>
   <span class="span4">
     <img src="/assets/images/opera-privly.png" />
@@ -47,11 +49,9 @@ We made the extension available so you can test it out with your favorite site, 
   </span>
 </div>
 
-### Where is my browser?
+**Where is my browser?** We need to bring Privly to other browsers and platforms, so if you don't see your endpoint here, please consider [helping out](http://www.privly.org/content/how-get-started).
 
-We need to bring Privly to other browsers and platforms, so if you don't see your endpoint here, please consider [helping out](http://www.privly.org/content/how-get-started).
-
-# Test Your Extension on These Pages
+# See Your Extension at Work
 
 The following pages are pre-seeded with Privly content so you can test the extension out: [Facebook](https://www.facebook.com/profile.php?id=100002254562518&sk=wall) and [Twitter](https://twitter.com/#!/PrivlyTest). You can also post the public links below to any website to see how it handles. Let us know if you have any [problems](http://www.privly.org/content/bug-report). It should work in any basic HTML form.
 
