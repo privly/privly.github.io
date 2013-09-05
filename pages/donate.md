@@ -1,6 +1,7 @@
 ---
 layout: page
-permalink: /donate.html
+title: Donate
+weight: 4
 ---
 
 ## Donate

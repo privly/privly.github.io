@@ -4,6 +4,7 @@ title: About
 sub_title: More Info
 header: About
 group: navigation
+weight: 1
 ---
 
 ## What is Privly?

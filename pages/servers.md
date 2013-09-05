@@ -4,6 +4,7 @@ title: Content Hosts
 sub_title: Sign Up
 header: Servers
 group: navigation
+weight: 3
 ---
 
 Privly users choose where they want to host their content. While it is a best practice for users to host their content on their own hardware, we realize that the majority of users will likely never maintain a web server. Hence, we manage a list of recommended hosts for users looking for their Privly home.

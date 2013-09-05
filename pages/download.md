@@ -4,6 +4,7 @@ title: Download Extension
 sub_title: For Browsers
 header: Download Extension
 group: navigation
+weight: 2
 ---
 
 The extensions are under active development. Check back later if you do not like change and filing [bug reports](http://www.privly.org/content/bug-report). We will announce developments on Privly's [Twitter account](http://twitter.com/#!/Privly).

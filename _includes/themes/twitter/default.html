@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Privly &middot; {{ page.title }}</title>
+    <title>Privly{% if page.title != nil %} &middot; {{ page.title }}{% endif %}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -55,7 +55,7 @@
             <ul class="nav">
               {% assign pages_list = site.pages %}
               {% assign group = 'navigation' %}
-              {% include JB/pages_list %}
+              {% include privly/pages_list %}
             </ul>
           </div>
         </div>
@@ -69,7 +69,15 @@
       </div>
       <hr>
       <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+        <p class="text-center">
+        {% for weight in (1..10) %}
+          {% for page in site.pages %}
+             {% if page.weight == nil %}{% assign page_weight = 9 %}{% else %}{% assign page_weight = page.weight %}{% endif %}
+             {% if page_weight == weight %}{% if page.hide_from_footer == nil %}<a href="{{ BASE_PATH }}{{page.url}}">{{ page.title }}</a> {% if forloop.last != true %}|{% endif %}{% endif %}{% endif %}
+          {% endfor %}
+        {% endfor %}
+        </p>
+        <p class="text-center">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>

@@ -1,14 +1,12 @@
-<<<<<<< HEAD
-_site/
-=======
+TODO.md
 _site/*
 _theme_packages/*
 
 Thumbs.db
 .DS_Store
 
-!.gitkeep
+.gitkeep
 
 .rbenv-version
 .rvmrc
->>>>>>> upstream/master
+
