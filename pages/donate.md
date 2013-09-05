@@ -4,1000 +4,997 @@ title: Donate
 weight: 4
 ---
 
-## Donate
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="text-align: center;">
-<input type="hidden" name="cmd" value="_s-xclick" />
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-"/>
-<input style="align:left" type="image" src="/assets/images/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - Donation"/>
-</form>
-
-
-
 Your time is just as valuable as your money, if you have the skills to move us forward, please consider [volunteering your time](http://www.privly.org/content/how-get-started).
 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="text-align: center;">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHLwYJKoZIhvcNAQcEoIIHIDCCBxwCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYANsBoyhhyYZVVx5Gj79AjVQtoA8yackseKirS+3mhBNceqqCGrZTAANi4Uprpi3j5wmRCt2zDf2jxd2E8HciRh+N8lBeFASCppFyOrXCyoKh5aAf64xZZ1ssTO1XdfUHFxdGIey0xbFnIpPQ+3lyeZIu601U1i6UHP8drEm3h39DELMAkGBSsOAwIaBQAwgawGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIe445oDtByJaAgYhoNhPsINWu3MxbjVcl6Y8WmnjrpIsY3wcYew3XzxkBKYOl4vUn1g9OoSPJxrUxUwc2uhzi4ZDlvAUHMcYb+bGeV5Ao31FfciRoBI8GbF7GFZ7OyeSMK5o7xE2CthGMbpYPq/wXXyy2x23fVdCZpC/KeDTWGxTqULU56Fw+02yLYOLRVX4QtwShoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTExMjA1MDU0OTA1WjAjBgkqhkiG9w0BCQQxFgQUe8VWWaxgUJ/8WtGzthzhMbGvX9QwDQYJKoZIhvcNAQEBBQAEgYBuFPlGV3kTNGewPK9/yp4wznMDUZ0xlOMyXPMbL6SjlLNrIkrdCTn3gNzu2PQExNAUBzwfcQEnb1gTf7UodLVsae2Nm0TUMcyDqicIeOXLJsecpo0XjsPBTnS93QU3nchetimfFuH+QGlFsizZUBQSxb2GOGjrh2VYGlAWSCcaIw==-----END PKCS7-----
+  "/>
+  <input style="align:left" type="image" src="/assets/images/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - Donation"/>
+</form>
 
+<div class="row-fluid">
+  <div class="span5">
 
-# Donor Roll
+    <h2>Founding Backers</h2>
 
+    <p>Andrea Sobotor</p>
 
-## Founding Backers
+    <p>George McGregor</p>
 
-Andrea Sobotor
+    <p>Anonymous</p>
 
-George McGregor
+    <p>Daniel Goldshlack</p>
 
-Anonymous
+    <p>High5!</p>
 
-Daniel Goldshlack
+    <p>Leonard</p>
 
-High5!
+    <p>RisforRobots</p>
 
-Leonard
+    <p>Stephen Oddo</p>
 
-RisforRobots
+    <p>Taylor Banks</p>
 
-Stephen Oddo
+    <p>Rauvin</p>
 
-Taylor Banks
+    <p>Anonymous</p>
 
-Rauvin
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Claire Bolyard</p>
 
-Anonymous
+    <p>Curt Mitchell</p>
 
-Claire Bolyard
+    <p>dale woolridge</p>
 
-Curt Mitchell
+    <p>Decio F</p>
 
-dale woolridge
+    <p>Jessica Beaton</p>
 
-Decio F
+    <p>Kent Liu</p>
 
-Jessica Beaton
+    <p>Lance Heckerman</p>
 
-Kent Liu
+    <p>Laurent Dysruptiv</p>
 
-Lance Heckerman
+    <p>M. Aleksich</p>
 
-Laurent Dysruptiv
+    <p>Mark Harvey</p>
 
-M. Aleksich
+    <p>Robert von Burg</p>
 
-Mark Harvey
+    <p>Timothy Ace &amp; Taleena Herkenhoff</p>
 
-Robert von Burg
+    <p>Bob Whiting</p>
 
-Timothy Ace &amp; Taleena Herkenhoff
+    <p>Scott A. McIntyre</p>
 
-Bob Whiting
+    <p>Sammy C</p>
 
-Scott A. McIntyre
+    <p>Joshua Sorenson</p>
 
-Sammy C
+    <p>@PaulFarmiga</p>
 
-Joshua Sorenson
+    <p>@rsmoz</p>
 
-\@PaulFarmiga
+    <p>Adam Hitchcock</p>
 
-\@rsmoz
+    <p>Alan Calvert</p>
 
-Adam Hitchcock
+    <p>Aleksandr Tsukanov</p>
 
-Alan Calvert
+    <p>andreas beuge</p>
 
-Aleksandr Tsukanov
+    <p>Andrew J. Cummings</p>
 
-andreas beuge
+    <p>Andrew Lekashman</p>
 
-Andrew J. Cummings
+    <p>Anna Jacobsen</p>
 
-Andrew Lekashman
+    <p>Anonymous</p>
 
-Anna Jacobsen
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anton Kovalyov</p>
 
-Anonymous
+    <p>Boyard Engels</p>
 
-Anton Kovalyov
+    <p>Brad Slavin</p>
 
-Boyard Engels
+    <p>Brandon High</p>
 
-Brad Slavin
+    <p>Brian Cardarella</p>
 
-Brandon High
+    <p>Charles Vollum</p>
 
-Brian Cardarella
+    <p>Chris McShell</p>
 
-Charles Vollum
+    <p>Christine Herron</p>
 
-Chris McShell
+    <p>Christopher E Roser</p>
 
-Christine Herron
+    <p>Conrad Bennett</p>
 
-Christopher E Roser
+    <p>Dave Eagle</p>
 
-Conrad Bennett
+    <p>Deon Botha</p>
 
-Dave Eagle
+    <p>Derrick Southerland</p>
 
-Deon Botha
+    <p>Doug Bolden</p>
 
-Derrick Southerland
+    <p>Doug Killmer</p>
 
-Doug Bolden
+    <p>Elisa Durrette</p>
 
-Doug Killmer
+    <p>Faber</p>
 
-Elisa Durrette
+    <p>Guenther Schober</p>
 
-Faber
+    <p>Guido Schoonheim</p>
 
-Guenther Schober
+    <p>Hanno 'Rince' Wagner</p>
 
-Guido Schoonheim
+    <p>Hishiv Shah</p>
 
-Hanno 'Rince' Wagner
+    <p>Holly Petermann</p>
 
-Hishiv Shah
+    <p>J. Mike Emler</p>
 
-Holly Petermann
+    <p>James M. Jensen II</p>
 
-J. Mike Emler
+    <p>Jesse Markowitz</p>
 
-James M. Jensen II
+    <p>Jessica Copeland</p>
 
-Jesse Markowitz
+    <p>John B. Foster</p>
 
-Jessica Copeland
+    <p>John Kinsella</p>
 
-John B. Foster
+    <p>John McDowall</p>
 
-John Kinsella
+    <p>Ken Stuart</p>
 
-John McDowall
+    <p>Kevin O'Connell</p>
 
-Ken Stuart
+    <p>Kyle Painter</p>
 
-Kevin O'Connell
+    <p>Legalowners.com</p>
 
-Kyle Painter
+    <p>Marc Reisen</p>
 
-Legalowners.com
+    <p>Matt Burns</p>
 
-Marc Reisen
+    <p>Mete Cevik</p>
 
-Matt Burns
+    <p>Michael Cox</p>
 
-Mete Cevik
+    <p>Michael Niles</p>
 
-Michael Cox
+    <p>MIS</p>
 
-Michael Niles
+    <p>mitpatterson</p>
 
-MIS
+    <p>Myles Moylan</p>
 
-mitpatterson
+    <p>Patt Léger</p>
 
-Myles Moylan
+    <p>Phil Walston</p>
 
-Patt Léger
+    <p>Praveen Arimbrathodiyil (j4v4m4n)</p>
 
-Phil Walston
+    <p>Quackers Mannerheim</p>
 
-Praveen Arimbrathodiyil (j4v4m4n)
+    <p>radiospiel</p>
 
-Quackers Mannerheim
+    <p>Raphael Love</p>
 
-radiospiel
+    <p>Richie Rich</p>
 
-Raphael Love
+    <p>Robert Payne</p>
 
-Richie Rich
+    <p>Ryan Kerrigan</p>
 
-Robert Payne
+    <p>Sam Punnett</p>
 
-Ryan Kerrigan
+    <p>Scott McNulty</p>
 
-Sam Punnett
+    <p>Sean Bonner</p>
 
-Scott McNulty
+    <p>Sebastian A. Engstroem</p>
 
-Sean Bonner
+    <p>Steve and Kathleen Erickson</p>
 
-Sebastian A. Engstroem
+    <p>Tall Jordan</p>
 
-Steve and Kathleen Erickson
+    <p>Tazca</p>
 
-Tall Jordan
+    <p>Ulrich G Meier</p>
 
-Tazca
+    <p>Vance Lockton</p>
 
-Ulrich G Meier
+    <p>Wikirating</p>
 
-Vance Lockton
+  </div>
+  <div class="span7">
+    <h2>Community Sponsors</h2>
 
-Wikirating
+    <a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/privly">
+      <img src="/assets/images/sponsors/google.png" title="Google logo" style="width:200px" />
+    </a>  
 
+    <p>
+      Supports student work on Privly projects through the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2013">Google Summer of Code</a>.
+    </p>
+    
+    <br />
+    
+    <h2>In-Kind Contributors</h2>
 
+    <a href="http://www.rackspace.com/">
+      <img src="/assets/images/sponsors/rackspace.png" style="width:200px" />
+    </a>
+    <p>Provides complementary hosting to Privly's development servers.</p>
 
+    <a href="http://www.jetbrains.com/">
+      <img src="/assets/images/sponsors/logo_jetbrains.gif" style="width:200px" />
+    </a>
+    <p>Provides Open Source licenses to Privly developers.</p>
 
-<h2>Kickstarter Backers</h2>
+    <a href="https://airbrake.io/pages/home">
+      <img src="/assets/images/sponsors/thoughtbot.png" title="Thoughtbot logo" style="width:200px" />
+    </a>
+    <p>Provides their error logging and notification service for Privly development.</p>
+    
+    <br />
+    
+    <h2>Kickstarter Backers</h2>
 
-Jeff Kuntz
+    <p>Jeff Kuntz</p>
 
-Al
+    <p>Al</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Aritomo Shinozaki
+    <p>Aritomo Shinozaki</p>
 
-Atley Joseph
+    <p>Atley Joseph</p>
 
-Ben Vallance
+    <p>Ben Vallance</p>
 
-Bradley Seegmiller
+    <p>Bradley Seegmiller</p>
 
-Brian S.
+    <p>Brian S.</p>
 
-Chris
+    <p>Chris</p>
 
-Chris Meyer
+    <p>Chris Meyer</p>
 
-D Doan
+    <p>D Doan</p>
 
-Daniel Kondermann
+    <p>Daniel Kondermann</p>
 
-Darrell Stevenson
+    <p>Darrell Stevenson</p>
 
-Gelasticjew
+    <p>Gelasticjew</p>
 
-Gin Berry
+    <p>Gin Berry</p>
 
-Hannah Robinson
+    <p>Hannah Robinson</p>
 
-Integgroll
+    <p>Integgroll</p>
 
-Jared Wunsch
+    <p>Jared Wunsch</p>
 
-Jay C
+    <p>Jay C</p>
 
-Jens G
+    <p>Jens G</p>
 
-Jeremy Low
+    <p>Jeremy Low</p>
 
-JouleLee, Perl, Ruby &amp; Jade
+    <p>JouleLee, Perl, Ruby &amp; Jade</p>
 
-Kjell Myksvoll
+    <p>Kjell Myksvoll</p>
 
-Luis Sosa
+    <p>Luis Sosa</p>
 
-Lutz Papenfub
+    <p>Lutz Papenfub</p>
 
-Magnus Grimstvedt Saltnes
+    <p>Magnus Grimstvedt Saltnes</p>
 
-Mark Jones
+    <p>Mark Jones</p>
 
-Matthew Brinker
+    <p>Matthew Brinker</p>
 
-Max Woerner Chase
+    <p>Max Woerner Chase</p>
 
-mvime
+    <p>mvime</p>
 
-Nelz
+    <p>Nelz</p>
 
-Oscar P
+    <p>Oscar P</p>
 
-Persephone
+    <p>Persephone</p>
 
-Sam Boosalis
+    <p>Sam Boosalis</p>
 
-Seth McCauley
+    <p>Seth McCauley</p>
 
-Slingshot John
+    <p>Slingshot John</p>
 
-Spencer Rogers
+    <p>Spencer Rogers</p>
 
-Thierry Van Biesen
+    <p>Thierry Van Biesen</p>
 
-Thom Parkin
+    <p>Thom Parkin</p>
 
-Ty Liang
+    <p>Ty Liang</p>
 
-William Wharff
+    <p>William Wharff</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Arlo Carreon
+    <p>Arlo Carreon</p>
 
-Ben Thomas
+    <p>Ben Thomas</p>
 
-Dan Whaley
+    <p>Dan Whaley</p>
 
-Dave Holtzhouser
+    <p>Dave Holtzhouser</p>
 
-dimlev
+    <p>dimlev</p>
 
-Giorgio Occhioni
+    <p>Giorgio Occhioni</p>
 
-GrandMaster
+    <p>GrandMaster</p>
 
-Mark Smith
+    <p>Mark Smith</p>
 
-Matt Brown
+    <p>Matt Brown</p>
 
-Michael Hussey
+    <p>Michael Hussey</p>
 
-Mitja Kukovec
+    <p>Mitja Kukovec</p>
 
-Nancy Trejo
+    <p>Nancy Trejo</p>
 
-Rachel Houtman
+    <p>Rachel Houtman</p>
 
-Sheila Bhardwaj
+    <p>Sheila Bhardwaj</p>
 
-Wendy
+    <p>Wendy</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Adam Clayman
+    <p>Adam Clayman</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Ashley Bromley
+    <p>Ashley Bromley</p>
 
-Christopher Evans
+    <p>Christopher Evans</p>
 
-Colin B.
+    <p>Colin B.</p>
 
-Dave Petrillo
+    <p>Dave Petrillo</p>
 
-db
+    <p>db</p>
 
-Eric Robledo
+    <p>Eric Robledo</p>
 
-Forrest Sutton
+    <p>Forrest Sutton</p>
 
-Gavin M Litchfield
+    <p>Gavin M Litchfield</p>
 
-James Liu
+    <p>James Liu</p>
 
-Jason O'Donnell
+    <p>Jason O'Donnell</p>
 
-Joe Tyburczy
+    <p>Joe Tyburczy</p>
 
-Kate M
+    <p>Kate M</p>
 
-Kimberly MuÃ±oz
+    <p>Kimberly MuÃ±oz</p>
 
-Kyle Lowry
+    <p>Kyle Lowry</p>
 
-Leslie Hawthorn
+    <p>Leslie Hawthorn</p>
 
-Matthew Lopez
+    <p>Matthew Lopez</p>
 
-Michael Cress
+    <p>Michael Cress</p>
 
-Michelle Tackabery
+    <p>Michelle Tackabery</p>
 
-Pam Allen
+    <p>Pam Allen</p>
 
-Pat Kight
+    <p>Pat Kight</p>
 
-paula despins
+    <p>paula despins</p>
 
-pixelpilot
+    <p>pixelpilot</p>
 
-praveen sinha
+    <p>praveen sinha</p>
 
-RGKirkpatrick
+    <p>RGKirkpatrick</p>
 
-Sander Raaymakers
+    <p>Sander Raaymakers</p>
 
-Sebastian
+    <p>Sebastian</p>
 
-Steffan Heuer
+    <p>Steffan Heuer</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-David Borg
+    <p>David Borg</p>
 
-Mike Cooper
+    <p>Mike Cooper</p>
 
-Chelsea H
+    <p>Chelsea H</p>
 
-Joel Meador
+    <p>Joel Meador</p>
 
-P. Quist
+    <p>P. Quist</p>
 
-Thomas Schmall
+    <p>Thomas Schmall</p>
 
-luck0r
+    <p>luck0r</p>
 
-Christopher Armstrong
+    <p>Christopher Armstrong</p>
 
-Jonathan Preston
+    <p>Jonathan Preston</p>
 
-Adam N
+    <p>Adam N</p>
 
-Amelie
+    <p>Amelie</p>
 
-Andrew Jarmon
+    <p>Andrew Jarmon</p>
 
-Andrew Michael Gower
+    <p>Andrew Michael Gower</p>
 
-anon
+    <p>anon</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous IV
+    <p>Anonymous IV</p>
 
-Asbjørn Bydal
+    <p>Asbjørn Bydal</p>
 
-Austin Pitcher
+    <p>Austin Pitcher</p>
 
-Barrett Shepherd
+    <p>Barrett Shepherd</p>
 
-Bill E. Dawson
+    <p>Bill E. Dawson</p>
 
-Brian
+    <p>Brian</p>
 
-C Dunklee
+    <p>C Dunklee</p>
 
-Caine Tighe
+    <p>Caine Tighe</p>
 
-Chris Koss
+    <p>Chris Koss</p>
 
-Chris Stutz
+    <p>Chris Stutz</p>
 
-D. Beardman
+    <p>D. Beardman</p>
 
-Dan Perez
+    <p>Dan Perez</p>
 
-Darken Skye
+    <p>Darken Skye</p>
 
-DasRakel
+    <p>DasRakel</p>
 
-David Cabana
+    <p>David Cabana</p>
 
-David Chua
+    <p>David Chua</p>
 
-Dennis Keefe
+    <p>Dennis Keefe</p>
 
-Doguhan Uluca
+    <p>Doguhan Uluca</p>
 
-Dominik Pich
+    <p>Dominik Pich</p>
 
-Eric A Fode
+    <p>Eric A Fode</p>
 
-Ernest Ambrose
+    <p>Ernest Ambrose</p>
 
-Frederik De Bleser
+    <p>Frederik De Bleser</p>
 
-Gayle Day
+    <p>Gayle Day</p>
 
-Graham Allen
+    <p>Graham Allen</p>
 
-Ilya Levantis
+    <p>Ilya Levantis</p>
 
-Jaime van Kessel
+    <p>Jaime van Kessel</p>
 
-Jan Wender
+    <p>Jan Wender</p>
 
-Jim Kirk
+    <p>Jim Kirk</p>
 
-Jon Moses
+    <p>Jon Moses</p>
 
-Jose zepeda
+    <p>Jose zepeda</p>
 
-Josie Hunter
+    <p>Josie Hunter</p>
 
-Kasper Villum Jensen
+    <p>Kasper Villum Jensen</p>
 
-Kate gramlich
+    <p>Kate gramlich</p>
 
-Ken Nickerson
+    <p>Ken Nickerson</p>
 
-Kitt Hodsden
+    <p>Kitt Hodsden</p>
 
-Kixka
+    <p>Kixka</p>
 
-Laci Videmsky
+    <p>Laci Videmsky</p>
 
-Luciano Tavares
+    <p>Luciano Tavares</p>
 
-Luke Stanley
+    <p>Luke Stanley</p>
 
-M Crandall
+    <p>M Crandall</p>
 
-Matthew Drooker
+    <p>Matthew Drooker</p>
 
-Matthew Stingel
+    <p>Matthew Stingel</p>
 
-Meiguro
+    <p>Meiguro</p>
 
-Micah ALtman
+    <p>Micah ALtman</p>
 
-Michael A. Williams
+    <p>Michael A. Williams</p>
 
-Michael Martinides
+    <p>Michael Martinides</p>
 
-modularjungle monkey
+    <p>modularjungle monkey</p>
 
-Neil Schieber
+    <p>Neil Schieber</p>
 
-Noah Levin
+    <p>Noah Levin</p>
 
-Pascal Brugger
+    <p>Pascal Brugger</p>
 
-Patricia Frederickson
+    <p>Patricia Frederickson</p>
 
-Paul Bergman
+    <p>Paul Bergman</p>
 
-Per Guth
+    <p>Per Guth</p>
 
-Randy "Raz" Ullon
+    <p>Randy "Raz" Ullon</p>
 
-Ray Lillywhite
+    <p>Ray Lillywhite</p>
 
-Robert Morgan
+    <p>Robert Morgan</p>
 
-RobertJFClarke
+    <p>RobertJFClarke</p>
 
-Ron c
+    <p>Ron c</p>
 
-Ryan Singer
+    <p>Ryan Singer</p>
 
-Sandersak
+    <p>Sandersak</p>
 
-Simms
+    <p>Simms</p>
 
-Socialsquare
+    <p>Socialsquare</p>
 
-theVocalounge
+    <p>theVocalounge</p>
 
-Tomas Kjær
+    <p>Tomas Kjær</p>
 
-TomTom Tommie
+    <p>TomTom Tommie</p>
 
-Topher Mykolyk
+    <p>Topher Mykolyk</p>
 
-Tyler Walters
+    <p>Tyler Walters</p>
 
-Win Bent
+    <p>Win Bent</p>
 
-K
+    <p>K</p>
 
-Adam Vandover
+    <p>Adam Vandover</p>
 
-Adrian Race
+    <p>Adrian Race</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Balthasar Glaettli
+    <p>Balthasar Glaettli</p>
 
-Ben Stanfield
+    <p>Ben Stanfield</p>
 
-calimaq
+    <p>calimaq</p>
 
-Calvin Winter
+    <p>Calvin Winter</p>
 
-Charles Alvis
+    <p>Charles Alvis</p>
 
-Charles J. Rosenthal
+    <p>Charles J. Rosenthal</p>
 
-Chris Castle
+    <p>Chris Castle</p>
 
-Christiaan Roos
+    <p>Christiaan Roos</p>
 
-Darin J.
+    <p>Darin J.</p>
 
-David P
+    <p>David P</p>
 
-Davis
+    <p>Davis</p>
 
-Djspunky
+    <p>Djspunky</p>
 
-Dominik Dalek
+    <p>Dominik Dalek</p>
 
-elfgirl
+    <p>elfgirl</p>
 
-Eliana Sur
+    <p>Eliana Sur</p>
 
-Emily Chen
+    <p>Emily Chen</p>
 
-Francis Pollara
+    <p>Francis Pollara</p>
 
-Frank Schuengel
+    <p>Frank Schuengel</p>
 
-Gabrial Szakal
+    <p>Gabrial Szakal</p>
 
-Gary Honold
+    <p>Gary Honold</p>
 
-Gregory Gutshall
+    <p>Gregory Gutshall</p>
 
-Hiruki
+    <p>Hiruki</p>
 
-Howard
+    <p>Howard</p>
 
-Jo Hall
+    <p>Jo Hall</p>
 
-John Doty
+    <p>John Doty</p>
 
-John_Hammer
+    <p>John_Hammer</p>
 
-Johnny Bui
+    <p>Johnny Bui</p>
 
-Jon Woods
+    <p>Jon Woods</p>
 
-Justin Field
+    <p>Justin Field</p>
 
-Kari Salminen
+    <p>Kari Salminen</p>
 
-Lawrence Blumberg
+    <p>Lawrence Blumberg</p>
 
-Lynn Rose
+    <p>Lynn Rose</p>
 
-Manfred
+    <p>Manfred</p>
 
-Mark Donovan
+    <p>Mark Donovan</p>
 
-Matthew Bond
+    <p>Matthew Bond</p>
 
-Micah Daigle
+    <p>Micah Daigle</p>
 
-Michael Litman
+    <p>Michael Litman</p>
 
-Mike Mongo
+    <p>Mike Mongo</p>
 
-Muhammad Fareez Yahya
+    <p>Muhammad Fareez Yahya</p>
 
-Peter Barbosa
+    <p>Peter Barbosa</p>
 
-Peter Mosbacher
+    <p>Peter Mosbacher</p>
 
-Rick Curbelo
+    <p>Rick Curbelo</p>
 
-Shirley Shum
+    <p>Shirley Shum</p>
 
-Steve Goguen
+    <p>Steve Goguen</p>
 
-Tobias
+    <p>Tobias</p>
 
-Victor Reynoso
+    <p>Victor Reynoso</p>
 
-Will B.
+    <p>Will B.</p>
 
-William Potash
+    <p>William Potash</p>
 
-A Kitchell
+    <p>A Kitchell</p>
 
-Aly-Bocar Cisse
+    <p>Aly-Bocar Cisse</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Ben Lerner
+    <p>Ben Lerner</p>
 
-Bob Walters
+    <p>Bob Walters</p>
 
-Brandon J Quinn
+    <p>Brandon J Quinn</p>
 
-Brantley
+    <p>Brantley</p>
 
-Brian Setzler
+    <p>Brian Setzler</p>
 
-Bryce Boltjes
+    <p>Bryce Boltjes</p>
 
-C. Rindi
+    <p>C. Rindi</p>
 
-Carl Lumma
+    <p>Carl Lumma</p>
 
-CDNPAL LTD
+    <p>CDNPAL LTD</p>
 
-Chenglin Yuan
+    <p>Chenglin Yuan</p>
 
-Chris Lewis
+    <p>Chris Lewis</p>
 
-Christopher R. Souser
+    <p>Christopher R. Souser</p>
 
-Claudia Weiss
+    <p>Claudia Weiss</p>
 
-CodeKiwi
+    <p>CodeKiwi</p>
 
-Demian Walendorff
+    <p>Demian Walendorff</p>
 
-Dmitry
+    <p>Dmitry</p>
 
-Erik Kuefler
+    <p>Erik Kuefler</p>
 
-Eva
+    <p>Eva</p>
 
-falkowich
+    <p>falkowich</p>
 
-Gene V
+    <p>Gene V</p>
 
-James Murray
+    <p>James Murray</p>
 
-James R
+    <p>James R</p>
 
-Jamie Donchi
+    <p>Jamie Donchi</p>
 
-Jared Seehafer
+    <p>Jared Seehafer</p>
 
-Jeremy B. Merrill
+    <p>Jeremy B. Merrill</p>
 
-JmQ
+    <p>JmQ</p>
 
-John F.
+    <p>John F.</p>
 
-Joseph Selman
+    <p>Joseph Selman</p>
 
-Josh
+    <p>Josh</p>
 
-Josh
+    <p>Josh</p>
 
-jue
+    <p>jue</p>
 
-Julizzette ColÃ³n
+    <p>Julizzette ColÃ³n</p>
 
-Justin Corwin
+    <p>Justin Corwin</p>
 
-Kenneth
+    <p>Kenneth</p>
 
-Kira Petersson
+    <p>Kira Petersson</p>
 
-LiKyUr
+    <p>LiKyUr</p>
 
-Logan Twedt
+    <p>Logan Twedt</p>
 
-Matthew Burleigh
+    <p>Matthew Burleigh</p>
 
-Matthew Sullivan
+    <p>Matthew Sullivan</p>
 
-Michael
+    <p>Michael</p>
 
-MJ Defrancesco
+    <p>MJ Defrancesco</p>
 
-msg
+    <p>msg</p>
 
-Niall Smith
+    <p>Niall Smith</p>
 
-Nick De Cooman
+    <p>Nick De Cooman</p>
 
-Nikolay Kolev
+    <p>Nikolay Kolev</p>
 
-Ning
+    <p>Ning</p>
 
-Oliver Shykles
+    <p>Oliver Shykles</p>
 
-Philip Chun
+    <p>Philip Chun</p>
 
-Philipp Thun
+    <p>Philipp Thun</p>
 
-Posha King
+    <p>Posha King</p>
 
-Raghd Hamzeh
+    <p>Raghd Hamzeh</p>
 
-Rob Pasell
+    <p>Rob Pasell</p>
 
-Ropproy
+    <p>Ropproy</p>
 
-Ruthlin Zephyr
+    <p>Ruthlin Zephyr</p>
 
-Sam Geake
+    <p>Sam Geake</p>
 
-Syed
+    <p>Syed</p>
 
-Tessel
+    <p>Tessel</p>
 
-Tim Johnstone
+    <p>Tim Johnstone</p>
 
-Tyler Dugoni
+    <p>Tyler Dugoni</p>
 
-Wardah
+    <p>Wardah</p>
 
-Yacine Merzouk
+    <p>Yacine Merzouk</p>
 
-Chrism929
+    <p>Chrism929</p>
 
-Emilia
+    <p>Emilia</p>
 
-\@chrisco
+    <p>@chrisco</p>
 
-Anonymous
+    <p>Anonymous</p>
 
-Ben Margolin
+    <p>Ben Margolin</p>
 
-Bhushan
+    <p>Bhushan</p>
 
-Charles Magnuson
+    <p>Charles Magnuson</p>
 
-Dave Moore
+    <p>Dave Moore</p>
 
-Jaleh Afshar
+    <p>Jaleh Afshar</p>
 
-Jared Trezise
+    <p>Jared Trezise</p>
 
-Lucid Portrayal
+    <p>Lucid Portrayal</p>
 
-Mark Keller
+    <p>Mark Keller</p>
 
-Patrick DiJusto
+    <p>Patrick DiJusto</p>
 
-richard stopford
+    <p>richard stopford</p>
 
-Scott Crelin
+    <p>Scott Crelin</p>
 
-Woodenfox
+    <p>Woodenfox</p>
+    
+    
+  </div>
+</div>
   
-## Community Sponsors
- 
-<a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/privly">
-	<img src="/assets/images/sponsors/google.png" title="Google logo" />
-</a>  
 
-
-Supports student work on Privly projects through the [Google Summer of Code](http://www.google-melange.com/gsoc/homepage/google/gsoc2013).
-
-
-
-
-## In-Kind Contributors
-
-<a href="http://www.rackspace.com/">
-  <img src="/assets/images/sponsors/rackspace.png" />
-</a>
-
-Provides complementary hosting to Privly's development servers.
-
-<a href="http://www.jetbrains.com/">
-  <img src="/assets/images/sponsors/logo_jetbrains.gif" />
-</a>
-
-Provides Open Source licenses to Privly developers.
-
-<a href="https://airbrake.io/pages/home">
-  <img src="/assets/images/sponsors/thoughtbot.png" title="Thoughtbot logo"/>
-</a>
-
-
-Provides their error logging and notification service for Privly development.
 
 
