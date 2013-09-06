@@ -101,3 +101,23 @@ div.navbar .nav > .active > a:focus {
   font-size:13px;
   border-bottom:1px solid #242424;
 }
+
+/* Download Icons */
+.privly-browser-combo {
+  position:relative;
+  display:block;
+  height:150px;
+  width:150px;
+}
+.privly-browser-combo .privly-icon {
+  position:absolute;
+  right:27px;
+  top:20px;
+}
+.privly-browser-combo .browser-icon {
+  position:absolute;
+  right:0;
+  top:0;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}
