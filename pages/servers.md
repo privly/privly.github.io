@@ -14,7 +14,7 @@ Privly users choose where they want to host their content. While it is a best pr
 "Official" hosts are plugged into Privly development and abide by best practices regarding user privacy. This list is currently small, but we are working to add hosts. We would like to have a menu of hosts operating in independent jurisdictions.
 
 * [PrivlyAlpha.org](https://privlyalpha.org): This server is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.
-* [dev.drivly.org](https://dev.privly.org): This host is primarily for developers actively contributing to the Privly Project. It has more frequent down time, but often have the newest functionality. This server is not for the uninitiated. It is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.
+* [dev.drivly.org](https://dev.privly.org): This host is primarily for developers actively contributing to the Privly Project. It has more frequent down time, but often has the newest functionality. This server is not for the uninitiated. It is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.
 * **YourServerHere.** You can [open an issue](https://github.com/privly/privly.github.io/issues) to request that your server be listed on this page. To be listed you need to abide by best practices for protecting user content. Initially we will likely put you in the "Community Hosts" section.
 
 ## Community Hosts ##
