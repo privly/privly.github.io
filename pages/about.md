@@ -30,8 +30,7 @@ Privly Does:
 - Own your content, you do
 
 
-Privly has proven itself as a concept. You can use it right now with Facebook, Gmail, Google+, Twitter, Reddit, and just about anywhere else. As we refine the [extensions](/download.html) and develop versions for other browsers, we hope you will check back. Sign up for an  [invitation](/pages/invite.html),  [donate](/pages/donate.html), or get a developer account and  [start building](/pages/join.html)!
-
+Privly has proven itself as a concept. You can use it right now with Facebook, Gmail, Google+, Twitter, Reddit, and just about anywhere else. As we refine the [extensions](/download.html) and develop versions for other browsers, we hope you will check back.
 
 ## How does it work?
 
@@ -40,29 +39,6 @@ Privly gives you more than **privacy**, it gives you **security**. Shifting your
 Most users do not host their own web server, so Privly will enable people to trust **any storage provider** by taking away their ability to read your content. The Privly extensions will **encrypt your data** _before_ you send it to a server for storage. Encrypting your data means the server only sees a scrambled version of your content. This way, you can store your data anywhere without losing your privacy.
 
 Privly is built as an "Open Privacy Stack," meaning it is not tied to a particular way of doing things. Special "Privly Applications" will develop to meet your communication needs, and seamlessly interface with your favorite web communities. You don't have to sacrifice functionality to gain your privacy.
-
-
-## Organization
-
-<h2 style="font: normal 32px Lobster;">The Privly Foundation</h2>
-
-Privacy on the internet is not something that can--or should--be owned. Privly's 2012 [Kickstarter](http://www.kickstarter.com/projects/229630898/protect-your-content-anywhere-on-the-web-privly) funded the creation of the Privly Foundation. Incorporating the technology into a (pending) 501(c)3 tax-exempt foundation ensures the mission focus of Privly will be maintained. We thank our many donors on the  "Privly donation page",.
-
-
-
-More information about the Privly Foundation can be found on  [www.privly.org](http://privly.org). The inaugural Privly Foundation board meeting took place in September 2012 with the following board members:
-
-**[Sean McGregor](http://www.linkedin.com/in/seanbmcgregor)** - *Ph.D. Student in Computer Science at Oregon State University*   
-Sean McGregor is the creator and lead developer for the Privly project. A native of the United States, McGregor is a PhD student in computer science at Oregon State University. In 2008, McGregor earned a Bachelor of Arts from Claremont McKenna College, with studies in computer science, environmental policy, government, and economics.
-
-**[Carlos Jensen](http://www.linkedin.com/pub/carlos-jensen/0/145/356)** - *Associate Professor of Computer Science at Oregon State University*   
-Carlos Jensen is an Associate Professor in the School of Electrical Engineering and Computer Science (EECS) at Oregon State University (OSU). He received his B.S. degree in Computer Science from the State University of New York (SUNY) Brockport, and a Ph.D. in Computer Science from the Georgia Institute of Technology in 2005, where he was a member of the Graphics, Visualization and Usability Center (GVU).
-
-His areas of research are in Usable Privacy and Security (HCISec), with a particular focus on making online decisions about privacy and security understandable and meaningful to users. He also does research related to open source communities.
-
-**[Leslie Hawthorn](http://www.linkedin.com/pub/leslie-hawthorn/0/231/624)** - *Community Action and Impact at Red Hat*   
-An internationally known community manager, speaker and author, [Leslie Hawthorn](http://twitter.com/lhawthorn) has over 10 years experience in high tech project management, marketing and public relations. In March 2012 she joined [Red Hat, Inc.](http://redhat.com/), where she is responsible for Community Action &amp; Impact on the company’s Open Source and Standards team. Prior to Red Hat, she served as Outreach Manager at [Oregon State University’s Open Source Lab](http://osuosl.org/) and as a Program Manager for [Google’s Open Source Team](http://code.google.com/opensource), where she managed the [Google Summer of Code Program](http://code.google.com/soc/), created the contest now known as [Google Code In](http://code.google.com/gci) and launched the company’s [Open Source Developer Blog](http://google-opensource.blogspot.com/).
-
 
 ## Open Source
 
@@ -98,6 +74,26 @@ Charles Martin
 
 For a more thorough treatment of Privly as a whole, visit [the overview](https://github.com/privly/privly-organization/wiki/Privly-System-and-Organization-Overview). For development discussion, join the [Development Mailing List](https://groups.google.com/group/privly). Many [repositories](https://github.com/privly/) have their own wikis, but content not specific to a single repository will be in the [central wiki](https://github.com/privly/privly-organization/wiki/). Official announcements are found on [www.privly.org](http://www.privly.org). Live versions of the content server can be found at [privlyalpha.org](https://privlyalpha.org) and [dev.privly.org](https://dev.privly.org) (development). Extension-host page integration test cases can be found at [test.privly.org](http://test.privly.org). 
 
-
 Privly developers gather on IRC in the #Privly room on irc.freenode.net
+
+## Organization
+
+<h2 style="font: normal 32px Lobster;">The Privly Foundation</h2>
+
+Privacy on the internet is not something that can--or should--be owned. Privly's 2012 [Kickstarter](http://www.kickstarter.com/projects/229630898/protect-your-content-anywhere-on-the-web-privly) funded the creation of the Privly Foundation. Incorporating the technology into a (pending) 501(c)3 tax-exempt foundation ensures the mission focus of Privly will be maintained. We thank our many donors on the  "Privly donation page",.
+
+
+
+More information about the Privly Foundation can be found on  [www.privly.org](http://privly.org). The inaugural Privly Foundation board meeting took place in September 2012 with the following board members:
+
+**[Sean McGregor](http://www.linkedin.com/in/seanbmcgregor)** - *Ph.D. Student in Computer Science at Oregon State University*   
+Sean McGregor is the creator and lead developer for the Privly project. A native of the United States, McGregor is a PhD student in computer science at Oregon State University. In 2008, McGregor earned a Bachelor of Arts from Claremont McKenna College, with studies in computer science, environmental policy, government, and economics.
+
+**[Carlos Jensen](http://www.linkedin.com/pub/carlos-jensen/0/145/356)** - *Associate Professor of Computer Science at Oregon State University*   
+Carlos Jensen is an Associate Professor in the School of Electrical Engineering and Computer Science (EECS) at Oregon State University (OSU). He received his B.S. degree in Computer Science from the State University of New York (SUNY) Brockport, and a Ph.D. in Computer Science from the Georgia Institute of Technology in 2005, where he was a member of the Graphics, Visualization and Usability Center (GVU).
+
+His areas of research are in Usable Privacy and Security (HCISec), with a particular focus on making online decisions about privacy and security understandable and meaningful to users. He also does research related to open source communities.
+
+**[Leslie Hawthorn](http://www.linkedin.com/pub/leslie-hawthorn/0/231/624)** - *Community Action and Impact at Red Hat*   
+An internationally known community manager, speaker and author, [Leslie Hawthorn](http://twitter.com/lhawthorn) has over 10 years experience in high tech project management, marketing and public relations. In March 2012 she joined [Red Hat, Inc.](http://redhat.com/), where she is responsible for Community Action &amp; Impact on the company’s Open Source and Standards team. Prior to Red Hat, she served as Outreach Manager at [Oregon State University’s Open Source Lab](http://osuosl.org/) and as a Program Manager for [Google’s Open Source Team](http://code.google.com/opensource), where she managed the [Google Summer of Code Program](http://code.google.com/soc/), created the contest now known as [Google Code In](http://code.google.com/gci) and launched the company’s [Open Source Developer Blog](http://google-opensource.blogspot.com/).
 

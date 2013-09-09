@@ -3,6 +3,10 @@ layout: page
 title: Terms of Service
 ---
 
+A new draft of the Privacy Policy, License, and Terms will be adopted by the Privly Foundation board. Until the draft legal documents are adopted and published here, these policies are in effect. We will discuss the draft documents on the [development mailing list](http://groups.google.com/group/privly).
+
+---
+
 The following terms and conditions govern all use of the Priv.ly website and all content, services and products available at or through the website (taken together, the Website). The Website is owned and operated by Privly. The Website is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies (including, without limitation, the [privacy policy](/pages/privacy.html) and procedures that may be published from time to time on this Site by Privly (collectively, the “Agreement”).
 
 Please read this Agreement carefully before accessing or using the Website. By accessing or using any part of the web site, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access the Website or use any services. If these terms and conditions are considered an offer by Privly, acceptance is expressly limited to these terms. The Website is available only to individuals who are at least 13 years old.
