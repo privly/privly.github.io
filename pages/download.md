@@ -67,7 +67,8 @@ The extensions are under active development. Check back later if you do not like
 <div class="row-fluid">
   <div class="span6">
     <h3>See it Working</h3>
-    <p>The following pages are pre-seeded with Privly content so you can test the extension out: <a href="https://www.facebook.com/profile.php?id=100002254562518&sk=wall">Facebook</a> and <a href="https://twitter.com/#!/PrivlyTest">Twitter</a>. You can also post the public links below to any website to see how it handles. Let us know if you have any <a href="http://www.privly.org/content/bug-report">problems</a>. It should work in any basic HTML form.</p>
+    <p>The following pages are pre-seeded with Privly content so you can test the extension out: 
+      <a href="https://www.facebook.com/profile.php?id=100002254562518">Facebook</a> and <a href="https://twitter.com/#!/PrivlyTest">Twitter</a>. You can also post the public links below to any website to see how it handles. Let us know if you have any <a href="http://www.privly.org/content/bug-report">problems</a>. It should work in any basic HTML form.</p>
   </div>
   <div class="span6">
     <h3>Try it Anywhere</h3>
