@@ -30,7 +30,7 @@ Privly Does:
 - Own your content, you do
 
 
-Privly has proven itself as a concept. You can use it right now with Facebook, Gmail, Google+, Twitter, Reddit, and just about anywhere else. As we refine the [extensions](/download.html) and develop versions for other browsers, we hope you will check back.
+Privly has proven itself as a concept. You can use it right now with Facebook, Gmail, Google+, Twitter, Reddit, and just about anywhere else. As we refine the [extensions](/pages/download.html) and develop versions for other browsers, we hope you will check back.
 
 ## How does it work?
 
@@ -48,9 +48,9 @@ _**Maintainers:**_
 [Sean McGregor](https://github.com/smcgregor/): [Firefox](https://github.com/privly/privly-firefox), [Chrome](https://github.com/privly/privly-chrome), [Content Server](https://github.com/privly/privly-web), [Test Cases](https://github.com/privly/privly-test)  
 [Jen Davidson](https://github.com/jewifer): [Privly.org](http://www.privly.org)  
 [Balaji Athreya](https://github.com/balajiathreya)  
-[Sanchit Karve](https://github.com/born2c0ded): [Opera](https://github.com/privly/privly-opera)  
+[Sanchit Karve](https://github.com/born2c0de): [Opera](https://github.com/privly/privly-opera)  
 [Hery Ratsimihah](https://github.com/hery): [iOS](https://github.com/privly/privly-iosd)  
-[Shivam Vermah](https://github.com/vshivamd): [Android](https://github.com/privly/privly-android)  
+[Shivam Vermah](https://github.com/vshivam): [Android](https://github.com/privly/privly-android)  
 [Garrett Seward](https://github.com/spectralsun): [Priv.ly](https://github.com/privly/privly.github.io)
 
 _**Contributors:**_  
@@ -63,7 +63,7 @@ _**Contributors:**_
 Jared Howe (User Docs)
 
 _**Past Contributors:**_  
-[Swetal Patel](http://www.linkedin.com/in/teamswetd)  
+[Swetal Patel](http://www.linkedin.com/in/teamswet)  
 [Jason Jacob](https://github.com/jayco)  
 [Jesse Pollak](https://github.com/jessepollak)  
 [Ravneet Singh](https://github.com/dreamrulez07)  
