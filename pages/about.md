@@ -49,7 +49,7 @@ _**Maintainers:**_
 [Jen Davidson](https://github.com/jewifer): [Privly.org](http://www.privly.org)  
 [Balaji Athreya](https://github.com/balajiathreya)  
 [Sanchit Karve](https://github.com/born2c0de): [Opera](https://github.com/privly/privly-opera)  
-[Hery Ratsimihah](https://github.com/hery): [iOS](https://github.com/privly/privly-iosd)  
+[Hery Ratsimihah](https://github.com/hery): [iOS](https://github.com/privly/privly-ios)  
 [Shivam Vermah](https://github.com/vshivam): [Android](https://github.com/privly/privly-android)  
 [Garrett Seward](https://github.com/spectralsun): [Priv.ly](https://github.com/privly/privly.github.io)
 
