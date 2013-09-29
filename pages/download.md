@@ -12,15 +12,14 @@ The extensions are under active development. Check back later if you do not like
 <div style="color:#FF0000">
     
   <p>
-    Please note that the extension does <strong>not</strong> currently offer:
+    Please note that the extension does <strong>not</strong> <span style="font-style:italic;">currently</span> offer:
     <ul>
       <li>Protection from governments</li>
       <li>Protection from the domain name system</li>
-      <li>Or security of any kind</li>
     </ul>
   </p>
 
-  <p>We made the extension available so you can test it out with your favorite site, but until we tell you otherwise, post with the expectation that it is public.</p>
+  <p>We made the extension available so you can participate in the development process, but until we tell you otherwise, post with the expectation that it is public.</p>
 
 </div>  
 
