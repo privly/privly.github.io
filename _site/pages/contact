@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Privly &middot; Content Hosts</title>
+    <title>Privly &middot; Contact Privly</title>
     
     <meta name="author" content="Privly">
 
@@ -182,8 +182,8 @@
       
         
           
-          	<li class="active">
-              <a href="/pages/servers.html" class="active">
+          	<li >
+              <a href="/pages/servers.html" >
                 Content Hosts
                 <span class="sub-title">Sign Up</span>
               </a>
@@ -519,34 +519,24 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Content Hosts </h1>
+  <h1>Contact Privly </h1>
 </div>
 
 <div class="row-fluid">
   <span class="span9">
-    <p>Privly users choose where they want to host their content. While it is a best practice for users to host their content on their own hardware, we realize that the majority of users will likely never maintain a web server. Hence, we manage a list of recommended hosts for users looking for their Privly home.</p>
+    <p>The Privly Foundation<br />PO Box 79<br />Corvallis, Oregon 97339<br />United States of America</p>
 
-<h2 id='official_hosts'>Official Hosts</h2>
+<h3 id='for_developer_inquiries'>For Developer Inquiries</h3>
 
-<p>&#8220;Official&#8221; hosts are plugged into Privly development and abide by best practices regarding user privacy. This list is currently small, but we are working to add hosts. We would like to have a menu of hosts operating in independent jurisdictions.</p>
+<p>Please email our public <a href='https://groups.google.com/forum/?fromgroups#!forum/privly'>development mailing list</a> or drop into our <a href='http://www.privly.org/content/irc'>IRC channel</a>.</p>
 
-<ul>
-<li><a href='https://privlyalpha.org'>PrivlyAlpha.org</a>: This server is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.</li>
+<h3 id='for_press_inquiries'>For press inquiries</h3>
 
-<li><a href='https://dev.privly.org'>dev.privly.org</a>: This host is primarily for developers actively contributing to the Privly Project. It has more frequent down time, but often has the newest functionality. This server is not for the uninitiated. It is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.</li>
+<p>Please email community <span>at</span> privly.org.</p>
 
-<li><strong>YourServerHere.</strong> You can <a href='https://github.com/privly/privly.github.io/issues'>open an issue</a> to request that your server be listed on this page. To be listed you need to abide by best practices for protecting user content. Initially we will likely put you in the &#8220;Community Hosts&#8221; section.</li>
-</ul>
+<h3 id='for_reporting_security_issues'>For Reporting Security Issues</h3>
 
-<h2 id='community_hosts'>Community Hosts</h2>
-
-<p>These servers properly integrate with Privly&#8217;s family of applications, but they don&#8217;t have the same level of scrutiny as the &#8220;official&#8221; hosts. Since malicious hosts could use Privly&#8217;s content injection to track users (see below), Privly does not automatically fetch content associated with these servers unless you tell it to.</p>
-
-<ul>
-<li>There are currently no known unaffiliated servers. <strong>Be the first!</strong></li>
-</ul>
-
-<p>Privly servers currently know when the content they store has been accessed. To prevent malicious hosts from tracking Privly users, only servers that are &#8220;whitelisted&#8221; by Privly can automatically inject content. A forthcoming peer-to-peer network will eliminate the necessity for a whitelist in many cases .</p>
+<p>Please email privly <span>at</span> privly.org.</p>
   </span>
   <span class="span3" id="side_block">
   	<div class="resources">

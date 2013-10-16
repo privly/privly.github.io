@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Privly &middot; Content Hosts</title>
+    <title>Privly &middot; About</title>
     
     <meta name="author" content="Privly">
 
@@ -69,8 +69,8 @@
       
         
           
-          	<li >
-              <a href="/pages/about.html" >
+          	<li class="active">
+              <a href="/pages/about.html" class="active">
                 About
                 <span class="sub-title">More Info</span>
               </a>
@@ -182,8 +182,8 @@
       
         
           
-          	<li class="active">
-              <a href="/pages/servers.html" class="active">
+          	<li >
+              <a href="/pages/servers.html" >
                 Content Hosts
                 <span class="sub-title">Sign Up</span>
               </a>
@@ -519,34 +519,74 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Content Hosts </h1>
+  <h1>About </h1>
 </div>
 
 <div class="row-fluid">
   <span class="span9">
-    <p>Privly users choose where they want to host their content. While it is a best practice for users to host their content on their own hardware, we realize that the majority of users will likely never maintain a web server. Hence, we manage a list of recommended hosts for users looking for their Privly home.</p>
+    <h2 id='what_is_privly'>What is Privly?</h2>
 
-<h2 id='official_hosts'>Official Hosts</h2>
+<p>All too often you are forced to trade your personal privacy for access to the latest technologies. This &#8220;bargain&#8221; risks your personal data to changing rules, well meaning system changes, and criminal hacking.</p>
 
-<p>&#8220;Official&#8221; hosts are plugged into Privly development and abide by best practices regarding user privacy. This list is currently small, but we are working to add hosts. We would like to have a menu of hosts operating in independent jurisdictions.</p>
+<p>Privly makes it impossible for others to control your personal data by hiding the content behind a userExtension-controlled hyperlink. A <a href='/pages/download.html'>Privly browser extension</a> will then &#8220;inject&#8221; the content in place of the link without giving away access to the content. For those who don’t have the extension installed, they see a simple link. For those who do have <a href='/pages/download.html'>extension</a> installed, they are able to see your post on the page as it was intended. That’s because the extension pulls the data from the other side of the link into your Facebook page, Twitter feed, etc, seamlessly, without supplying that data to data miners. Meaning your content stays, <em>your</em> content.</p>
 
-<ul>
-<li><a href='https://privlyalpha.org'>PrivlyAlpha.org</a>: This server is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.</li>
-
-<li><a href='https://dev.privly.org'>dev.privly.org</a>: This host is primarily for developers actively contributing to the Privly Project. It has more frequent down time, but often has the newest functionality. This server is not for the uninitiated. It is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.</li>
-
-<li><strong>YourServerHere.</strong> You can <a href='https://github.com/privly/privly.github.io/issues'>open an issue</a> to request that your server be listed on this page. To be listed you need to abide by best practices for protecting user content. Initially we will likely put you in the &#8220;Community Hosts&#8221; section.</li>
-</ul>
-
-<h2 id='community_hosts'>Community Hosts</h2>
-
-<p>These servers properly integrate with Privly&#8217;s family of applications, but they don&#8217;t have the same level of scrutiny as the &#8220;official&#8221; hosts. Since malicious hosts could use Privly&#8217;s content injection to track users (see below), Privly does not automatically fetch content associated with these servers unless you tell it to.</p>
+<p>Privly Does:</p>
 
 <ul>
-<li>There are currently no known unaffiliated servers. <strong>Be the first!</strong></li>
+<li>Give you the ability to share/post/tweet/chat anywhere without giving the host site access to the content</li>
+
+<li>Give you the power to grant or revoke access to your content to anyone or anywhere</li>
+
+<li>Give the content creator ownership of their data</li>
 </ul>
 
-<p>Privly servers currently know when the content they store has been accessed. To prevent malicious hosts from tracking Privly users, only servers that are &#8220;whitelisted&#8221; by Privly can automatically inject content. A forthcoming peer-to-peer network will eliminate the necessity for a whitelist in many cases .</p>
+<p><strong>Official Privly Hosts Do NOT:</strong></p>
+
+<ul>
+<li>Use or sell your data</li>
+
+<li>Give your data to third party companies</li>
+
+<li>Own your content, you do</li>
+</ul>
+
+<p>Privly has proven itself as a concept. You can use it right now with Facebook, Gmail, Google+, Twitter, Reddit, and just about anywhere else. As we refine the <a href='/pages/download.html'>extensions</a> and develop versions for other browsers, we hope you will check back.</p>
+
+<h2 id='how_does_it_work'>How does it work?</h2>
+
+<p>Privly gives you more than <strong>privacy</strong>, it gives you <strong>security</strong>. Shifting your data and trust from an organization that sells your data to one that in the long run, can’t even protect it, doesn’t help. Eventually, a hacker, rogue employee, government, or even someone close to you will expose everything you wrote in an email, said in a chat, or posted in a message. <strong>No one can be trusted to protect your data forever</strong>, so how can you use the internet for personal communication? The answer to the privacy problem is <strong>encryption</strong>.</p>
+
+<p>Most users do not host their own web server, so Privly will enable people to trust <strong>any storage provider</strong> by taking away their ability to read your content. The Privly extensions will <strong>encrypt your data</strong> <em>before</em> you send it to a server for storage. Encrypting your data means the server only sees a scrambled version of your content. This way, you can store your data anywhere without losing your privacy.</p>
+
+<p>Privly is built as an &#8220;Open Privacy Stack,&#8221; meaning it is not tied to a particular way of doing things. Special &#8220;Privly Applications&#8221; will develop to meet your communication needs, and seamlessly interface with your favorite web communities. You don&#8217;t have to sacrifice functionality to gain your privacy.</p>
+
+<h2 id='open_source'>Open Source</h2>
+
+<p>Privly is about creating a square deal for users, and that can&#8217;t be done with a closed-source, proprietary platform. Anyone can add their skills to the project and their contribution will be protected.</p>
+
+<p><em><strong>Maintainers:</strong></em><br /><a href='https://github.com/smcgregor/'>Sean McGregor</a>: <a href='https://github.com/privly/privly-firefox'>Firefox</a>, <a href='https://github.com/privly/privly-chrome'>Chrome</a>, <a href='https://github.com/privly/privly-web'>Content Server</a>, <a href='https://github.com/privly/privly-test'>Test Cases</a><br /><a href='https://github.com/jewifer'>Jen Davidson</a>: <a href='http://www.privly.org'>Privly.org</a><br /><a href='https://github.com/balajiathreya'>Balaji Athreya</a><br /><a href='https://github.com/born2c0de'>Sanchit Karve</a>: <a href='https://github.com/privly/privly-opera'>Opera</a><br /><a href='https://github.com/hery'>Hery Ratsimihah</a>: <a href='https://github.com/privly/privly-ios'>iOS</a><br /><a href='https://github.com/vshivam'>Shivam Vermah</a>: <a href='https://github.com/privly/privly-android'>Android</a><br /><a href='https://github.com/spectralsun'>Garrett Seward</a>: <a href='https://github.com/privly/privly.github.io'>Priv.ly</a></p>
+
+<p><em><strong>Contributors:</strong></em><br /><a href='https://github.com/irdan'>Daniel Reichert</a><br /><a href='http://de.linkedin.com/pub/hanno-wagner/6/33/305'>Hanno Wagner</a> (System Administration)<br /><a href='https://github.com/qmaruf'>Quazi Marufur Rahman</a><br /><a href='http://www.linkedin.com/profile/view?id=204119935'>Tyler Dugoni</a> (Graphics)<br /><a href='https://github.com/jhostetler'>Jesse Hostetler</a><br /><a href='https://github.com/JesseMarkowitz'>Jesse Markowitz</a><br />Jared Howe (User Docs)</p>
+
+<p><em><strong>Past Contributors:</strong></em><br /><a href='http://www.linkedin.com/in/teamswet'>Swetal Patel</a><br /><a href='https://github.com/jayco'>Jason Jacob</a><br /><a href='https://github.com/jessepollak'>Jesse Pollak</a><br /><a href='https://github.com/dreamrulez07'>Ravneet Singh</a><br /><a href='https://github.com/Decode141'>Rohan Durve</a><br /><a href='https://github.com/gordyvision'>Jordan Vrvilo</a> <br /><a href='https://github.com/selmanj'>Joseph Selman</a><br />Charles Martin</p>
+
+<p>For a more thorough treatment of Privly as a whole, visit <a href='https://github.com/privly/privly-organization/wiki/Privly-System-and-Organization-Overview'>the overview</a>. For development discussion, join the <a href='https://groups.google.com/group/privly'>Development Mailing List</a>. Many <a href='https://github.com/privly/'>repositories</a> have their own wikis, but content not specific to a single repository will be in the <a href='https://github.com/privly/privly-organization/wiki/'>central wiki</a>. Official announcements are found on <a href='http://www.privly.org'>www.privly.org</a>. Live versions of the content server can be found at <a href='https://privlyalpha.org'>privlyalpha.org</a> and <a href='https://dev.privly.org'>dev.privly.org</a> (development). Extension-host page integration test cases can be found at <a href='http://test.privly.org'>test.privly.org</a>.</p>
+
+<p>Privly developers gather on IRC in the #Privly room on irc.freenode.net</p>
+
+<h2 id='organization'>Organization</h2>
+<h2 style='font: normal 32px Lobster;'>The Privly Foundation</h2>
+<p>Privacy on the internet is not something that can&#8211;or should&#8211;be owned. Privly&#8217;s 2012 <a href='http://www.kickstarter.com/projects/229630898/protect-your-content-anywhere-on-the-web-privly'>Kickstarter</a> funded the creation of the Privly Foundation. Incorporating the technology into a (pending) 501(c)3 tax-exempt foundation ensures the mission focus of Privly will be maintained. We thank our many donors on the &#8220;Privly donation page&#8221;,.</p>
+
+<p>More information about the Privly Foundation can be found on <a href='http://privly.org'>www.privly.org</a>. The inaugural Privly Foundation board meeting took place in September 2012 with the following board members:</p>
+
+<p><strong><a href='http://www.linkedin.com/in/seanbmcgregor'>Sean McGregor</a></strong> - <em>Ph.D. Student in Computer Science at Oregon State University</em> <br />Sean McGregor is the creator and lead developer for the Privly project. A native of the United States, McGregor is a PhD student in computer science at Oregon State University. In 2008, McGregor earned a Bachelor of Arts from Claremont McKenna College, with studies in computer science, environmental policy, government, and economics.</p>
+
+<p><strong><a href='http://www.linkedin.com/pub/carlos-jensen/0/145/356'>Carlos Jensen</a></strong> - <em>Associate Professor of Computer Science at Oregon State University</em> <br />Carlos Jensen is an Associate Professor in the School of Electrical Engineering and Computer Science (EECS) at Oregon State University (OSU). He received his B.S. degree in Computer Science from the State University of New York (SUNY) Brockport, and a Ph.D. in Computer Science from the Georgia Institute of Technology in 2005, where he was a member of the Graphics, Visualization and Usability Center (GVU).</p>
+
+<p>His areas of research are in Usable Privacy and Security (HCISec), with a particular focus on making online decisions about privacy and security understandable and meaningful to users. He also does research related to open source communities.</p>
+
+<p><strong><a href='http://www.linkedin.com/pub/leslie-hawthorn/0/231/624'>Leslie Hawthorn</a></strong> - <em>Community Action and Impact at Red Hat</em> <br />An internationally known community manager, speaker and author, <a href='http://twitter.com/lhawthorn'>Leslie Hawthorn</a> has over 10 years experience in high tech project management, marketing and public relations. In March 2012 she joined <a href='http://redhat.com/'>Red Hat, Inc.</a>, where she is responsible for Community Action &#38; Impact on the company’s Open Source and Standards team. Prior to Red Hat, she served as Outreach Manager at <a href='http://osuosl.org/'>Oregon State University’s Open Source Lab</a> and as a Program Manager for <a href='http://code.google.com/opensource'>Google’s Open Source Team</a>, where she managed the <a href='http://code.google.com/soc/'>Google Summer of Code Program</a>, created the contest now known as <a href='http://code.google.com/gci'>Google Code In</a> and launched the company’s <a href='http://google-opensource.blogspot.com/'>Open Source Developer Blog</a>.</p>
   </span>
   <span class="span3" id="side_block">
   	<div class="resources">

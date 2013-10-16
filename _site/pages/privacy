@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Privly &middot; Content Hosts</title>
+    <title>Privly &middot; Privacy Principles</title>
     
     <meta name="author" content="Privly">
 
@@ -182,8 +182,8 @@
       
         
           
-          	<li class="active">
-              <a href="/pages/servers.html" class="active">
+          	<li >
+              <a href="/pages/servers.html" >
                 Content Hosts
                 <span class="sub-title">Sign Up</span>
               </a>
@@ -519,34 +519,34 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Content Hosts </h1>
+  <h1>Privacy Principles </h1>
 </div>
 
 <div class="row-fluid">
   <span class="span9">
-    <p>Privly users choose where they want to host their content. While it is a best practice for users to host their content on their own hardware, we realize that the majority of users will likely never maintain a web server. Hence, we manage a list of recommended hosts for users looking for their Privly home.</p>
+    <p><strong>Make Privacy Automatic</strong><br />Eventually we will store everything as cipher-text (encrypted), and execute all encryption services on the browser. We don&#8217;t want Privly hosts to be able to read your content.</p>
 
-<h2 id='official_hosts'>Official Hosts</h2>
+<p><strong>It is Your Data</strong><br />Privly hosts will not archive your content after you delete it, and will never crawl your content.</p>
 
-<p>&#8220;Official&#8221; hosts are plugged into Privly development and abide by best practices regarding user privacy. This list is currently small, but we are working to add hosts. We would like to have a menu of hosts operating in independent jurisdictions.</p>
+<p><strong>Everything is Opt-In</strong><br />When we add capabilities, access to existing content will not change unless the content-owner explicitly changes the settings.</p>
 
-<ul>
-<li><a href='https://privlyalpha.org'>PrivlyAlpha.org</a>: This server is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.</li>
+<p><strong>Reading Content is Also Private</strong><br />Content owners do not know which links you read. Privly hosts will only collect user data (example: geography) that helps deliver content more effectively.</p>
 
-<li><a href='https://dev.privly.org'>dev.privly.org</a>: This host is primarily for developers actively contributing to the Privly Project. It has more frequent down time, but often has the newest functionality. This server is not for the uninitiated. It is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.</li>
+<p><strong>Other Concerns?</strong><br />Above all we want to enable privacy across the internet. We will keep development and policies open and responsive to the users, so get involved! A new draft of the Privacy Policy, License, and Terms will be adopted by the Privly Foundation board. Until the draft legal documents are adopted and published here, these policies are in effect. We will discuss the draft documents on the <a href='http://groups.google.com/group/privly'>development mailing list</a>.</p>
 
-<li><strong>YourServerHere.</strong> You can <a href='https://github.com/privly/privly.github.io/issues'>open an issue</a> to request that your server be listed on this page. To be listed you need to abide by best practices for protecting user content. Initially we will likely put you in the &#8220;Community Hosts&#8221; section.</li>
-</ul>
+<h3 id='disclaimer'>Disclaimer</h3>
 
-<h2 id='community_hosts'>Community Hosts</h2>
-
-<p>These servers properly integrate with Privly&#8217;s family of applications, but they don&#8217;t have the same level of scrutiny as the &#8220;official&#8221; hosts. Since malicious hosts could use Privly&#8217;s content injection to track users (see below), Privly does not automatically fetch content associated with these servers unless you tell it to.</p>
+<p>Please note that the extension does <strong>not</strong> currently offer:</p>
 
 <ul>
-<li>There are currently no known unaffiliated servers. <strong>Be the first!</strong></li>
+<li>Protection from governments</li>
+
+<li>Protection from hosting providers</li>
+
+<li>Protection from the domain name system</li>
 </ul>
 
-<p>Privly servers currently know when the content they store has been accessed. To prevent malicious hosts from tracking Privly users, only servers that are &#8220;whitelisted&#8221; by Privly can automatically inject content. A forthcoming peer-to-peer network will eliminate the necessity for a whitelist in many cases .</p>
+<p>We made the extension available so you can test it out with your favorite site, but until we tell you otherwise, post with the expectation that it is public.</p>
   </span>
   <span class="span3" id="side_block">
   	<div class="resources">
