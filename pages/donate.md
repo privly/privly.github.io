@@ -7,16 +7,21 @@ weight: 4
 Your time is just as valuable as your money, if you have the skills to move us forward, please consider [volunteering your time](http://www.privly.org/content/how-get-started).
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="text-align: center;">
+  <h3>Paypal</h3>
   <input type="hidden" name="cmd" value="_s-xclick" />
   <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
   "/>
   <input style="align:left" type="image" src="/assets/images/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - Donation"/>
+  <h3>BitCoin</h3>
+  <p>Donation Address: 1DSM4sFyM7m6Xs3a3hsNWfqS8pXTqYkwqx</p>
 </form>
+
+## Donors
 
 <div class="row-fluid">
   <div class="span5">
 
-    <h2>Founding Backers</h2>
+    <h3>Founding Backers</h3>
 
     <p>Andrea Sobotor</p>
 
@@ -238,7 +243,7 @@ Your time is just as valuable as your money, if you have the skills to move us f
 
   </div>
   <div class="span7">
-    <h2>Community Sponsors</h2>
+    <h3>Community Sponsors</h3>
 
     <a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/privly">
       <img src="/assets/images/sponsors/google.png" title="Google logo" style="width:200px" />
@@ -250,7 +255,7 @@ Your time is just as valuable as your money, if you have the skills to move us f
     
     <br />
     
-    <h2>In-Kind Contributors</h2>
+    <h3>In-Kind Contributors</h3>
 
     <a href="http://www.rackspace.com/">
       <img src="/assets/images/sponsors/rackspace.png" style="width:200px" />
@@ -269,7 +274,7 @@ Your time is just as valuable as your money, if you have the skills to move us f
     
     <br />
     
-    <h2>Kickstarter Backers</h2>
+    <h3>Kickstarter Backers</h3>
 
     <p>Jeff Kuntz</p>
 
