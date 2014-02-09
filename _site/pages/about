@@ -49,7 +49,7 @@
             <span class="icon-bar"></span>
           </a>
           <div id="site_name">
-             <a class="brand" href="/">Privly</a>
+             <a class="brand" href="/">Priv.ly</a>
              <span>Share Priv(ate).ly</span>
           </div>
           <div class="nav-collapse collapse">
@@ -58,18 +58,6 @@
               
               
   
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
     
      
       
@@ -89,6 +77,18 @@
             </li>
           
         
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
       
     
      
@@ -180,12 +180,6 @@
     
      
       
-    
-     
-      
-    
-     
-      
         
           
           	<li >
@@ -204,19 +198,13 @@
      
       
     
+     
+      
+    
+     
+      
+    
   
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
     
      
       
@@ -235,32 +223,6 @@
         
           
         
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
       
     
      
@@ -402,6 +364,44 @@
     
      
       
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
         
           
         
@@ -414,17 +414,6 @@
     
      
       
-        
-          
-        
-      
-    
-     
-      
-        
-          
-        
-      
     
      
       
@@ -450,6 +439,17 @@
       
     
      
+      
+        
+          
+        
+      
+    
+     
+      
+        
+          
+        
       
     
      
@@ -661,19 +661,19 @@
              
           
              
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
              <a href="/pages/about.html">About</a> |
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
           
              
              
@@ -752,12 +752,6 @@
              
           
              
-             
-          
-             
-             
-          
-             
              <a href="/pages/servers.html">Content Hosts</a> |
           
              
@@ -766,19 +760,13 @@
              
              
           
+             
+             
+          
+             
+             
+          
         
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
           
              
              
@@ -804,32 +792,6 @@
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
@@ -965,13 +927,39 @@
              
           
              
-             <a href="/rss.xml">RSS Feed</a> |
+             
           
              
-             <a href="/pages/terms.html">Terms of Service</a> |
+             
           
              
-             <a href="/pages/trademark.html">Privly Trademark</a> |
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
           
              
              
@@ -990,6 +978,18 @@
           
              
              <a href="/pages/privacy.html">Privacy Principles</a> |
+          
+             
+             
+          
+             
+             <a href="/pages/terms.html">Terms of Service</a> |
+          
+             
+             <a href="/pages/trademark.html">Privly Trademark</a> |
+          
+             
+             <a href="/rss.xml">RSS Feed</a> |
           
              
              

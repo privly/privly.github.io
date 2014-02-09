@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Privly</title>
+ <title>Priv.ly</title>
  <link href="http://privly.github.io/" rel="self"/>
  <link href="http://privly.github.io"/>
- <updated>2014-02-09T13:49:29-08:00</updated>
+ <updated>2014-02-09T15:15:30-08:00</updated>
  <id>http://privly.github.io</id>
  <author>
    <name>Privly</name>
