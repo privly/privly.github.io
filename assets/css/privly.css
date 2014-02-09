@@ -19,10 +19,11 @@ div.container-narrow {
   max-width:800px;
 }
 div.navbar-inner {
-  background: #242424; 
+  background: #242424;
   border: none;
   border-radius: 0;
 }
+
 div.navbar .nav > li > a {
   color:#827B6E;
   height: 42px;
@@ -35,9 +36,9 @@ div.navbar .nav > li > a span {
   color:#6C675E;
   font:14px 'Vollkorn',Georgia,"Times New Roman",Times,serif;
 }
-div.navbar .nav > .active > a, 
+div.navbar .nav > .active > a,
 div.navbar .nav > li > a:hover,
-div.navbar .nav > .active > a:hover, 
+div.navbar .nav > .active > a:hover,
 div.navbar .nav > .active > a:focus {
   color:#F3EBD9;
   background-color:transparent;
@@ -45,11 +46,18 @@ div.navbar .nav > .active > a:focus {
   background-repeat: no-repeat;
   background-position: bottom center;
 }
-.navbar ui.nav {
-  float: none;
-  text-align: center;
-}
 
+@media (max-width: 767px) {
+    .navbar ul.nav {
+        float: none;
+    }
+    div.navbar .nav > .active > a,
+    div.navbar .nav > li > a:hover,
+    div.navbar .nav > .active > a:hover,
+    div.navbar .nav > .active > a:focus {
+        background-image: none;
+    }
+}
 .navbar .btn.btn-navbar {
   padding: 16px;
   margin-top: 13px;

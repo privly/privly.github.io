@@ -67,6 +67,18 @@
     
      
       
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
         
           
           	<li >
@@ -77,18 +89,6 @@
             </li>
           
         
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
       
     
      
@@ -180,6 +180,12 @@
     
      
       
+    
+     
+      
+    
+     
+      
         
           
           	<li >
@@ -198,13 +204,19 @@
      
       
     
-     
-      
-    
-     
-      
-    
   
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
     
      
       
@@ -223,18 +235,6 @@
         
           
         
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
       
     
      
@@ -414,6 +414,17 @@
     
      
       
+        
+          
+        
+      
+    
+     
+      
+        
+          
+        
+      
     
      
       
@@ -439,17 +450,6 @@
       
     
      
-      
-        
-          
-        
-      
-    
-     
-      
-        
-          
-        
       
     
      
@@ -526,17 +526,17 @@
   <span class="span9">
     <p>The Privly Foundation<br />PO Box 79<br />Corvallis, Oregon 97339<br />United States of America</p>
 
-<h3 id='for_developer_inquiries'>For Developer Inquiries</h3>
+<h3 id="for_developer_inquiries">For Developer Inquiries</h3>
 
-<p>Please email our public <a href='https://groups.google.com/forum/?fromgroups#!forum/privly'>development mailing list</a> or drop into our <a href='http://www.privly.org/content/irc'>IRC channel</a>.</p>
+<p>Please email our public <a href="https://groups.google.com/forum/?fromgroups#!forum/privly">development mailing list</a> or drop into our <a href="http://www.privly.org/content/irc">IRC channel</a>.</p>
 
-<h3 id='for_press_inquiries'>For press inquiries</h3>
+<h3 id="for_press_inquiries">For press inquiries</h3>
 
-<p>Please email community <span>at</span> privly.org.</p>
+<p>Please email community [at] privly.org.</p>
 
-<h3 id='for_reporting_security_issues'>For Reporting Security Issues</h3>
+<h3 id="for_reporting_security_issues">For Reporting Security Issues</h3>
 
-<p>Please email privly <span>at</span> privly.org.</p>
+<p>Please email privly [at] privly.org.</p>
   </span>
   <span class="span3" id="side_block">
   	<div class="resources">
@@ -611,19 +611,19 @@
              
           
              
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
              <a href="/pages/about.html">About</a> |
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
           
              
              
@@ -702,6 +702,12 @@
              
           
              
+             
+          
+             
+             
+          
+             
              <a href="/pages/servers.html">Content Hosts</a> |
           
              
@@ -710,13 +716,19 @@
              
              
           
-             
-             
-          
-             
-             
-          
         
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
           
              
              
@@ -742,18 +754,6 @@
              
              
           
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
         
           
              
@@ -910,6 +910,18 @@
           
              
              
+          
+             
+             
+          
+             
+             <a href="/rss.xml">RSS Feed</a> |
+          
+             
+             <a href="/pages/terms.html">Terms of Service</a> |
+          
+             
+             <a href="/pages/trademark.html">Privly Trademark</a> |
           
              
              
@@ -928,18 +940,6 @@
           
              
              <a href="/pages/privacy.html">Privacy Principles</a> |
-          
-             
-             
-          
-             
-             <a href="/pages/terms.html">Terms of Service</a> |
-          
-             
-             <a href="/pages/trademark.html">Privly Trademark</a> |
-          
-             
-             <a href="/rss.xml">RSS Feed</a> |
           
              
              
