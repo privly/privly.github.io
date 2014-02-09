@@ -45,6 +45,16 @@ div.navbar .nav > .active > a:focus {
   background-repeat: no-repeat;
   background-position: bottom center;
 }
+.navbar ui.nav {
+  float: none;
+  text-align: center;
+}
+
+.navbar .btn.btn-navbar {
+  padding: 16px;
+  margin-top: 13px;
+}
+
 /* End Bootstrap Tweaks */
 
 
@@ -77,9 +87,15 @@ div.navbar .nav > .active > a:focus {
   font-size: 72px;
   line-height: 1;
 }
+@media (max-width: 420px) {
+  .jumbotron h1 {
+    font-size: 54px;
+  }
+}
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
+  margin-bottom: 7px;
 }
 
 /* Supporting marketing content */
