@@ -2,11 +2,11 @@
   <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
 
-<div class="row-fluid">
-  <span class="span9">
+<div class="row">
+  <span class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
     {{ content }}
   </span>
-  <span class="span3" id="side_block">
+  <span class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="side_block">
   	{% include privly/newsblock.html %}
   </span>
 </div>
