@@ -18,20 +18,11 @@
     <link rel="icon" href="/favicon.ico" />
 
     <!-- Le styles -->
-     <link href="/assets/css/privly.css?body=1" media="screen" rel="stylesheet" type="text/css" />
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/privly.css?body=1" media="screen" rel="stylesheet" type="text/css" />
 
-   
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
 
     <!-- atom & rss feed -->
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -40,30 +31,28 @@
   </head>
 
   <body data-privly-exclude="true">
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="navbar-inner">
+    <!-- Navbar -->
+    <div class="navbar-wrapper">
+      <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <div id="site_name">
-             <a class="brand" href="/">Priv.ly</a>
-             <span>Share Priv(ate).ly</span>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id="site_name">
+              <a class="brand" href="/">Priv.ly</a>
+              <span>Share Priv(ate).ly</span>
+            </div>
           </div>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
               
               
               
   
-    
-     
-      
-    
-     
-      
     
      
       
@@ -106,13 +95,13 @@
      
       
     
+     
+      
+    
+     
+      
+    
   
-    
-     
-      
-    
-     
-      
     
      
       
@@ -155,13 +144,13 @@
      
       
     
+     
+      
+    
+     
+      
+    
   
-    
-     
-      
-    
-     
-      
     
      
       
@@ -204,7 +193,22 @@
      
       
     
+     
+      
+    
+     
+      
+    
   
+    
+     
+      
+    
+     
+      
+    
+     
+      
     
      
       
@@ -223,53 +227,6 @@
         
           
         
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
       
     
      
@@ -402,6 +359,47 @@
     
      
       
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
         
           
         
@@ -410,19 +408,8 @@
      
       
         
-      
-    
-     
-      
-    
-     
-      
-        
           
         
-      
-    
-     
       
     
      
@@ -447,8 +434,16 @@
     
      
       
+    
+     
+      
         
           
+        
+      
+    
+     
+      
         
       
     
@@ -513,6 +508,7 @@
         </div>
       </div>
     </div>
+    <!-- /Navbar -->
 
     <div class="container-narrow">
 
@@ -530,15 +526,15 @@
 
 <hr>
 
-<div class="row-fluid marketing">
-  <div class="span6">
+<div class="row marketing">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     <h4>Take Control</h4>
     <p>With Privly you can use <strong>any</strong> website without giving that website access to your content. You control your digital life. <a href="/pages/about.html">Learn more about controlling your digital life with Privly.</a></p>
 
     <h4>Download and Get Hosting</h4>
     <p>Privly changes the way your web browser works with a "browser extension". Learn more about the Privly extensions on the <a href="/pages/download.html">download page.</a> Anyone can host a server for Privly content, but we maintain a <a href="/pages/servers.html">list of hosts</a> for you if you don't have the required expertise.</p>
   </div>
-  <div class="span6">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     <h4>Flexible</h4>
     <p>Privly is a flexible framework, meaning web developers can build applications to keep Privly fresh and powerful. <a href="http://programming.oreilly.com/2013/07/securing-user-content-in-the-javascriptable-web.html">Learn more about Privly's design philosophy.</a></p>
 
@@ -553,12 +549,6 @@
       <footer>
         <p class="text-center">
         
-          
-             
-             
-          
-             
-             
           
              
              <a href="/pages/about.html">About</a> |
@@ -590,13 +580,13 @@
              
              
           
+             
+             
+          
+             
+             
+          
         
-          
-             
-             
-          
-             
-             
           
              
              
@@ -628,13 +618,13 @@
              
              
           
+             
+             
+          
+             
+             
+          
         
-          
-             
-             
-          
-             
-             
           
              
              
@@ -666,7 +656,22 @@
              
              
           
+             
+             
+          
+             
+             
+          
         
+          
+             
+             
+          
+             
+             
+          
+             
+             
           
              
              
@@ -695,15 +700,6 @@
              
              
           
-             
-             
-          
-             
-             
-          
-             
-             
-          
         
           
              
@@ -862,7 +858,16 @@
              
           
              
+             <a href="/pages/trademark.html">Privly Trademark</a> |
+          
              
+             <a href="/pages/terms.html">Terms of Service</a> |
+          
+             
+             
+          
+             
+             <a href="/pages/privacy.html">Privacy Principles</a> |
           
              
              
@@ -877,22 +882,13 @@
              
           
              
-             <a href="/pages/privacy.html">Privacy Principles</a> |
-          
-             
              
           
              
-             <a href="/pages/terms.html">Terms of Service</a> |
+             
           
              
-             <a href="/pages/trademark.html">Privly Trademark</a> |
-          
-             
-             <a href="/rss.xml">RSS Feed</a> |
-          
-             
-             
+             <a href="/rss.xml">RSS Feed</a> 
           
         
           

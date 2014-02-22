@@ -18,20 +18,11 @@
     <link rel="icon" href="/favicon.ico" />
 
     <!-- Le styles -->
-     <link href="/assets/css/privly.css?body=1" media="screen" rel="stylesheet" type="text/css" />
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/privly.css?body=1" media="screen" rel="stylesheet" type="text/css" />
 
-   
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
 
     <!-- atom & rss feed -->
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -40,30 +31,28 @@
   </head>
 
   <body data-privly-exclude="true">
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="navbar-inner">
+    <!-- Navbar -->
+    <div class="navbar-wrapper">
+      <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <div id="site_name">
-             <a class="brand" href="/">Priv.ly</a>
-             <span>Share Priv(ate).ly</span>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id="site_name">
+              <a class="brand" href="/">Priv.ly</a>
+              <span>Share Priv(ate).ly</span>
+            </div>
           </div>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
               
               
               
   
-    
-     
-      
-    
-     
-      
     
      
       
@@ -106,13 +95,13 @@
      
       
     
+     
+      
+    
+     
+      
+    
   
-    
-     
-      
-    
-     
-      
     
      
       
@@ -155,13 +144,13 @@
      
       
     
+     
+      
+    
+     
+      
+    
   
-    
-     
-      
-    
-     
-      
     
      
       
@@ -204,7 +193,22 @@
      
       
     
+     
+      
+    
+     
+      
+    
   
+    
+     
+      
+    
+     
+      
+    
+     
+      
     
      
       
@@ -223,53 +227,6 @@
         
           
         
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
       
     
      
@@ -402,6 +359,47 @@
     
      
       
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
         
           
         
@@ -410,19 +408,8 @@
      
       
         
-      
-    
-     
-      
-    
-     
-      
-        
           
         
-      
-    
-     
       
     
      
@@ -447,8 +434,16 @@
     
      
       
+    
+     
+      
         
           
+        
+      
+    
+     
+      
         
       
     
@@ -513,6 +508,7 @@
         </div>
       </div>
     </div>
+    <!-- /Navbar -->
 
     <div class="container-narrow">
 
@@ -522,8 +518,8 @@
   <h1>Contact Privly </h1>
 </div>
 
-<div class="row-fluid">
-  <span class="span9">
+<div class="row">
+  <span class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
     <p>The Privly Foundation<br />PO Box 79<br />Corvallis, Oregon 97339<br />United States of America</p>
 
 <h3 id="for_developer_inquiries">For Developer Inquiries</h3>
@@ -538,7 +534,7 @@
 
 <p>Please email privly [at] privly.org.</p>
   </span>
-  <span class="span3" id="side_block">
+  <span class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="side_block">
   	<div class="resources">
 	<h3>Privly Resources</h3>
 	<a href="https://groups.google.com/forum/?fromgroups#!forum/privly">Development Email List</a>
@@ -567,30 +563,30 @@
 	<br/>
 	<a href="https://diasp.org/u/privly">Diaspora</a>
 </div>
-<div>
+<div class="privly-news-links">
 	<h3>Privly Gets Attention</h3>
 	<a href="http://www.theatlantic.com/technology/archive/12/04/a-privacy-manifesto-in-code-what-if-your-emails-never-went-to-gmail-and-twitter-couldnt-see-your-tweets/255414/">
-		<img width="230" src="/assets/images/NewsSites/atlantic_logo.gif" alt="Atlantic_logo">
+		<img src="/assets/images/NewsSites/atlantic_logo.gif" alt="Atlantic_logo">
 	</a>
 	<br>
 	<br>
 	<a href="http://programming.oreilly.com/2013/07/securing-user-content-in-the-javascriptable-web.html">
-		<img width="230" src="/assets/images/NewsSites/oreilly.gif" alt="Oreilly Media Logo">
+		<img src="/assets/images/NewsSites/oreilly.gif" alt="Oreilly Media Logo">
 	</a>
 	<br>
 	<br>
 	<a href="http://www.spiegel.de/netzwelt/web/0,1518,825950,00.html">
-		<img width="230" src="/assets/images/NewsSites/Spiegel_Online_logo.png" alt="Spiegel_online_logo">
+		<img src="/assets/images/NewsSites/Spiegel_Online_logo.png" alt="Spiegel_online_logo">
 	</a>
 	<br>
 	<br>
 	<a href="http://www.wired.co.uk/magazine/archive/2012/09/ideas-bank/how-not-to-be-a-product-on-facebook">
-		<img width="230" src="/assets/images/NewsSites/wired_logo.gif" alt="Wired_logo">
+		<img src="/assets/images/NewsSites/wired_logo.gif" alt="Wired_logo">
 	</a>
 	<br>
 	<br>
 	<a href="http://mashable.com/2012/04/04/privly/">
-		<img width="230" src="/assets/images/NewsSites/Mashable_Logo_230px.png" alt="Mashable_logo_230px">
+		<img src="/assets/images/NewsSites/Mashable_Logo_230px.png" alt="Mashable_logo_230px">
 	</a>
 	<br>
 </div>
@@ -603,12 +599,6 @@
       <footer>
         <p class="text-center">
         
-          
-             
-             
-          
-             
-             
           
              
              <a href="/pages/about.html">About</a> |
@@ -640,13 +630,13 @@
              
              
           
+             
+             
+          
+             
+             
+          
         
-          
-             
-             
-          
-             
-             
           
              
              
@@ -678,13 +668,13 @@
              
              
           
+             
+             
+          
+             
+             
+          
         
-          
-             
-             
-          
-             
-             
           
              
              
@@ -716,7 +706,22 @@
              
              
           
+             
+             
+          
+             
+             
+          
         
+          
+             
+             
+          
+             
+             
+          
+             
+             
           
              
              
@@ -745,15 +750,6 @@
              
              
           
-             
-             
-          
-             
-             
-          
-             
-             
-          
         
           
              
@@ -912,7 +908,16 @@
              
           
              
+             <a href="/pages/trademark.html">Privly Trademark</a> |
+          
              
+             <a href="/pages/terms.html">Terms of Service</a> |
+          
+             
+             
+          
+             
+             <a href="/pages/privacy.html">Privacy Principles</a> |
           
              
              
@@ -927,22 +932,13 @@
              
           
              
-             <a href="/pages/privacy.html">Privacy Principles</a> |
-          
-             
              
           
              
-             <a href="/pages/terms.html">Terms of Service</a> |
+             
           
              
-             <a href="/pages/trademark.html">Privly Trademark</a> |
-          
-             
-             <a href="/rss.xml">RSS Feed</a> |
-          
-             
-             
+             <a href="/rss.xml">RSS Feed</a> 
           
         
           

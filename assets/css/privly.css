@@ -23,10 +23,14 @@ div.navbar-inner {
   border: none;
   border-radius: 0;
 }
-
+div.navbar-inverse {
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border: none;
+}
 div.navbar .nav > li > a {
   color:#827B6E;
-  height: 42px;
   padding-top:23px;
   text-shadow:none;
   font:bold 18px "Trebuchet MS",Arial,Helvetica,sans-serif;
@@ -47,7 +51,7 @@ div.navbar .nav > .active > a:focus {
   background-position: bottom center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 436px) {
     .navbar ul.nav {
         float: none;
     }
@@ -62,13 +66,18 @@ div.navbar .nav > .active > a:focus {
   padding: 16px;
   margin-top: 13px;
 }
-
+div.page-header {
+  margin: 20px 0 30px;
+}
 /* End Bootstrap Tweaks */
 
-
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 #site_name {
   float:left;
   padding: 0 0 9px;
+  text-align: center;
 }
 #site_name a {
   color:#F3EBD9;
@@ -87,13 +96,16 @@ div.navbar .nav > .active > a:focus {
 /* Home Page */
 
  /* Main marketing message and sign up button */
-.jumbotron {
+div.jumbotron {
   margin: 60px 0;
   text-align: center;
+  padding: 0px;
+  background: transparent;
 }
-.jumbotron h1 {
+div.jumbotron h1 {
   font-size: 72px;
   line-height: 1;
+  font-weight: bold;
 }
 @media (max-width: 420px) {
   .jumbotron h1 {
@@ -113,6 +125,9 @@ div.navbar .nav > .active > a:focus {
 .marketing p + h4 {
   margin-top: 28px;
 }
+.marketing h4 {
+  font-weight: bold;
+}
 /* End Home Page */
 
 /* News Side Block */
@@ -124,6 +139,9 @@ div.navbar .nav > .active > a:focus {
 #side_block h3 {
   font-size:13px;
   border-bottom:1px solid #242424;
+}
+.privly-news-links img {
+  width: 100%;
 }
 
 /* Download Icons */

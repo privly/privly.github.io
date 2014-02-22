@@ -17,8 +17,8 @@ Your time is just as valuable as your money, if you have the skills to move us f
   
 ## Donors
 
-<div class="row-fluid">
-  <div class="span5">
+<div class="row">
+  <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 
     <h3>Founding Backers</h3>
 
@@ -241,7 +241,7 @@ Your time is just as valuable as your money, if you have the skills to move us f
     <p>Wikirating</p>
 
   </div>
-  <div class="span7">
+  <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
     <h3>Community Sponsors</h3>
 
     <a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/privly">

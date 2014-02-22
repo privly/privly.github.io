@@ -17,20 +17,11 @@
     <link rel="icon" href="/favicon.ico" />
 
     <!-- Le styles -->
-     <link href="{{ site.url }}/assets/css/privly.css?body=1" media="screen" rel="stylesheet" type="text/css" />
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ site.url }}/assets/css/privly.css?body=1" media="screen" rel="stylesheet" type="text/css" />
 
-   
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -39,20 +30,24 @@
   </head>
 
   <body data-privly-exclude="true">
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="navbar-inner">
+    <!-- Navbar -->
+    <div class="navbar-wrapper">
+      <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <div id="site_name">
-             <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-             <span>Share Priv(ate).ly</span>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id="site_name">
+              <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+              <span>Share Priv(ate).ly</span>
+            </div>
           </div>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
               {% assign pages_list = site.pages %}
               {% assign group = 'navigation' %}
               {% include privly/pages_list %}
@@ -61,6 +56,7 @@
         </div>
       </div>
     </div>
+    <!-- /Navbar -->
 
     <div class="container-narrow">
 
