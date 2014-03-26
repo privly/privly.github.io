@@ -20,8 +20,9 @@
     <!-- Le styles -->
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/css/privly.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/assets/themes/twitter/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/privly.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/assets/lib/fontawesome/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
 
 
     <!-- atom & rss feed -->
@@ -53,6 +54,12 @@
               
               
   
+    
+     
+      
+    
+     
+      
     
      
       
@@ -95,13 +102,13 @@
      
       
     
-     
-      
-    
-     
-      
-    
   
+    
+     
+      
+    
+     
+      
     
      
       
@@ -144,13 +151,13 @@
      
       
     
-     
-      
-    
-     
-      
-    
   
+    
+     
+      
+    
+     
+      
     
      
       
@@ -193,22 +200,7 @@
      
       
     
-     
-      
-    
-     
-      
-    
   
-    
-     
-      
-    
-     
-      
-    
-     
-      
     
      
       
@@ -227,6 +219,15 @@
         
           
         
+      
+    
+     
+      
+    
+     
+      
+    
+     
       
     
      
@@ -397,9 +398,6 @@
     
      
       
-    
-     
-      
         
           
         
@@ -407,18 +405,6 @@
     
      
       
-        
-          
-        
-      
-    
-     
-      
-    
-     
-      
-        
-          
         
       
     
@@ -437,6 +423,9 @@
     
      
       
+    
+     
+      
         
           
         
@@ -444,6 +433,18 @@
     
      
       
+    
+     
+      
+        
+          
+        
+      
+    
+     
+      
+        
+          
         
       
     
@@ -1580,6 +1581,12 @@
         
           
              
+             
+          
+             
+             
+          
+             
              <a href="/pages/about.html">About</a> |
           
              
@@ -1609,13 +1616,13 @@
              
              
           
-             
-             
-          
-             
-             
-          
         
+          
+             
+             
+          
+             
+             
           
              
              
@@ -1647,13 +1654,13 @@
              
              
           
-             
-             
-          
-             
-             
-          
         
+          
+             
+             
+          
+             
+             
           
              
              
@@ -1685,22 +1692,7 @@
              
              
           
-             
-             
-          
-             
-             
-          
         
-          
-             
-             
-          
-             
-             
-          
-             
-             
           
              
              
@@ -1729,35 +1721,6 @@
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
@@ -1887,16 +1850,45 @@
              
           
              
-             <a href="/pages/trademark.html">Privly Trademark</a> |
-          
              
-             <a href="/pages/terms.html">Terms of Service</a> |
           
              
              
           
              
-             <a href="/pages/privacy.html">Privacy Principles</a> |
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
           
              
              
@@ -1911,13 +1903,22 @@
              
           
              
-             
+             <a href="/pages/privacy.html">Privacy Principles</a> |
           
              
              
           
              
-             <a href="/rss.xml">RSS Feed</a> 
+             <a href="/pages/terms.html">Terms of Service</a> |
+          
+             
+             <a href="/pages/trademark.html">Privly Trademark</a> |
+          
+             
+             <a href="/rss.xml">RSS Feed</a> |
+          
+             
+             
           
         
           

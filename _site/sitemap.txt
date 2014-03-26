@@ -1,13 +1,13 @@
 
+http://privly.github.io/atom.xml
+http://privly.github.io/index.html
 http://privly.github.io/pages/about.html
-http://privly.github.io/pages/trademark.html
-http://privly.github.io/pages/terms.html
+http://privly.github.io/pages/contact.html
+http://privly.github.io/pages/donate.html
 http://privly.github.io/pages/download.html
 http://privly.github.io/pages/privacy.html
 http://privly.github.io/pages/servers.html
-http://privly.github.io/pages/contact.html
-http://privly.github.io/pages/donate.html
-http://privly.github.io/sitemap.txt
-http://privly.github.io/index.html
-http://privly.github.io/atom.xml
+http://privly.github.io/pages/terms.html
+http://privly.github.io/pages/trademark.html
 http://privly.github.io/rss.xml
+http://privly.github.io/sitemap.txt
