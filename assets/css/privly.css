@@ -163,3 +163,12 @@ div.jumbotron h1 {
   opacity:0.4;
   filter:alpha(opacity=40);
 }
+
+a i.fa {
+ color: #000;
+ transition: all .3s;
+}
+
+a:hover i.fa {
+ color: #1155cc;
+}
