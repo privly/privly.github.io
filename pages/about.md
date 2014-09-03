@@ -72,7 +72,6 @@ _**Past Contributors:**_
 [Ravneet Singh](https://github.com/dreamrulez07)  
 [Jason Jacob](https://github.com/jayco)  
 [Jesse Pollak](https://github.com/jessepollak)  
-[Ravneet Singh](https://github.com/dreamrulez07)  
 [Rohan Durve](https://github.com/Decode141)  
 [Jordan Vrvilo](https://github.com/gordyvision)   
 [Joseph Selman](https://github.com/selmanj)  
