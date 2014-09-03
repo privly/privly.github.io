@@ -45,32 +45,40 @@ Privly is built as an "Open Privacy Stack," meaning it is not tied to a particul
 Privly is about creating a square deal for users, and that can't be done with a closed-source, proprietary platform. Anyone can add their skills to the project and their contribution will be protected.
 
 _**Maintainers:**_  
-[Sean McGregor](https://github.com/smcgregor/): [Firefox](https://github.com/privly/privly-firefox), [Chrome](https://github.com/privly/privly-chrome), [Content Server](https://github.com/privly/privly-web), [Test Cases](https://github.com/privly/privly-test)  
+[Sean McGregor](https://github.com/smcgregor/): [Chrome](https://github.com/privly/privly-chrome), [Firefox](https://github.com/privly/privly-firefox), [Content Server](https://github.com/privly/privly-web), [Test Cases](https://github.com/privly/privly-test), [Privly Applications](https://github.com/privly/privly-applications)  
+[Daniel Reichert](https://github.com/irdan): [Privly Applications](https://github.com/privly/privly-applications)  
 [Jen Davidson](https://github.com/jewifer): [Privly.org](http://www.privly.org)  
 [Balaji Athreya](https://github.com/balajiathreya)  
 [Sanchit Karve](https://github.com/born2c0de): [Opera](https://github.com/privly/privly-opera)  
 [Hery Ratsimihah](https://github.com/hery): [iOS](https://github.com/privly/privly-ios)  
 [Shivam Vermah](https://github.com/vshivam): [Android](https://github.com/privly/privly-android)  
-[Garrett Seward](https://github.com/spectralsun): [Priv.ly](https://github.com/privly/privly.github.io)
+[Garrett Seward](https://github.com/spectralsun): [Priv.ly](https://github.com/privly/privly.github.io), [Privly-Flask](https://github.com/privly/privly-flask)
 
 _**Contributors:**_  
-[Daniel Reichert](https://github.com/irdan)  
+
+[Vlad Fulgeanu](https://github.com/fullvlad)  
+[Trevor Bramwell](https://github.com/bramwelt)  
+[Gitanshu Sardana](https://github.com/gitanshu)  
+[Metla Ivan](https://github.com/metlaivan)  
+[Geoffrey Corey](https://github.com/stumped2)  
 [Hanno Wagner](http://de.linkedin.com/pub/hanno-wagner/6/33/305) (System Administration)  
 [Quazi Marufur Rahman](https://github.com/qmaruf)  
 [Tyler Dugoni](http://www.linkedin.com/profile/view?id=204119935) (Graphics)  
-[Jesse Hostetler](https://github.com/jhostetler)  
-[Jesse Markowitz](https://github.com/JesseMarkowitz)  
-Jared Howe (User Docs)
 
 _**Past Contributors:**_  
 [Swetal Patel](http://www.linkedin.com/in/teamswet)  
+[Jesse Hostetler](https://github.com/jhostetler)  
+[Jesse Markowitz](https://github.com/JesseMarkowitz)  
+[Ravneet Singh](https://github.com/dreamrulez07)  
 [Jason Jacob](https://github.com/jayco)  
 [Jesse Pollak](https://github.com/jessepollak)  
 [Ravneet Singh](https://github.com/dreamrulez07)  
 [Rohan Durve](https://github.com/Decode141)  
 [Jordan Vrvilo](https://github.com/gordyvision)   
 [Joseph Selman](https://github.com/selmanj)  
-Charles Martin
+[Ravi Kishore](http://rkravi.com/)  
+Charles Martin  
+Jared Howe (User Docs)  
 
 For a more thorough treatment of Privly as a whole, visit [the overview](https://github.com/privly/privly-organization/wiki/Privly-System-and-Organization-Overview). For development discussion, join the [Development Mailing List](https://groups.google.com/group/privly). Many [repositories](https://github.com/privly/) have their own wikis, but content not specific to a single repository will be in the [central wiki](https://github.com/privly/privly-organization/wiki/). Official announcements are found on [www.privly.org](http://www.privly.org). Live versions of the content server can be found at [privlyalpha.org](https://privlyalpha.org) and [dev.privly.org](https://dev.privly.org) (development). Extension-host page integration test cases can be found at [test.privly.org](http://test.privly.org). 
 
