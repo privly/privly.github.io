@@ -34,7 +34,7 @@ The extensions are under active development. Check back later if you do not like
     <br/>
     <a href="https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol">Chrome Extension</a>
     <br/>
-    <p>(Alpha) The Chrome extension supports viewing Privly links, and uploading new content directly to any content server.</p>
+    <p class="text-left">(Alpha) The Chrome extension supports viewing Privly links, and uploading new content directly to any content server.</p>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/" class="privly-browser-combo">
@@ -44,7 +44,7 @@ The extensions are under active development. Check back later if you do not like
     <br/>
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/">Firefox Extension</a>
     <br/>
-     <p>(Alpha) The Firefox extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
+     <p class="text-left">(Alpha) The Firefox extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
   </div>
 </div>
 
