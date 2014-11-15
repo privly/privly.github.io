@@ -26,7 +26,7 @@ The extensions are under active development. Check back later if you do not like
 <br/>
 
 <div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
     <a href="https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol" class="privly-browser-combo">
       <img src="/assets/images/chrome_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
@@ -36,7 +36,7 @@ The extensions are under active development. Check back later if you do not like
     <br/>
     <p>(Alpha) The Chrome extension supports viewing Privly links, and uploading new content directly to any content server.</p>
   </div>
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/" class="privly-browser-combo">
       <img src="/assets/images/firefox_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
