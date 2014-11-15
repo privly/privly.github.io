@@ -26,7 +26,7 @@ The extensions are under active development. Check back later if you do not like
 <br/>
 
 <div class="row">
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     <a href="https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol" class="privly-browser-combo">
       <img src="/assets/images/chrome_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
@@ -36,7 +36,7 @@ The extensions are under active development. Check back later if you do not like
     <br/>
     <p>(Alpha) The Chrome extension supports viewing Privly links, and uploading new content directly to any content server.</p>
   </div>
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/" class="privly-browser-combo">
       <img src="/assets/images/firefox_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
@@ -45,16 +45,6 @@ The extensions are under active development. Check back later if you do not like
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/">Firefox Extension</a>
     <br/>
      <p>(Alpha) The Firefox extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-    <a href="https://addons.opera.com/en/extensions/details/privly-2/?display=en" class="privly-browser-combo">
-      <img src="/assets/images/opera_logo_150.png" class="browser-icon" />
-      <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
-    </a>
-    <br/>
-    <a href="https://addons.opera.com/en/extensions/details/privly-2/?display=en">Opera Extension</a>
-    <br/>
-    <p>(Pre-Alpha) The Opera extension supports viewing Privly links, and uploading new content directly to the Privly servers.</p>
   </div>
 </div>
 
