@@ -132,13 +132,17 @@ div.jumbotron h1 {
 
 /* News Side Block */
 #side_block {
-  background:white;
-  border-radius:6px;
-  padding:13px;
+  background: white;
+  border-radius: 6px;
+  padding: 13px;
+  width: 200px;
+}
+#side_block.affix {
+  top: 20px;
 }
 #side_block h3 {
-  font-size:13px;
-  border-bottom:1px solid #242424;
+  font-size: 13px;
+  border-bottom: 1px solid #242424;
 }
 .privly-news-links img {
   width: 100%;
@@ -179,7 +183,6 @@ a:hover i.fa {
 
 /* sidebar */
 .bs-docs-sidebar {
-    padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
