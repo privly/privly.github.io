@@ -13,9 +13,10 @@ Your time is just as valuable as your money, if you have the skills to move us f
   <input type="hidden" name="cmd" value="_s-xclick"/>
   <input type="hidden" name="hosted_button_id" value="V97NL7N36BZAN"/>
   <input type="image" src="/assets/images/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - Donate"/>
-  <h3>BitCoin</h3>
-  <p>Donation Address: 1DSM4sFyM7m6Xs3a3hsNWfqS8pXTqYkwqx</p>
 </form>
+
+<h3>BitCoin</h3>
+<p>Donation Address: 1DSM4sFyM7m6Xs3a3hsNWfqS8pXTqYkwqx</p>
   
 ## Donors
 
