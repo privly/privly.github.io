@@ -17,4 +17,16 @@
                 $('#chrome_link').attr('href'));
         }
     }
+
+    /**
+     * If docs sidebar is present, monitor the scrolling for IDs
+     * that should be indicated in the right side's navigation.
+     */
+    if ($('.bs-docs-sidebar').length > 0) {
+        
+        $('body').scrollspy({
+            target: '.bs-docs-sidebar',
+            offset: 40
+        });
+    }
 })();

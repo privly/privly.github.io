@@ -1,17 +1,3 @@
-<script type="text/javascript">
-  // When the page has loaded, monitor the scrolling
-  // for IDs that should be indicated in the right side's navigation.
-  var readyStateCheckInterval = setInterval(function() {
-      if (document.readyState === "complete") {
-          $('body').scrollspy({
-              target: '.bs-docs-sidebar',
-              offset: 40
-          });
-          clearInterval(readyStateCheckInterval);
-      }
-  }, 100);
-</script>
-
 <!--Nav Bar -->
 <nav class="bs-docs-sidebar">
   <ul id="sidebar" class="nav nav-stacked">
