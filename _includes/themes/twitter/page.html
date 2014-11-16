@@ -7,6 +7,10 @@
     {{ content }}
   </span>
   <span class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="side_block">
-  	{% include privly/newsblock.html %}
+    {% if page.name == "develop.md" %}
+      {% include privly/devblock.html %}
+    {% else %}
+      {% include privly/newsblock.html %}
+    {% endif %}
   </span>
 </div>
