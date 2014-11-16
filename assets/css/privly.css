@@ -146,22 +146,22 @@ div.jumbotron h1 {
 
 /* Download Icons */
 .privly-browser-combo {
-  position:relative;
-  display:block;
-  height:150px;
-  width:150px;
+  position: relative;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
 }
 .privly-browser-combo .privly-icon {
-  position:absolute;
-  right:27px;
-  top:20px;
+  position: absolute;
+  right: 27px;
+  top: 20px;
 }
 .privly-browser-combo .browser-icon {
-  position:absolute;
-  right:0;
-  top:0;
-  opacity:0.4;
-  filter:alpha(opacity=40);
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 
 a i.fa {
