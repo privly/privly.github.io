@@ -7,6 +7,12 @@ group: navigation
 weight: 2
 ---
 
+
+<div class="text-center">
+ <a id="big_download_link" class="btn btn-large btn-primary" href="#">Download Privly</a> 
+</div>
+
+
 The extensions are under active development. Check back later if you do not like change and filing [bug reports](http://www.privly.org/content/bug-report). We will announce developments on Privly's [Twitter account](https://twitter.com/Privly).
 
 <div style="color:#FF0000">
@@ -27,7 +33,7 @@ The extensions are under active development. Check back later if you do not like
 
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-    <a href="https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol" class="privly-browser-combo">
+    <a href="https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol" id="chrome_link" class="privly-browser-combo">
       <img src="/assets/images/chrome_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
     </a>
@@ -37,7 +43,7 @@ The extensions are under active development. Check back later if you do not like
     <p class="text-left">(Alpha) The Chrome extension supports viewing Privly links, and uploading new content directly to any content server.</p>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-     <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/" class="privly-browser-combo">
+     <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/" id="firefox_link" class="privly-browser-combo">
       <img src="/assets/images/firefox_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
     </a>
