@@ -112,7 +112,8 @@ div.jumbotron h1 {
     font-size: 54px;
   }
 }
-.jumbotron .btn {
+.jumbotron .btn,
+#big_download_link {
   font-size: 21px;
   padding: 14px 24px;
   margin-bottom: 7px;
@@ -149,6 +150,9 @@ div.jumbotron h1 {
 }
 
 /* Download Icons */
+#big_download_link {
+  margin-bottom: 26px;
+}
 .privly-browser-combo {
   position: relative;
   display: inline-block;
