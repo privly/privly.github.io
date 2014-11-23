@@ -1,6 +1,10 @@
 ---
 layout: page
-title: Priv.ly Development School
+header: Priv.ly Development School
+sub_title: Create Privacy
+title: Develop
+group: navigation
+weight: 3
 ---
 
 {::options parse_block_html="true" /}
