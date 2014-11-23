@@ -10,3 +10,5 @@ cp privacy.html privacy
 cp servers.html servers
 cp terms.html terms
 cp trademark.html trademark
+cp develop.html develop
+cp safety.html safety
