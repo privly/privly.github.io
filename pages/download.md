@@ -1,10 +1,6 @@
 ---
 layout: page
 title: Download Extension
-sub_title: For Browsers
-header: Download Extension
-group: navigation
-weight: 2
 ---
 
 
