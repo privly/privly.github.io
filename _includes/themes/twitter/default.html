@@ -31,6 +31,7 @@
   </head>
 
   <body data-privly-exclude="true">
+
     <!-- Navbar -->
     <div class="navbar-wrapper">
       <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -58,6 +59,10 @@
       </div>
     </div>
     <!-- /Navbar -->
+
+    {% if page.name == "develop.md" %}
+      <a href="https://github.com/privly/privly.github.io/blob/master/pages/develop.md"><img style="position: absolute; top: 0; left: 0; border: 0;z-index:1000;" src="/assets/images/fork-me.png" alt="Fork me on GitHub"></a>
+    {% endif %}
 
     <div class="container-narrow">
 
