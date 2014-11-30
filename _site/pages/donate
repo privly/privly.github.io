@@ -32,6 +32,7 @@
   </head>
 
   <body data-privly-exclude="true">
+
     <!-- Navbar -->
     <div class="navbar-wrapper">
       <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -54,12 +55,6 @@
               
               
   
-    
-     
-      
-    
-     
-      
     
      
       
@@ -102,6 +97,18 @@
      
       
     
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
   
     
      
@@ -121,12 +128,50 @@
     
      
       
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
         
           
           	<li >
-              <a href="/pages/download.html" >
-                Download Extension
-                <span class="sub-title">For Browsers</span>
+              <a href="/pages/develop.html" >
+                Develop
+                <span class="sub-title">Create Privacy</span>
               </a>
             </li>
           
@@ -151,6 +196,70 @@
      
       
     
+     
+      
+        
+          
+        
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+        
+          
+        
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
   
     
      
@@ -176,12 +285,216 @@
     
      
       
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+        
+          
+        
+      
+    
+     
+      
+        
+          
+        
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+        
+          
+        
+      
+    
+     
+      
+        
+      
+    
+     
+      
+        
+          
+        
+      
+    
+     
+      
+        
+          
+        
+      
+    
+     
+      
         
           
           	<li >
-              <a href="/pages/servers.html" >
-                Content Hosts
-                <span class="sub-title">Sign Up</span>
+              <a href="/pages/safety.html" >
+                Safety
+                <span class="sub-title">Protect Yourself</span>
               </a>
             </li>
           
@@ -193,256 +506,6 @@
     
      
       
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-        
-          
-        
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-  
-    
-     
-      
-        
-          
-        
-      
-    
-     
-      
-        
-      
-    
-     
-      
-    
-     
-      
-        
-          
-        
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-        
-          
-        
-      
-    
-     
-      
-    
-     
-      
-        
-          
-        
-      
-    
-     
-      
         
           
         
@@ -463,6 +526,12 @@
       
     
   
+    
+     
+      
+    
+     
+      
     
      
       
@@ -511,6 +580,8 @@
     </div>
     <!-- /Navbar -->
 
+    
+
     <div class="container-narrow">
 
       <div class="content">
@@ -521,20 +592,24 @@
 
 <div class="row">
   <span class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-    <p>Your time is just as valuable as your money, if you have the skills to move us forward, please consider <a href="http://www.privly.org/content/how-get-started">volunteering your time</a>.</p>
+    <p>Privly is a <a href="https://www.privly.org/content/privly-gains-non-profit-status" target="_blank">federally recognized non-profit</a> organization. Your financial contributions are tax-deductable in the United States.</p>
 
-<p><form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
+<p>Your time is just as valuable as your money, if you have the skills to move us forward, please consider <a href="http://www.privly.org/content/how-get-started">volunteering your time</a>.</p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <h3>Paypal</h3>
-  <input name='cmd' type='hidden' value='_s-xclick' />
-  <input name='hosted_button_id' type='hidden' value='V97NL7N36BZAN' />
-  <input alt='PayPal - Donate' border='0' name='submit' src='/assets/images/btn_donateCC_LG.gif' type='image' />
-  <h3>BitCoin</h3>
-  <p>Donation Address: 1DSM4sFyM7m6Xs3a3hsNWfqS8pXTqYkwqx</p>
-</form></p>
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="V97NL7N36BZAN" />
+  <input type="image" src="/assets/images/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - Donate" />
+</form>
+
+<h3>BitCoin</h3>
+<p>Donation Address: 1DSM4sFyM7m6Xs3a3hsNWfqS8pXTqYkwqx</p>
 
 <h2 id="donors">Donors</h2>
-<div class='row'>
-  <div class='col-lg-5 col-md-5 col-sm-5 col-xs-12'>
+
+<div class="row">
+  <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 
     <h3>Founding Backers</h3>
 
@@ -757,33 +832,33 @@
     <p>Wikirating</p>
 
   </div>
-  <div class='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
+  <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
     <h3>Community Sponsors</h3>
 
-    <a href='http://www.google-melange.com/gsoc/org/google/gsoc2013/privly'>
-      <img src='/assets/images/sponsors/google.png' style='width:200px' title='Google logo' />
+    <a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/privly">
+      <img src="/assets/images/sponsors/google.png" title="Google logo" style="width:200px" />
     </a>  
 
     <p>
-      Supports student work on Privly projects through the <a href='http://www.google-melange.com/gsoc/homepage/google/gsoc2013'>Google Summer of Code</a>.
+      Supports student work on Privly projects through the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2013">Google Summer of Code</a>.
     </p>
     
     <br />
     
     <h3>In-Kind Contributors</h3>
 
-    <a href='http://www.rackspace.com/'>
-      <img src='/assets/images/sponsors/rackspace.png' style='width:200px' />
+    <a href="http://www.rackspace.com/">
+      <img src="/assets/images/sponsors/rackspace.png" style="width:200px" />
     </a>
     <p>Provides complementary hosting to Privly's development servers.</p>
 
-    <a href='http://www.jetbrains.com/'>
-      <img src='/assets/images/sponsors/logo_jetbrains.gif' style='width:200px' />
+    <a href="http://www.jetbrains.com/">
+      <img src="/assets/images/sponsors/logo_jetbrains.gif" style="width:200px" />
     </a>
     <p>Provides Open Source licenses to Privly developers.</p>
 
-    <a href='https://airbrake.io/pages/home'>
-      <img src='/assets/images/sponsors/thoughtbot.png' style='width:200px' title='Thoughtbot logo' />
+    <a href="https://airbrake.io/pages/home">
+      <img src="/assets/images/sponsors/thoughtbot.png" title="Thoughtbot logo" style="width:200px" />
     </a>
     <p>Provides their error logging and notification service for Privly development.</p>
     
@@ -1513,9 +1588,12 @@
     
   </div>
 </div>
+
+
   </span>
-  <span class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="side_block">
-  	<div class="resources">
+  <span class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="side_block" >
+    
+      <div class="resources">
 	<h3>Privly Resources</h3>
 	<a href="https://groups.google.com/forum/?fromgroups#!forum/privly">Development Email List</a>
 	<br/>
@@ -1535,7 +1613,7 @@
 </div>
 <div class="resources">
 	<h3>Privly Social Media</h3>
-	<a href="http://twitter.com/#!/Privly">Twitter</a>
+	<a href="https://twitter.com/Privly">Twitter</a>
 	<br/>
 	<a href="https://www.facebook.com/shareprivately">Facebook</a>
 	<br/>
@@ -1570,6 +1648,8 @@
 	</a>
 	<br>
 </div>
+
+    
   </span>
 </div>
 
@@ -1579,12 +1659,6 @@
       <footer>
         <p class="text-center">
         
-          
-             
-             
-          
-             
-             
           
              
              <a href="/pages/about.html">About</a> |
@@ -1616,32 +1690,6 @@
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             <a href="/pages/download.html">Download Extension</a> |
-          
-             
-             
-          
-             
-             
-          
              
              
           
@@ -1658,6 +1706,59 @@
           
              
              
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             <a href="/pages/develop.html">Develop</a> |
           
              
              
@@ -1679,9 +1780,6 @@
           
              
              <a href="/pages/servers.html">Content Hosts</a> |
-          
-             
-             
           
              
              
@@ -1730,38 +1828,6 @@
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
@@ -1775,38 +1841,6 @@
           
              
              
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-        
           
              
              
@@ -1882,10 +1916,101 @@
              
              
           
+             
+             
+          
+             
+             
+          
         
           
              
              
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
           
              
              
@@ -1903,7 +2028,22 @@
              
           
              
+             <a href="/pages/download.html">Download Extension</a> |
+          
+             
+             
+          
+             
              <a href="/pages/privacy.html">Privacy Principles</a> |
+          
+             
+             <a href="/rss.xml">RSS Feed</a> |
+          
+             
+             <a href="/pages/safety.html">Safety</a> |
+          
+             
+             
           
              
              
@@ -1912,15 +2052,15 @@
              <a href="/pages/terms.html">Terms of Service</a> |
           
              
-             <a href="/pages/trademark.html">Privly Trademark</a> |
-          
-             
-             <a href="/rss.xml">RSS Feed</a> |
-          
-             
-             
+             <a href="/pages/trademark.html">Privly Trademark</a> 
           
         
+          
+             
+             
+          
+             
+             
           
              
              
@@ -1962,7 +2102,7 @@
         </p>
         <p class="text-center">&copy; 2014 Privly
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
         </p>
       </footer>
 
@@ -1971,6 +2111,7 @@
     
     <script type="text/javascript" src="/assets/themes/twitter/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/assets/themes/twitter/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/site.js"></script>
   </body>
 </html>
 
