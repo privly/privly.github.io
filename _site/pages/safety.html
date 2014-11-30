@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Privly &middot; Content Hosts</title>
+    <title>Privly &middot; Safety</title>
     
     <meta name="author" content="Privly">
 
@@ -491,8 +491,8 @@
       
         
           
-          	<li >
-              <a href="/pages/safety.html" >
+          	<li class="active">
+              <a href="/pages/safety.html" class="active">
                 Safety
                 <span class="sub-title">Protect Yourself</span>
               </a>
@@ -587,32 +587,55 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Content Hosts </h1>
+  <h1>Safety </h1>
 </div>
 
 <div class="row">
   <span class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-    <p>Privly users choose where they want to host their content. While it is a best practice for users to host their content on their own hardware, we realize that the majority of users will likely never maintain a web server. Hence, we manage a list of recommended hosts for users looking for their Privly home.</p>
+    
+<p>Privly provides you with privacy, but what does that mean? For some people it is enough to hold onto their information unless a government legally forces access, while others would lose their life or freedom if their communications ever escaped the intended audience.</p>
 
-<h2 id="official-hosts">Official Hosts</h2>
+<p>This page is intended to tell you the status of the Priv.ly Project for various uses, so you can be mindful of your privacy as you use it across the web.</p>
 
-<p>“Official” hosts are plugged into Privly development and abide by best practices regarding user privacy. This list is currently small, but we are working to add hosts. We would like to have a menu of hosts operating in independent jurisdictions.</p>
+<h3 id="corporations">Corporations</h3>
+
+<p><strong>Passive Corporate Logging</strong></p>
+
+<p>When you post information through a social network, that information is
+typically stored by the social network in perpetuity. By using Privly,
+you have the ability to prevent this permanent logging of information.
+Please note that the social network will still have access to your metadata
+when you use Privly. Examples of your metadata include: who you are talking
+to, when you talk to them, and where you talk to them from.</p>
+
+<p>If you want to protect your metadata in addition to your data, you should
+consider using the <a href="https://www.torproject.org/">Tor Browser</a>, but using
+Tor with a browser extension (Privly) could also be used to <a href="https://www.torproject.org/docs/faq.html.en#TBBOtherExtensions">uniquely identify
+who you are</a>.</p>
+
+<p><strong>Active Corporate Logging</strong></p>
+
+<p>Corporations are legally prohibited from logging encrypted content stored
+on your Privly content server. This means it would be very expensive for
+them to compromise your privacy, but they have the technical capacity to do so.</p>
+
+<h3 id="governments">Governments</h3>
+
+<p><strong>Passive Government Surveillance</strong></p>
+
+<p>Recent disclosures reveal that governments are working to tap the internet in a way that effectively allows for a “time machine.” Government agents can look at internet traffic for a rolling window in the past. The way Privly shares content effectively mitigates this, meaning it is less likely for this government time machine to be able to query your private data. However, if a government attacks both your social network and your Privly content server it is likely that they will be able to decrypt your content. <strong>Do not assume your content is protected from governments.</strong></p>
+
+<p><strong>Active Government Surveillance</strong></p>
+
+<p>A computer running a web browser presents many different potential vulnerabilities. Your computer will not resist active surveillance unless you obtain the equivalent of a masters degree in computer systems and cryptography. The open source community is working to solve this issue, but it is far more likely that we will develop solutions to “passive surveillance” than active surveillance.</p>
+
+<h2 id="take-note">Take Note</h2>
 
 <ul>
-  <li><a href="https://privlyalpha.org">PrivlyAlpha.org</a>: This server is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.</li>
-  <li><a href="https://dev.privly.org">dev.privly.org</a>: This host is primarily for developers actively contributing to the Privly Project. It has more frequent down time, but often has the newest functionality. This server is not for the uninitiated. It is operated by the Privly Foundation, which is a United States based non-profit organization. The servers are donated by Rackspace, inc and are located in a United States-based facility.</li>
-  <li><strong>YourServerHere.</strong> You can <a href="https://github.com/privly/privly.github.io/issues">open an issue</a> to request that your server be listed on this page. To be listed you need to abide by best practices for protecting user content. Initially we will likely put you in the “Community Hosts” section.</li>
+  <li>The Priv.ly Project is still under active development. Think of using privacy software under “active development” like crossing a bridge that is still under construction.</li>
+  <li>The Priv.ly Project does not have a paid staff. People are developing the software because they are passionate about online privacy. This means the software will continue to serve <strong>your</strong> interests instead of financial interests.</li>
+  <li>This page assumes you are using the default privacy applications built into Privly. If you change your application the privacy properties will change.</li>
 </ul>
-
-<h2 id="community-hosts">Community Hosts</h2>
-
-<p>These servers properly integrate with Privly’s family of applications, but they don’t have the same level of scrutiny as the “official” hosts. Since malicious hosts could use Privly’s content injection to track users (see below), Privly does not automatically fetch content associated with these servers unless you tell it to.</p>
-
-<ul>
-  <li>There are currently no known unaffiliated servers. <strong>Be the first!</strong></li>
-</ul>
-
-<p>Privly servers currently know when the content they store has been accessed. To prevent malicious hosts from tracking Privly users, only servers that are “whitelisted” by Privly can automatically inject content. A forthcoming peer-to-peer network will eliminate the necessity for a whitelist in many cases .</p>
 
   </span>
   <span class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="side_block" >
