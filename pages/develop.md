@@ -77,7 +77,7 @@ by the application (creating, updating, destroying, etc) to prevent regressions.
 To achieve this level, you should
 See the [integration testing](#Testing) docs for more details.
 
-**Level 4:** Add continuous integration. _([TravisCI, SauceLabs](#TestingOverview))_   
+**Level 4:** Add continuous integration. _([TravisCI](#SauceLabs), [SauceLabs](#SauceLabs))_  
 Continuous integration runs the full suite of unit and integration tests every time
 you push commits to GitHub. Setting up Continuous Integration for your fork
 requires a few additions to the .travis.yml file that is shared by all the forks.
