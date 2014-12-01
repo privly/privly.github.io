@@ -3,11 +3,6 @@ layout: page
 title: Contact Privly
 ---
 
-### For Reporting a Bug ###
-
-Please email privly [at] privly.org. Security Issues can also be reported at this
-address.
-
 ### For Developer Inquiries ###
 
 Please email our public
@@ -24,3 +19,7 @@ The Privly Foundation
 PO Box 79  
 Corvallis, Oregon 97339  
 United States of America
+
+### For Reporting a Bug ###
+
+Go to the [bug report page](/pages/bug.html).
