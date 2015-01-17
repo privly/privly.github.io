@@ -60,6 +60,7 @@ _**Contributors:**_
 [Trevor Bramwell](https://github.com/bramwelt)  
 [Gitanshu Sardana](https://github.com/gitanshu)  
 [Metla Ivan](https://github.com/metlaivan)  
+[Bhavul Gauri](https://github.com/bhavul)  
 [Geoffrey Corey](https://github.com/stumped2)  
 [Hanno Wagner](http://de.linkedin.com/pub/hanno-wagner/6/33/305) (System Administration)  
 [Quazi Marufur Rahman](https://github.com/qmaruf)  
