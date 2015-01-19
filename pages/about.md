@@ -51,7 +51,7 @@ _**Maintainers:**_
 [Balaji Athreya](https://github.com/balajiathreya)  
 [Sanchit Karve](https://github.com/born2c0de): [Opera](https://github.com/privly/privly-opera)  
 [Hery Ratsimihah](https://github.com/hery): [iOS](https://github.com/privly/privly-ios)  
-[Shivam Vermah](https://github.com/vshivam): [Android](https://github.com/privly/privly-android)  
+[Shivam Verma](https://github.com/vshivam): [Android](https://github.com/privly/privly-android)  
 [Garrett Seward](https://github.com/spectralsun): [Priv.ly](https://github.com/privly/privly.github.io), [Privly-Flask](https://github.com/privly/privly-flask)
 
 _**Contributors:**_  
