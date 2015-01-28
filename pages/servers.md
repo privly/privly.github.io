@@ -3,6 +3,7 @@ layout: page
 title: Content Hosts
 sub_title: Sign Up
 header: Servers
+group: navigation
 weight: 3
 ---
 
