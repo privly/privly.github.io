@@ -9,20 +9,12 @@ title: Download Extension
 </div>
 
 
-The extensions are under active development. Check back later if you do not like change and filing [bug reports](http://www.privly.org/content/bug-report). We will announce developments on Privly's [Twitter account](https://twitter.com/Privly).
+The extensions are under active development. Check back later if you do not like change and filing [bug reports](/pages/bug.html). We will announce developments on Privly's [Twitter account](https://twitter.com/Privly).
 
 <div style="color:#FF0000">
-    
   <p>
-    Please note that the extension does <strong>not</strong> <span style="font-style:italic;">currently</span> offer:
-    <ul>
-      <li>Protection from governments</li>
-      <li>Protection from the domain name system</li>
-    </ul>
+    Read our <a href="/pages/safety.html">safety page</a> before using the extension. Until you understand the risks of modern technology you should assume your communications are public.
   </p>
-
-  <p>We made the extension available so you can participate in the development process, but until we tell you otherwise, post with the expectation that it is public.</p>
-
 </div>  
 
 <br/>
@@ -50,7 +42,7 @@ The extensions are under active development. Check back later if you do not like
   </div>
 </div>
 
-**Where is my browser?** We need to bring Privly to other browsers and platforms, so if you don't see your endpoint here, please consider [helping out](http://www.privly.org/content/how-get-started).
+**Where is my browser?** We need to bring Privly to other browsers and platforms, so if you don't see your endpoint here, please consider [helping out](/pages/develop.html).
 
 
 
@@ -59,7 +51,7 @@ The extensions are under active development. Check back later if you do not like
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     <h3>See it Working</h3>
     <p>The following pages are pre-seeded with Privly content so you can test the extension out: 
-      <a href="https://www.facebook.com/profile.php?id=100002254562518">Facebook</a> and <a href="https://twitter.com/PrivlyTest">Twitter</a>. You can also post the public links below to any website to see how it handles. Let us know if you have any <a href="http://www.privly.org/content/bug-report">problems</a>. It should work in any basic HTML form.</p>
+      <a href="https://www.facebook.com/profile.php?id=100002254562518">Facebook</a> and <a href="https://twitter.com/PrivlyTest">Twitter</a>. You can also post the public links below to any website to see how it handles. Let us know if you have any <a href="/pages/bug.html">problems</a>. It should work in any basic HTML form.</p>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     <h3>Try it Anywhere</h3>
