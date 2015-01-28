@@ -1,6 +1,7 @@
 
 http://privly.github.io/pages/about.html
 http://privly.github.io/atom.xml
+http://privly.github.io/pages/bug.html
 http://privly.github.io/pages/contact.html
 http://privly.github.io/pages/develop.html
 http://privly.github.io/pages/donate.html

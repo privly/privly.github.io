@@ -109,51 +109,60 @@
      
       
     
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
      
       
     
   
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
     
      
       
@@ -200,6 +209,13 @@
       
         
           
+          	<li >
+              <a href="/pages/servers.html" >
+                Content Hosts
+                <span class="sub-title">Sign Up</span>
+              </a>
+            </li>
+          
         
       
     
@@ -213,6 +229,9 @@
       
     
   
+    
+     
+      
     
      
       
@@ -304,47 +323,6 @@
      
       
     
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
      
       
     
@@ -392,6 +370,56 @@
      
       
     
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
   
     
      
@@ -436,9 +464,19 @@
      
       
     
+     
+      
+    
   
     
      
+      
+    
+     
+      
+        
+          
+        
       
     
      
@@ -569,6 +607,9 @@
      
       
     
+     
+      
+    
   
 
 
@@ -592,34 +633,37 @@
 
 <div class="row">
   <span class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-    <p>The Privly Foundation<br />
-PO Box 79<br />
-Corvallis, Oregon 97339<br />
-United States of America  </p>
+    <h3 id="for-developer-inquiries">For Developer Inquiries</h3>
 
-<h3 id="for-developer-inquiries">For Developer Inquiries</h3>
+<p>Please email our public
+<a href="https://groups.google.com/forum/?fromgroups#!forum/privly">development mailing list</a>
+or drop into our <a href="http://www.privly.org/content/irc">IRC channel</a>.</p>
 
-<p>Please email our public <a href="https://groups.google.com/forum/?fromgroups#!forum/privly">development mailing list</a> or drop into our <a href="http://www.privly.org/content/irc">IRC channel</a>.</p>
-
-<h3 id="for-press-inquiries">For press inquiries</h3>
+<h3 id="for-press-inquiries">For Press Inquiries</h3>
 
 <p>Please email community [at] privly.org.</p>
 
-<h3 id="for-reporting-security-issues">For Reporting Security Issues</h3>
+<h3 id="mailing-address">Mailing Address</h3>
 
-<p>Please email privly [at] privly.org.</p>
+<p>The Privly Foundation<br />
+PO Box 79<br />
+Corvallis, Oregon 97339<br />
+United States of America</p>
 
+<h3 id="for-reporting-a-bug">For Reporting a Bug</h3>
+
+<p>Go to the <a href="/pages/bug.html">bug report page</a>.</p>
 
   </span>
   <span class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="side_block" >
     
       <div class="resources">
 	<h3>Privly Resources</h3>
+	<a href="/pages/bug.html">Submit a Bug</a>
+	<br/>
 	<a href="https://groups.google.com/forum/?fromgroups#!forum/privly">Development Email List</a>
 	<br/>
 	<a href="https://groups.google.com/forum/?fromgroups#!forum/privly-test">Tester Email List</a>
-	<br/>
-	<a href="http://www.privly.org/content/bug-report">Submit a Bug</a>
 	<br/>
 	<a href="https://github.com/privly/privly-organization/wiki">Development Wiki</a>
 	<br/>
@@ -722,51 +766,60 @@ United States of America  </p>
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
         
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
           
              
              
@@ -811,6 +864,9 @@ United States of America  </p>
              
           
         
+          
+             
+             
           
              
              
@@ -898,47 +954,6 @@ United States of America  </p>
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
@@ -946,47 +961,6 @@ United States of America  </p>
           
              
              
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-        
           
              
              
@@ -1037,6 +1011,103 @@ United States of America  </p>
           
              
              
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
+          
+             
+             <a href="/pages/bug.html">Submit a Bug Report</a> |
           
              
              <a href="/pages/contact.html">Contact Privly</a> |
@@ -1118,9 +1189,12 @@ United States of America  </p>
              
              
           
+             
+             
+          
         
         </p>
-        <p class="text-center">&copy; 2014 Privly
+        <p class="text-center">&copy; 2015 Privly
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
         </p>

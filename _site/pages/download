@@ -109,51 +109,60 @@
      
       
     
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
      
       
     
   
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
     
      
       
@@ -200,6 +209,13 @@
       
         
           
+          	<li >
+              <a href="/pages/servers.html" >
+                Content Hosts
+                <span class="sub-title">Sign Up</span>
+              </a>
+            </li>
+          
         
       
     
@@ -213,6 +229,9 @@
       
     
   
+    
+     
+      
     
      
       
@@ -304,47 +323,6 @@
      
       
     
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
      
       
     
@@ -392,6 +370,56 @@
      
       
     
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
   
     
      
@@ -436,9 +464,19 @@
      
       
     
+     
+      
+    
   
     
      
+      
+    
+     
+      
+        
+          
+        
       
     
      
@@ -569,6 +607,9 @@
      
       
     
+     
+      
+    
   
 
 
@@ -596,20 +637,12 @@
  <a id="big_download_link" class="btn btn-large btn-primary" href="#" target="_blank">Download Privly</a> 
 </div>
 
-<p>The extensions are under active development. Check back later if you do not like change and filing <a href="http://www.privly.org/content/bug-report">bug reports</a>. We will announce developments on Privly’s <a href="https://twitter.com/Privly">Twitter account</a>.</p>
+<p>The extensions are under active development. Check back later if you do not like change and filing <a href="/pages/bug.html">bug reports</a>. We will announce developments on Privly’s <a href="https://twitter.com/Privly">Twitter account</a>.</p>
 
 <div style="color:#FF0000">
-    
   <p>
-    Please note that the extension does <strong>not</strong> <span style="font-style:italic;">currently</span> offer:
-    <ul>
-      <li>Protection from governments</li>
-      <li>Protection from the domain name system</li>
-    </ul>
+    Read our <a href="/pages/safety.html">safety page</a> before using the extension. Until you understand the risks of modern technology you should assume your communications are public.
   </p>
-
-  <p>We made the extension available so you can participate in the development process, but until we tell you otherwise, post with the expectation that it is public.</p>
-
 </div>
 
 <p><br /></p>
@@ -637,13 +670,13 @@
   </div>
 </div>
 
-<p><strong>Where is my browser?</strong> We need to bring Privly to other browsers and platforms, so if you don’t see your endpoint here, please consider <a href="http://www.privly.org/content/how-get-started">helping out</a>.</p>
+<p><strong>Where is my browser?</strong> We need to bring Privly to other browsers and platforms, so if you don’t see your endpoint here, please consider <a href="/pages/develop.html">helping out</a>.</p>
 
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     <h3>See it Working</h3>
     <p>The following pages are pre-seeded with Privly content so you can test the extension out: 
-      <a href="https://www.facebook.com/profile.php?id=100002254562518">Facebook</a> and <a href="https://twitter.com/PrivlyTest">Twitter</a>. You can also post the public links below to any website to see how it handles. Let us know if you have any <a href="http://www.privly.org/content/bug-report">problems</a>. It should work in any basic HTML form.</p>
+      <a href="https://www.facebook.com/profile.php?id=100002254562518">Facebook</a> and <a href="https://twitter.com/PrivlyTest">Twitter</a>. You can also post the public links below to any website to see how it handles. Let us know if you have any <a href="/pages/bug.html">problems</a>. It should work in any basic HTML form.</p>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     <h3>Try it Anywhere</h3>
@@ -663,11 +696,11 @@
     
       <div class="resources">
 	<h3>Privly Resources</h3>
+	<a href="/pages/bug.html">Submit a Bug</a>
+	<br/>
 	<a href="https://groups.google.com/forum/?fromgroups#!forum/privly">Development Email List</a>
 	<br/>
 	<a href="https://groups.google.com/forum/?fromgroups#!forum/privly-test">Tester Email List</a>
-	<br/>
-	<a href="http://www.privly.org/content/bug-report">Submit a Bug</a>
 	<br/>
 	<a href="https://github.com/privly/privly-organization/wiki">Development Wiki</a>
 	<br/>
@@ -770,51 +803,60 @@
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
         
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
           
              
              
@@ -859,6 +901,9 @@
              
           
         
+          
+             
+             
           
              
              
@@ -946,47 +991,6 @@
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
@@ -994,47 +998,6 @@
           
              
              
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-        
           
              
              
@@ -1085,6 +1048,103 @@
           
              
              
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
+          
+             
+             <a href="/pages/bug.html">Submit a Bug Report</a> |
           
              
              <a href="/pages/contact.html">Contact Privly</a> |
@@ -1166,9 +1226,12 @@
              
              
           
+             
+             
+          
         
         </p>
-        <p class="text-center">&copy; 2014 Privly
+        <p class="text-center">&copy; 2015 Privly
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
         </p>

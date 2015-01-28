@@ -109,51 +109,60 @@
      
       
     
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
      
       
     
   
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+  
+    
+     
+      
     
      
       
@@ -200,6 +209,13 @@
       
         
           
+          	<li >
+              <a href="/pages/servers.html" >
+                Content Hosts
+                <span class="sub-title">Sign Up</span>
+              </a>
+            </li>
+          
         
       
     
@@ -213,6 +229,9 @@
       
     
   
+    
+     
+      
     
      
       
@@ -304,47 +323,6 @@
      
       
     
-  
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
-     
-      
-    
      
       
     
@@ -392,6 +370,56 @@
      
       
     
+     
+      
+    
+  
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
+     
+      
+    
   
     
      
@@ -436,9 +464,19 @@
      
       
     
+     
+      
+    
   
     
      
+      
+    
+     
+      
+        
+          
+        
       
     
      
@@ -526,6 +564,9 @@
       
     
   
+    
+     
+      
     
      
       
@@ -1278,51 +1319,60 @@ setting things up.</p>
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
         
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
           
              
              
@@ -1367,6 +1417,9 @@ setting things up.</p>
              
           
         
+          
+             
+             
           
              
              
@@ -1454,47 +1507,6 @@ setting things up.</p>
              
              
           
-        
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
              
              
           
@@ -1502,47 +1514,6 @@ setting things up.</p>
           
              
              
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-             
-             
-          
-        
           
              
              
@@ -1593,6 +1564,103 @@ setting things up.</p>
           
              
              
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+             
+             
+          
+        
+          
+             
+             
+          
+             
+             
+          
+             
+             <a href="/pages/bug.html">Submit a Bug Report</a> |
           
              
              <a href="/pages/contact.html">Contact Privly</a> |
@@ -1674,9 +1742,12 @@ setting things up.</p>
              
              
           
+             
+             
+          
         
         </p>
-        <p class="text-center">&copy; 2014 Privly
+        <p class="text-center">&copy; 2015 Privly
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
         </p>
