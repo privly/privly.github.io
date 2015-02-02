@@ -19,11 +19,50 @@ If you just want to use the system, you should go to the ["about"](about.html) p
 
 # Beginning Knowledge #
 
-1. *What's Privly?* Privly lets you keep your private information yours. Watch this <a href="https://vimeo.com/83073455" target="_blank">introductory video</a> (under 2 minutes). Also, watch this <a href="https://vimeo.com/83258935" target="_blank">technical teaser trailer</a> (a little over 2 minutes), but don't worry if you don't understand them. Privly is a framework for allowing you to post encrypted content anywhere on the web. Privly is essentially a set of browser extensions and apps that run inside them or a content server.
+1. *What's Privly?* Privly gives users control over their private information. Watch this <a href="https://vimeo.com/83073455" target="_blank">introductory video</a> (under 2 minutes). Also, watch this <a href="https://vimeo.com/83258935" target="_blank">technical teaser trailer</a> (a little over 2 minutes), but don't worry if you don't understand them. Privly is a framework for allowing you to post encrypted content anywhere on the web. Privly is a protocol and suite of applications for controlling personal data shared via any site on the web. For consumer-focused information on what Privly is, visit [priv.ly/pages/about](https://priv.ly/pages/about). We also have a [blog post](http://radar.oreilly.com/2013/07/securing-user-content-in-the-javascriptable-web.html) on O'Reilly about Privly's design philosophy.
 2. *I want to try Privly before I start learning how to become a contributor.* Check out our <a href="https://www.privly.org/content/give-privly-try" target="_blank">Give Privly a Try</a> documentation. 
 3. *How do I report bugs against this documentation?* If you see something wrong with this documentation or want something added, please <a href="https://github.com/privly/privly.github.io/issues/new" target="_blank">submit an issue on GitHub</a> or
 [fork and edit it yourself](https://github.com/privly/privly.github.io/blob/master/pages/develop.md).
-5. *How do I GitHub?* If you've never used GitHub, check out this <a href="https://help.github.com/articles/set-up-git" target="_blank">documentation</a>. We recommend using the terminal with git, not the GitHub native app.
+4. *How do I GitHub?* If you've never used GitHub, check out this <a href="https://help.github.com/articles/set-up-git" target="_blank">documentation</a>. We recommend using the terminal with git, not the GitHub native app.
+
+</div>
+<div id="TechnicalVision" class="subgroup">
+
+## Technical Vision ##
+
+Every website has its own navigation structure, layout, and audience, but when you strip away these unique attributes of websites, you are left with data-- chats, emails, photos-- that can be treated uniformly across all websites. Operations on these data like encryption and signing, can be performed with indifference to their context and their contents.
+
+Privly uses data indifference to create the notion of ``Injectable Applications'' (Privly Applications), which are full web applications that are injected into the context of other web application. Since these applications are scoped to data and not layout, their properties are simplified and usable across the web.
+
+Privly works within browser extensions by scanning web pages for specially formatted hyperlinks. When the extension detects the hyperlink, it ``injects'' the link into an iframe that is served locally from the browser extension. Since the injected application is a full web application, the app could potentially support any web-implementable feature.
+
+**Development Status**
+
+* [Privly Applications](https://github.com/privly/privly-applications) - In Alpha - Under development
+* [Chrome and Opera](https://github.com/privly/privly-chrome) - In Alpha - Under development
+* [Firefox](https://github.com/privly/privly-firefox) - In Alpha - Under development
+* [Safari](https://github.com/privly/privly-safari) - Development stalled (no maintainer)
+* [Internet Explorer](https://github.com/privly/privly-ie) - Not under development (no maintainer)
+* [Reference Implementation Content Server](https://github.com/privly/privly-web) - Not currently a focus of development since the Privly Applications repository houses most of the functionality client-side.
+
+Each Privly version will be released "when it's ready."
+
+</div>
+<div id="WheresTheDocumentation" class="subgroup">
+
+## Where's the Documentation? ##
+
+This guide has much of the documentation you'll need, but we also have documentation in three other locations (we know, that's a lot, hear us out).
+
+1. [privly.org](www.privly.org)- Privly.org is the official home of the Privly Foundation. It contains:
+* Development Blog
+* Privly Foundation organization information
+
+1. [Github Wiki](https://github.com/privly/privly-organization/wiki)- The wiki permits anyone to contribute and improve content. The wiki contains:
+* Developer Information
+* Working Draft Specifications
+
+1. In application-specific repositories. These are mostly in the form of READMEs for installing specific components, but in the case of [privly-applications](https://github.com/privly/privly-applications) several of the sub folders contain doc directories with threat models. A threat model details the security assumptions of an application and the appropriate use cases for the application.
 
 </div>
 <div id="Communication" class="subgroup">
@@ -40,6 +79,24 @@ If you just want to use the system, you should go to the ["about"](about.html) p
 Privly developers gather on IRC to chat informally about issues and concepts. Be prepared to wait a few hours depending on when you enter the room. Many Privly developers are on UTC -7 time.
 
 <p>If you've never used IRC before, we recommend using the Freenode's <a href="http://webchat.freenode.net" target="_blank">web-based IRC client</a>. You can also check out this <a href="http://lug.oregonstate.edu/blog/irc/" target="_blank">documentation</a>&nbsp;on how to use IRC. When you're in your IRC client you can join us at #privly using these commands:</p><ul><li>/connect irc.freenode.net</li><li>/nick "your nick"</li><li>/join #privly</li></ul><p>Here are a few more basics:</p><ul><li>Type someone's "nick" to get their attention (i.e. smcgregor: "stuff I want to say to smcgregor")&nbsp;</li><li>Not everyone in the channel is actually present so be patient. They may take awhile to get back to you, but they will get back to you.</li><li>Stop by and say hi! We're here to welcome you. Feel free to ask questions anytime.</li></ul><p>You can also join Privly's IRC channel using this webchat:{::nomarkdown}<iframe height="400" src="https://webchat.freenode.net?channels=privly" width="500"></iframe>{:/nomarkdown}</p>
+
+**List of All Communication Resources**
+
+* Mailing Lists
+  * [Developers Mailing List](http://groups.google.com/group/privly)
+  * [Tester Mailing List](http://groups.google.com/group/privly-test)
+  * [Announcement Mailing List](http://groups.google.com/group/privly-announce)
+* IRC
+  * Privly developers gather on irc.freenode.net, in the #privly room
+* Social Networks
+  * [Diaspora](https://diasp.org/u/privly)
+  * [Twitter](https://twitter.com/Privly)
+  * [Facebook](https://www.facebook.com/shareprivately)
+  * [Google+](https://plus.google.com/u/0/b/116408437159289879477/116408437159289879477)
+* Direct Emails
+  * Sean McGregor: privly@privly.org
+* GitHub
+  * [Create an Issue in a Repository](http://github.com/privly/)
 
 </div>
 <div id="StartingWithBasics" class="subgroup">
@@ -182,15 +239,15 @@ If you **must** install a local content server we have a basic setup guide that 
 
 ## Component Outline
 
-If you prefer more technical documentation about how the system works, check out the <a href="https://github.com/privly/privly-organization/wiki" target="_blank">wiki on GitHub</a>. 
-
 Privly is composed of three primary components:
 
-1. A set of Javascript privacy applications called "Privly Applications." [Chrome](https://github.com/privly/privly-applications).
+1. A set of Javascript privacy applications called "Privly Applications." [Repo](https://github.com/privly/privly-applications).
 1. A Client-Side Extension (your browser extended by Privly), which changes the websites you view to support the secure injection of Privly applications. [Chrome](https://github.com/privly/privly-chrome), [Firefox](https://github.com/privly/privly-firefox).
 2. A content server, which holds the information required by privly-applications. [Ruby on Rails](https://github.com/privly/privly-web), [Python Flask](https://github.com/privly/privly-firefox).
 
-In the following sections, we are going to cover the current implementation of the Privly server, then move onto the design for the extensions.
+You can learn more about how these components plug together on the [development wiki](https://github.com/privly/privly-organization/wiki/System-Hierarchy).
+
+In the following sections, we are going to cover the current implementation of the Privly server, then move onto the design considerations for the extensions.
 
 </div>
 <div id="ReferenceImplementation" class="subgroup">

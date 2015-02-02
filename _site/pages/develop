@@ -647,11 +647,58 @@ If you just want to use the system, you should go to the <a href="about.html">�
     <h1 id="beginning-knowledge">Beginning Knowledge</h1>
 
     <ol>
-      <li><em>What’s Privly?</em> Privly lets you keep your private information yours. Watch this <a href="https://vimeo.com/83073455" target="_blank">introductory video</a> (under 2 minutes). Also, watch this <a href="https://vimeo.com/83258935" target="_blank">technical teaser trailer</a> (a little over 2 minutes), but don’t worry if you don’t understand them. Privly is a framework for allowing you to post encrypted content anywhere on the web. Privly is essentially a set of browser extensions and apps that run inside them or a content server.</li>
+      <li><em>What’s Privly?</em> Privly gives users control over their private information. Watch this <a href="https://vimeo.com/83073455" target="_blank">introductory video</a> (under 2 minutes). Also, watch this <a href="https://vimeo.com/83258935" target="_blank">technical teaser trailer</a> (a little over 2 minutes), but don’t worry if you don’t understand them. Privly is a framework for allowing you to post encrypted content anywhere on the web. Privly is a protocol and suite of applications for controlling personal data shared via any site on the web. For consumer-focused information on what Privly is, visit <a href="https://priv.ly/pages/about">priv.ly/pages/about</a>. We also have a <a href="http://radar.oreilly.com/2013/07/securing-user-content-in-the-javascriptable-web.html">blog post</a> on O’Reilly about Privly’s design philosophy.</li>
       <li><em>I want to try Privly before I start learning how to become a contributor.</em> Check out our <a href="https://www.privly.org/content/give-privly-try" target="_blank">Give Privly a Try</a> documentation. </li>
       <li><em>How do I report bugs against this documentation?</em> If you see something wrong with this documentation or want something added, please <a href="https://github.com/privly/privly.github.io/issues/new" target="_blank">submit an issue on GitHub</a> or
 <a href="https://github.com/privly/privly.github.io/blob/master/pages/develop.md">fork and edit it yourself</a>.</li>
       <li><em>How do I GitHub?</em> If you’ve never used GitHub, check out this <a href="https://help.github.com/articles/set-up-git" target="_blank">documentation</a>. We recommend using the terminal with git, not the GitHub native app.</li>
+    </ol>
+
+  </div>
+  <div id="TechnicalVision" class="subgroup">
+
+    <h2 id="technical-vision">Technical Vision</h2>
+
+    <p>Every website has its own navigation structure, layout, and audience, but when you strip away these unique attributes of websites, you are left with data– chats, emails, photos– that can be treated uniformly across all websites. Operations on these data like encryption and signing, can be performed with indifference to their context and their contents.</p>
+
+    <p>Privly uses data indifference to create the notion of ``Injectable Applications’’ (Privly Applications), which are full web applications that are injected into the context of other web application. Since these applications are scoped to data and not layout, their properties are simplified and usable across the web.</p>
+
+    <p>Privly works within browser extensions by scanning web pages for specially formatted hyperlinks. When the extension detects the hyperlink, it ``injects’’ the link into an iframe that is served locally from the browser extension. Since the injected application is a full web application, the app could potentially support any web-implementable feature.</p>
+
+    <p><strong>Development Status</strong></p>
+
+    <ul>
+      <li><a href="https://github.com/privly/privly-applications">Privly Applications</a> - In Alpha - Under development</li>
+      <li><a href="https://github.com/privly/privly-chrome">Chrome and Opera</a> - In Alpha - Under development</li>
+      <li><a href="https://github.com/privly/privly-firefox">Firefox</a> - In Alpha - Under development</li>
+      <li><a href="https://github.com/privly/privly-safari">Safari</a> - Development stalled (no maintainer)</li>
+      <li><a href="https://github.com/privly/privly-ie">Internet Explorer</a> - Not under development (no maintainer)</li>
+      <li><a href="https://github.com/privly/privly-web">Reference Implementation Content Server</a> - Not currently a focus of development since the Privly Applications repository houses most of the functionality client-side.</li>
+    </ul>
+
+    <p>Each Privly version will be released “when it’s ready.”</p>
+
+  </div>
+  <div id="WheresTheDocumentation" class="subgroup">
+
+    <h2 id="wheres-the-documentation">Where’s the Documentation?</h2>
+
+    <p>This guide has much of the documentation you’ll need, but we also have documentation in three other locations (we know, that’s a lot, hear us out).</p>
+
+    <ol>
+      <li><a href="www.privly.org">privly.org</a>- Privly.org is the official home of the Privly Foundation. It contains:
+        <ul>
+          <li>Development Blog</li>
+          <li>Privly Foundation organization information</li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/privly/privly-organization/wiki">Github Wiki</a>- The wiki permits anyone to contribute and improve content. The wiki contains:
+        <ul>
+          <li>Developer Information</li>
+          <li>Working Draft Specifications</li>
+        </ul>
+      </li>
+      <li>In application-specific repositories. These are mostly in the form of READMEs for installing specific components, but in the case of <a href="https://github.com/privly/privly-applications">privly-applications</a> several of the sub folders contain doc directories with threat models. A threat model details the security assumptions of an application and the appropriate use cases for the application.</li>
     </ol>
 
   </div>
@@ -675,6 +722,41 @@ If you just want to use the system, you should go to the <a href="about.html">�
     <p>Here are a few more basics:</p>
     <ul><li>Type someone's "nick" to get their attention (i.e. smcgregor: "stuff I want to say to smcgregor")&nbsp;</li><li>Not everyone in the channel is actually present so be patient. They may take awhile to get back to you, but they will get back to you.</li><li>Stop by and say hi! We're here to welcome you. Feel free to ask questions anytime.</li></ul>
     <p>You can also join Privly’s IRC channel using this webchat:<iframe height="400" src="https://webchat.freenode.net?channels=privly" width="500"></iframe></p>
+
+    <p><strong>List of All Communication Resources</strong></p>
+
+    <ul>
+      <li>Mailing Lists
+        <ul>
+          <li><a href="http://groups.google.com/group/privly">Developers Mailing List</a></li>
+          <li><a href="http://groups.google.com/group/privly-test">Tester Mailing List</a></li>
+          <li><a href="http://groups.google.com/group/privly-announce">Announcement Mailing List</a></li>
+        </ul>
+      </li>
+      <li>IRC
+        <ul>
+          <li>Privly developers gather on irc.freenode.net, in the #privly room</li>
+        </ul>
+      </li>
+      <li>Social Networks
+        <ul>
+          <li><a href="https://diasp.org/u/privly">Diaspora</a></li>
+          <li><a href="https://twitter.com/Privly">Twitter</a></li>
+          <li><a href="https://www.facebook.com/shareprivately">Facebook</a></li>
+          <li><a href="https://plus.google.com/u/0/b/116408437159289879477/116408437159289879477">Google+</a></li>
+        </ul>
+      </li>
+      <li>Direct Emails
+        <ul>
+          <li>Sean McGregor: privly@privly.org</li>
+        </ul>
+      </li>
+      <li>GitHub
+        <ul>
+          <li><a href="http://github.com/privly/">Create an Issue in a Repository</a></li>
+        </ul>
+      </li>
+    </ul>
 
   </div>
   <div id="StartingWithBasics" class="subgroup">
@@ -821,17 +903,17 @@ In that location, you will find your Firefox profile directories, e.g. 12a3bc4d.
 
     <h2 id="component-outline">Component Outline</h2>
 
-    <p>If you prefer more technical documentation about how the system works, check out the <a href="https://github.com/privly/privly-organization/wiki" target="_blank">wiki on GitHub</a>. </p>
-
     <p>Privly is composed of three primary components:</p>
 
     <ol>
-      <li>A set of Javascript privacy applications called “Privly Applications.” <a href="https://github.com/privly/privly-applications">Chrome</a>.</li>
+      <li>A set of Javascript privacy applications called “Privly Applications.” <a href="https://github.com/privly/privly-applications">Repo</a>.</li>
       <li>A Client-Side Extension (your browser extended by Privly), which changes the websites you view to support the secure injection of Privly applications. <a href="https://github.com/privly/privly-chrome">Chrome</a>, <a href="https://github.com/privly/privly-firefox">Firefox</a>.</li>
       <li>A content server, which holds the information required by privly-applications. <a href="https://github.com/privly/privly-web">Ruby on Rails</a>, <a href="https://github.com/privly/privly-firefox">Python Flask</a>.</li>
     </ol>
 
-    <p>In the following sections, we are going to cover the current implementation of the Privly server, then move onto the design for the extensions.</p>
+    <p>You can learn more about how these components plug together on the <a href="https://github.com/privly/privly-organization/wiki/System-Hierarchy">development wiki</a>.</p>
+
+    <p>In the following sections, we are going to cover the current implementation of the Privly server, then move onto the design considerations for the extensions.</p>
 
   </div>
   <div id="ReferenceImplementation" class="subgroup">
@@ -1219,6 +1301,8 @@ setting things up.</p>
       <a href="#Background">Background</a>
       <ul class="nav nav-stacked">
         <li><a href="#BeginningKnowledge">Beginning Knowledge</a></li>
+        <li><a href="#TechnicalVision">Technical Vision</a></li>
+        <li><a href="#WheresTheDocumentation">Where's the Documentation?</a></li>
         <li><a href="#Communication">Communication and Getting Help</a></li>
         <li><a href="#StartingWithBasics">Starting with Basics</a></li>
       </ul>
