@@ -802,49 +802,57 @@ we have a set of tasks that will help you bootstrap your Privly development skil
 Even if you are a seasoned web dev we recommend starting with the “level 0” because
 Privly has many differences from the typical web development approach.</p>
 
-    <p><strong>Level 0:</strong> Improve programatic code quality. <em>(<a href="#Setup">Setup</a>)</em><br />
-<a href="http://codeclimate.com">CodeClimate</a> gives reports on code quality that
+    <p>Each of these levels have open issues on GitHub for you to comment on. Someone will answer
+each of your comments, so don’t be shy!</p>
+
+    <p>To help new developers enter the community, we have issues annotated [Level 0], <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22">Level 1</a>, <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22">Level 2</a>, <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22">Level 3</a>, and <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22">Level 4</a>.</p>
+
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+0%22"><strong>Level 0</strong></a>: <strong>Improve programatic code quality.</strong> <em>(<a href="#Setup">Setup</a>)</em><br />
+<a href="https://codeclimate.com/github/privly/privly-applications">CodeClimate</a>
+gives reports on code quality that
 highlight simplistic issues across the whole code base. We recommend cloning the
 <a href="https://github.com/privly/privly-applications">Privly-Applications repository</a>
 and improving the code based on the recommendations found
 <a href="https://codeclimate.com/github/privly/privly-applications">on code climate</a>.
 Then open a pull request! Don’t be afraid to submit a small pull request.</p>
 
-    <p><strong>Level 1:</strong> Run the Privly-Applications build system. <em>(<a href="#BuildSystem">Build System</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22"><strong>Level 1</strong></a>: <strong>Run the Privly-Applications build system.</strong> <em>(<a href="#BuildSystem">Build System</a>)</em><br />
 Privly packages multiple Javascript applications into a bundle of privacy applications.
 Understanding this <a href="#BuildSystem">build system</a> will allow you to make changes across
 all applications. A good starting point is to change the text in the footer to be
 more visually appealing. See the <a href="#BuildSystem">build system</a> docs for more details.</p>
 
-    <p><strong>Level 2:</strong> Unit testing. <em>(Javascript, <a href="#UnitTesting">Jasmine, Karma</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22"><strong>Level 2</strong></a>: <strong>Unit testing.</strong> <em>(Javascript, <a href="#UnitTesting">Jasmine, Karma</a>)</em><br />
 Privacy software requires strong test coverage to guard the security of the
 applications. To complete this level we recommend adding test coverage to one of the
 existing specs. See the <a href="#UnitTesting">unit testing</a> docs for more details.</p>
 
-    <p><strong>Level 3:</strong> Integration testing. <em>(<a href="#Testing">Selenium</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22"><strong>Level 3</strong></a>: <strong>Integration testing.</strong> <em>(<a href="#IntegrationTesting">Selenium</a>)</em><br />
 Unit tests examine a tiny part of Privly and integration tests examine the system
 as a whole. It is important to programmatically perform all the activities supported
 by the application (creating, updating, destroying, etc) to prevent regressions.
 To achieve this level, you should
 See the <a href="#Testing">integration testing</a> docs for more details.</p>
 
-    <p><strong>Level 4:</strong> Add continuous integration. <em>(<a href="#SauceLabs">TravisCI</a>, <a href="#SauceLabs">SauceLabs</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22"><strong>Level 4</strong></a>: <strong>Add continuous integration.</strong> <em>(<a href="#TravisCI">TravisCI</a>, <a href="#SauceLabs">SauceLabs</a>)</em><br />
 Continuous integration runs the full suite of unit and integration tests every time
 you push commits to GitHub. Setting up Continuous Integration for your fork
 requires a few additions to the .travis.yml file that is shared by all the forks.
 See the <a href="#TravisCI">continuous integration</a> docs for more details.</p>
 
-    <p><strong>Level 5:</strong> Make a new Privly App. <em>(Everything Related to Apps)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22"><strong>Project</strong></a>: <strong>Application Project:</strong> Make a new Privly App. <em>(Everything Related to Apps)</em><br />
 At this point you have all the infrastructure in place to develop a new Privly App.
 Copy an existing application to a new directory, edit the manifest.json to reference the
 proper paths, and get experimenting!</p>
 
-    <p><strong>Level 6:</strong> Hack on content scripts. <em>(<a href="#ContentScripts">Hacking Host Page DOM</a>)</em><br />
-Want to change how Privly interacts with social networks? This requires
-hacking on the
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22"><strong>Project</strong></a>: <strong>User Experience Project:</strong> Hack on content scripts. <em>(<a href="#ContentScripts">Content Scripts</a>)</em><br />
+Browser extensions interface the privly-applications to the context of arbitrary social networks. This
+level of development invites you to make improvements to the User Experience of the content scripts or
+the options presented by the privly-applications repository itself. The core of the content scripts can
+be found in the
 <a href="https://github.com/privly/privly-chrome/blob/master/javascripts/content_scripts/privly.js">privly.js</a>
-<a href="#ContentScripts">content script</a>. We won’t tell you what to change here since it is
-up to you to experiment at this “max level.”</p>
+file, but you should learn how these types of scripts provide functionality to an augmented browsing
+experience in general.</p>
 
   </div>
 </section>
@@ -1315,6 +1323,60 @@ setting things up.</p>
 
   </div>
 </section>
+<section id="Guidelines" class="group">
+  <div id="IssueLabels" class="subgroup">
+
+    <hr />
+
+    <h2 id="issue-labels">Issue Labels</h2>
+
+    <p>The Priv.ly Project uses the GitHub issue tracker for all its issues. While some issue labels are not included
+on this list, all issues will be labeled with the following categories:</p>
+
+    <ul>
+      <li>Importance: <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3ACritical">Critical</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3AMajor">Major</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3ANormal">Normal</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3AMinor">Minor</a></li>
+      <li>Status: <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3ANew">New</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3AActive">Active</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Needs+Review%22">Needs Review</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Needs+Work%22">Needs Work</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Postponed">Postponed</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Reviewed+and+Tested%22">Reviewed and Tested</a></li>
+      <li>Type: <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Bug+Report%22">Bug Report</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Task%22">Task</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Feature+Request%22">Feature Request</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Support+Request%22">Support Request</a></li>
+    </ul>
+
+    <p>We also have special labels for
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22UX%22">UX</a> issues,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3AEasy">Easy</a>
+issues, and bigger issues that are better classified a
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22">Project</a>.</p>
+
+    <p>To help new developers enter the community, we have longstanding issues annotated
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+0%22">Level 0</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22">Level 1</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22">Level 2</a>,
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22">Level 3</a>, and
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22">Level 4</a>.</p>
+
+  </div>
+  <div id="CodingStandards" class="subgroup">
+
+    <h2 id="coding-standards">Coding Standards</h2>
+
+    <p>We are currently using <a href="https://www.drupal.org/node/172169">Drupal’s coding standards</a> for all Javascript code.</p>
+
+    <p>You should also be aquatinted with <a href="/pages/personas">Frank Jones</a> since he will influence many of your design
+decisions.</p>
+
+  </div>
+</section>
+
+<hr />
 
 <h1 id="final-notes">Final Notes</h1>
 
@@ -1378,6 +1440,13 @@ setting things up.</p>
         <li><a href="#IntegrationTesting">Integration Testing</a></li>
         <li><a href="#SauceLabs">SauceLabs</a></li>
         <li><a href="#TravisCI">TravisCI</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Guidelines">Guidelines</a>
+      <ul class="nav nav-stacked">
+        <li><a href="#IssueLabels">Issue Labels</a></li>
+        <li><a href="#CodingStandards">Coding Standards</a></li>
       </ul>
     </li>
   </ul>
