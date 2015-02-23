@@ -603,6 +603,58 @@ setting things up.
 
 </div>
 </section>
+<section id="Guidelines" class="group">
+<div id="IssueLabels" class="subgroup">
+
+---
+
+## Issue Labels ##
+
+The Priv.ly Project uses the GitHub issue tracker for all its issues. While some issue labels are not included
+on this list, all issues will be labeled with the following categories:
+
+* Importance: [Critical](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3ACritical),
+[Major](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3AMajor),
+[Normal](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3ANormal),
+[Minor](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3AMinor)
+* Status: [New](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3ANew),
+[Active](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3AActive),
+[Needs Review](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Needs+Review%22),
+[Needs Work](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Needs+Work%22),
+[Postponed](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Postponed),
+[Reviewed and Tested](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Reviewed+and+Tested%22)
+* Type: [Bug Report](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Bug+Report%22),
+[Task](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Task%22),
+[Feature Request](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Feature+Request%22),
+[Support Request](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Support+Request%22)
+
+We also have special labels for
+[UX](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22UX%22) issues,
+[Easy](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3AEasy)
+issues, and bigger issues that are better classified a
+[Project](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22).
+
+To help new developers enter the community, we have longstanding issues annotated
+[Level 0](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+0%22),
+[Level 1](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22),
+[Level 2](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22),
+[Level 3](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22), and
+[Level 4](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22).
+
+</div>
+<div id="CodingStandards" class="subgroup">
+
+## Coding Standards ##
+
+We are currently using [Drupal's coding standards](https://www.drupal.org/node/172169) for all Javascript code.
+
+You should also be aquatinted with [Frank Jones](/pages/personas) since he will influence many of your design
+decisions.
+
+</div>
+</section>
+
+---
 
 # Final Notes
 
