@@ -108,49 +108,57 @@ we have a set of tasks that will help you bootstrap your Privly development skil
 Even if you are a seasoned web dev we recommend starting with the "level 0" because
 Privly has many differences from the typical web development approach.
 
-**Level 0:** Improve programatic code quality. _([Setup](#Setup))_  
-[CodeClimate](http://codeclimate.com) gives reports on code quality that
+Each of these levels have open issues on GitHub for you to comment on. Someone will answer
+each of your comments, so don't be shy!
+
+To help new developers enter the community, we have issues annotated [Level 0], [Level 1](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22), [Level 2](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22), [Level 3](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22), and [Level 4](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22).
+
+[**Level 0**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+0%22): **Improve programatic code quality.** _([Setup](#Setup))_  
+[CodeClimate](https://codeclimate.com/github/privly/privly-applications)
+gives reports on code quality that
 highlight simplistic issues across the whole code base. We recommend cloning the
 [Privly-Applications repository](https://github.com/privly/privly-applications)
 and improving the code based on the recommendations found
 [on code climate](https://codeclimate.com/github/privly/privly-applications).
 Then open a pull request! Don't be afraid to submit a small pull request.
 
-**Level 1:** Run the Privly-Applications build system. _([Build System](#BuildSystem))_  
+[**Level 1**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22): **Run the Privly-Applications build system.** _([Build System](#BuildSystem))_  
 Privly packages multiple Javascript applications into a bundle of privacy applications.
 Understanding this [build system](#BuildSystem) will allow you to make changes across
 all applications. A good starting point is to change the text in the footer to be
 more visually appealing. See the [build system](#BuildSystem) docs for more details.
 
-**Level 2:** Unit testing. _(Javascript, [Jasmine, Karma](#UnitTesting))_  
+[**Level 2**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22): **Unit testing.** _(Javascript, [Jasmine, Karma](#UnitTesting))_  
 Privacy software requires strong test coverage to guard the security of the
 applications. To complete this level we recommend adding test coverage to one of the
 existing specs. See the [unit testing](#UnitTesting) docs for more details.
 
-**Level 3:** Integration testing. _([Selenium](#Testing))_  
+[**Level 3**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22): **Integration testing.** _([Selenium](#IntegrationTesting))_  
 Unit tests examine a tiny part of Privly and integration tests examine the system
 as a whole. It is important to programmatically perform all the activities supported
 by the application (creating, updating, destroying, etc) to prevent regressions.
 To achieve this level, you should
 See the [integration testing](#Testing) docs for more details.
 
-**Level 4:** Add continuous integration. _([TravisCI](#SauceLabs), [SauceLabs](#SauceLabs))_  
+[**Level 4**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22): **Add continuous integration.** _([TravisCI](#TravisCI), [SauceLabs](#SauceLabs))_  
 Continuous integration runs the full suite of unit and integration tests every time
 you push commits to GitHub. Setting up Continuous Integration for your fork
 requires a few additions to the .travis.yml file that is shared by all the forks.
 See the [continuous integration](#TravisCI) docs for more details.
 
-**Level 5:** Make a new Privly App. _(Everything Related to Apps)_  
+[**Project**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22): **Application Project:** Make a new Privly App. _(Everything Related to Apps)_  
 At this point you have all the infrastructure in place to develop a new Privly App.
 Copy an existing application to a new directory, edit the manifest.json to reference the
 proper paths, and get experimenting!
 
-**Level 6:** Hack on content scripts. _([Hacking Host Page DOM](#ContentScripts))_  
-Want to change how Privly interacts with social networks? This requires
-hacking on the
+[**Project**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22): **User Experience Project:** Hack on content scripts. _([Content Scripts](#ContentScripts))_  
+Browser extensions interface the privly-applications to the context of arbitrary social networks. This
+level of development invites you to make improvements to the User Experience of the content scripts or
+the options presented by the privly-applications repository itself. The core of the content scripts can
+be found in the
 [privly.js](https://github.com/privly/privly-chrome/blob/master/javascripts/content_scripts/privly.js)
-[content script](#ContentScripts). We won't tell you what to change here since it is
-up to you to experiment at this "max level."
+file, but you should learn how these types of scripts provide functionality to an augmented browsing
+experience in general.
 
 </div>
 </section>
