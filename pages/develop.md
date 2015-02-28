@@ -789,9 +789,8 @@ To help new developers enter the community, we have longstanding issues annotate
 
 ## Coding Standards ##
 
-We are currently using [Drupal's coding standards](https://www.drupal.org/node/172169) for all Javascript code.
-
-You should also be aquatinted with [Frank Jones](/pages/personas) since he will influence many of your design
+* We are currently using [Drupal's coding standards](https://www.drupal.org/node/172169) for all Javascript code.
+* You should be aquatinted with [Frank Jones](/pages/personas) since he will influence many of your design
 decisions.
 
 </div>
