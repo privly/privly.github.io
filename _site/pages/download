@@ -738,7 +738,7 @@
   </div>
 </div>
 
-<p><strong>Where is my browser?</strong> We need to bring Privly to other browsers and platforms, so if you don’t see your endpoint here, please consider <a href="/pages/develop.html">helping out</a>.</p>
+<p><strong>Where is my browser?</strong> We need to bring Privly to other browsers and platforms, so if you don’t see your endpoint here, please consider <a href="/pages/join.html">joining the development effort</a>.</p>
 
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -1361,9 +1361,8 @@
           
         
         </p>
-        <p class="text-center">&copy; 2015 Privly
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+        <p class="text-center">
+          &copy; 2015 Privly Foundation
         </p>
       </footer>
 

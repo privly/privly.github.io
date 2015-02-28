@@ -1325,9 +1325,8 @@
           
         
         </p>
-        <p class="text-center">&copy; 2015 Privly
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+        <p class="text-center">
+          &copy; 2015 Privly Foundation
         </p>
       </footer>
 
