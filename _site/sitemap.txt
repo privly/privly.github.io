@@ -7,6 +7,7 @@ http://privly.github.io/pages/develop.html
 http://privly.github.io/pages/donate.html
 http://privly.github.io/pages/download.html
 http://privly.github.io/index.html
+http://privly.github.io/pages/join.html
 http://privly.github.io/pages/personas.html
 http://privly.github.io/pages/privacy.html
 http://privly.github.io/rss.xml

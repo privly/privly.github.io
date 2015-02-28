@@ -13,7 +13,7 @@ Privly provides you with privacy, but what does that mean? For some people it is
 
 This page is intended to tell you the status of the Priv.ly Project for various uses, so you can be mindful of your privacy as you use it across the web.
 
-### Corporations
+### Social Networks and Email Providers
 
 **Passive Corporate Logging**
 
@@ -34,6 +34,8 @@ who you are](https://www.torproject.org/docs/faq.html.en#TBBOtherExtensions).
 Corporations are legally prohibited from logging encrypted content stored
 on your Privly content server. This means it would be very expensive for
 them to compromise your privacy, but they have the technical capacity to do so.
+We have applications in development that make stronger privacy claims, but they
+are currently too difficult to use.
 
 ### Governments
 
