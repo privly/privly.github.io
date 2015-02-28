@@ -27,6 +27,8 @@ Privly Does:
 
 Privly has proven itself as a concept. You can use it right now with Facebook, Gmail, Google+, Twitter, Reddit, and just about anywhere else. As we refine the [extensions](/pages/download.html) and develop versions for other browsers the system will become even more powerful.
 
+Ready to give it a try? Start by [downloading the extension](/pages/download.html).
+
 ## <i class="fa fa-lock"></i> How does it work?
 
 Privly gives you more than **privacy**, it gives you **security**. Shifting your data and trust from an organization that sells your data to one that in the long run, can’t even protect it, doesn’t help. Eventually, a hacker, rogue employee, government, or even someone close to you will expose everything you wrote in an email, said in a chat, or posted in a message. **No one can be trusted to protect your data forever**, so how can you use the internet for personal communication? The answer to the privacy problem is **encryption**.
@@ -35,6 +37,10 @@ Most users do not host their own web server, so Privly enables people to trust *
 
 Privly is built as an "[Open Privacy Stack](http://programming.oreilly.com/2013/07/securing-user-content-in-the-javascriptable-web.html)," meaning it is not tied to a particular way of doing things. Special "Privly Applications" develop to meet your communication needs, and interface with your favorite web communities. You don't have to sacrifice functionality to gain your privacy.
 
+Want to see it in action? Start by [downloading the extension](/pages/download.html).
+
 ## <i class="fa fa-users"></i> Who Are We?
 
-The Priv.ly Project is organized by the [Privly Foundation](https://privly.org/), but [development is open to everyone](/pages/join.html) so you can [contribute](/pages/join.html) to the advancement of online privacy. [Join us!](/pages/join.html)
+The Priv.ly Project is organized by the [Privly Foundation](https://privly.org/), but [development is open to everyone](/pages/join.html) so you can [contribute](/pages/join.html) to the advancement of online privacy.
+
+[Join us!](/pages/join.html)
