@@ -716,7 +716,7 @@ If you just want to use the system, you should go to the <a href="about.html">�
 
     <ol>
       <li><em>What’s Privly?</em> Privly gives users control over their private information. Watch this <a href="https://vimeo.com/83073455" target="_blank">introductory video</a> (under 2 minutes). Also, watch this <a href="https://vimeo.com/83258935" target="_blank">technical teaser trailer</a> (a little over 2 minutes), but don’t worry if you don’t understand them. Privly is a framework for allowing you to post encrypted content anywhere on the web. Privly is a protocol and suite of applications for controlling personal data shared via any site on the web. For consumer-focused information on what Privly is, visit <a href="https://priv.ly/pages/about">priv.ly/pages/about</a>. We also have a <a href="http://radar.oreilly.com/2013/07/securing-user-content-in-the-javascriptable-web.html">blog post</a> on O’Reilly about Privly’s design philosophy.</li>
-      <li><em>I want to try Privly before I start learning how to become a contributor.</em> Check out our <a href="https://www.privly.org/content/give-privly-try" target="_blank">Give Privly a Try</a> documentation. </li>
+      <li><em>I want to try Privly before I start learning how to become a contributor.</em> Check out our <a href="https://www.privly.org/content/give-privly-try" target="_blank">Give Privly a Try</a> documentation.</li>
       <li><em>How do I report bugs against this documentation?</em> If you see something wrong with this documentation or want something added, please <a href="https://github.com/privly/privly.github.io/issues/new" target="_blank">submit an issue on GitHub</a> or
 <a href="https://github.com/privly/privly.github.io/blob/master/pages/develop.md">fork and edit it yourself</a>.</li>
       <li><em>How do I GitHub?</em> If you’ve never used GitHub, check out this <a href="https://help.github.com/articles/set-up-git" target="_blank">documentation</a>. We recommend using the terminal with git, not the GitHub native app.</li>
@@ -921,7 +921,7 @@ use the <code>--recursive</code> option. Otherwise you will not get all the requ
 <code>git clone --recursive git@github.com:privly/privly-chrome.git</code>.</li>
       <li>Open Chrome and click the wrench icon (or go to Preferences).</li>
       <li>Select Extensions</li>
-      <li>Check “Developer Mode” box if unchecked. </li>
+      <li>Check “Developer Mode” box if unchecked.</li>
       <li>Click “Load Unpacked Extension…”</li>
       <li>Select the directory containing the chrome extension (where you just cloned it to).</li>
     </ol>
@@ -942,9 +942,9 @@ Mac: <code>cd ~/Library/Application\ Support/Firefox/profiles/</code><br />
 Linux:  <code>cd ~/.mozilla/</code><br />
 In that location, you will find your Firefox profile directories, e.g. 12a3bc4d.dev., change directories to your profile folder, for example <code>cd 12a3bc4d.dev</code></li>
       <li>Create a file to include a pointer to your code. For this, you need the path of where you cloned the Git Repository for the extension. Use vim (or your preferred editor) to create a filename with privly@priv.ly. On some systems (no, we’re not sure which ones) this won’t work and your filename will need to be {ec8030f7-c20a-464f-9b0e-13a3a9e97384}.</li>
-      <li>Type in the path your newly cloned git repository from earlier, e.g. C:\path\to\extension\privly-firefox\ (Windows) or /path/to/extension/privly-firefox/ (Linux, Mac), and save the file. </li>
+      <li>Type in the path your newly cloned git repository from earlier, e.g. C:\path\to\extension\privly-firefox\ (Windows) or /path/to/extension/privly-firefox/ (Linux, Mac), and save the file.</li>
       <li>Open Firefox.</li>
-      <li>You should see a dialog asking to confirm the Privly extension installation. </li>
+      <li>You should see a dialog asking to confirm the Privly extension installation.</li>
       <li>Success! If it didn’t work, see the tip from above, where the filename in your development profile folder may need to be privly@priv.ly or {ec8030f7-c20a-464f-9b0e-13a3a9e97384}.</li>
     </ol>
 
@@ -1167,6 +1167,131 @@ and it will change all the apps. You can also copy an existing app, update the
 manifest.json file, and build the apps for your “new” app to automatically
 be included in the navigation.</p>
 
+    <p>We have several
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22">simpler issues</a>
+whose only knowledge prerequisite is working with the build system.
+If you open a pull request for these
+<a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22">Level 1 issues</a>
+you should commit changes to the templates, but not to the HTML files themselves since it is better for
+the privly-applications maintainers to run the build when they merge the changes.</p>
+
+  </div>
+  <div id="Testing101" class="subgroup">
+
+    <h2 id="privly-testing-101">Privly Testing 101</h2>
+
+    <p>Before learning the Privly testing architecture you need to know the basics of testing for software engineering.</p>
+
+    <p>If you are already experienced in writing unit and integration tests, you can skip over the following simile.</p>
+
+    <p><strong>Begin simile:</strong> Consider a car. A car is a big system made up of smaller
+components. Before the car is manufactured each component of the car (engine,
+fuel tank, exhaust, steering wheel, gear, etc) is tested in isolation before
+plugging them together. You want to know whether pressing the accelerator will
+tell the engine to speed up, turning the steering wheel will tell the wheels to
+turn, turning the ignition will begin the ignition sequence, etc. If you test
+all these components (units) after they are combined into a whole car a failure
+in a single component will cause a cascading failure whose root cause is
+difficult to determine. By testing the components (units) in isolation, you
+build a much more robust system.</p>
+
+    <p>But what about the car (system) as a whole? Even when individual components
+(units) work perfectly, the combination of those components could fail. This
+is why you also want to drive the whole car around the neighborhood a few times
+(integration tests) to ensure everything is working together.</p>
+
+    <p>Privly as a car is a multi-component system whose individual functions should
+be tested with unit tests and the whole system should be tested with integration
+tests.</p>
+
+    <p>The smallest component that deserves testing is called a unit. In the case of
+Privly, units are usually javascript functions. Unit tests are code that test
+these units. Keep in mind that Tests are nothing but code. Just say this line
+5 times to yourself: “Test code tests source code”. <strong>/End simile.</strong></p>
+
+    <p>Privly has three layers that must all be tested on the unit level and as a
+whole system: The content server, the extension, and the privly-application.</p>
+
+    <p><strong>Types of Tests</strong></p>
+
+    <p>Unit tests: Makes sure that the individual javascript functions (units) that
+make up the privly codebase are running properly across all browsers.</p>
+
+    <p>Integration tests: Makes sure Privly applications, extensions, and content
+servers are able to work in concert.</p>
+
+    <p>Content server tests: Makes sure content server is working as expected. This
+is not a focus of this guide because content servers have their own commonly
+used and well documented testing infrastructure that you do not need to worry
+about.</p>
+
+    <p><strong>Test Language, Test Runner, Test Syntax, and Environment</strong></p>
+
+    <p>This is the most difficult aspect to understand about Privly’s testing
+infrastructure since it requires understanding several layers of related
+systems. To simplify things, we don’t recommend you figure out how everything
+fits together. The best way to get started is to get the existing tests
+running, then to copy and modify the existing test to cover a new case.
+Still, you need to know a few things before you get started.</p>
+
+    <p>To run tests, you need a testing environment where the tests and the system
+as a whole can execute. Since Privly runs in web browsers and in web browser
+extensions, we have a very large number of target environments. However,
+when you are developing new tests and functionality you do <strong>not</strong> need to
+develop against all the potential platforms. When developing your tests will
+run in either your Chrome or your Firefox browser. To support testing on all
+the platforms and to enable testing in our Continuous Integration system,
+we also integrate tests with SauceLabs.</p>
+
+    <p><a href="https://saucelabs.com/opensauce/">SauceLabs</a> is a browser virtualization
+service that gives you the ability to run both Unit and Integration tests
+on hundreds of different platforms. You don’t need to use Sauce to run tests
+while you are developing since you can use your local browser, but you do
+need to use SauceLabs if you run tests in the continuous integration system.</p>
+
+    <p>Your local browser or the SauceLabs browser are the environment in which
+tests run, but what are the tests written in and what drives the tests in
+the browser? The answer is different depending on whether you are talking
+about Unit or Integration tests.</p>
+
+    <p><strong>Unit Test Infrastructure</strong></p>
+
+    <p>Unit tests are written in JavaScript with a library called Jasmine that
+declares (expects) a unit to produce a particular outcome. When writing
+Jasmine tests you should
+<a href="http://jasmine.github.io/2.2/introduction.html">read the Jasmine</a> introduction
+then copy one of the existing tests in a privly-application.</p>
+
+    <p>But how do the Jasmine tests run in the browser? We use
+<a href="http://karma-runner.github.io/0.12/index.html">Karma</a> as a “test runner” to
+connect the tests (written in Jasmine) to a set of many test iframes running in
+the browser. A brilliant part of Karma is that you can set it to monitor your
+files and re-run a test set every time the files change. Karma will change the
+way you develop in JavaScript, for the better.</p>
+
+    <p><img src="/assets/images/UnitTests.png" alt="Unit Tests Diagram" class="img-responsive" /></p>
+
+    <p><strong>Integration Test Infrastructure</strong></p>
+
+    <p>Integration tests are written in Ruby’s Test::Unit – think of this as the
+“Jasmine of Integration Tests,” which will make more sense after you write
+your first Jasmine tests. These Test:Unit tests control your browser or
+SauceLabs’ browser via Selenium Webdriver, which is essentially an API and
+communication protocol for “driving” a web browser with code – think of
+this as the “Karma of Integration Tests”. To make this “web driving” more
+expressive, we use a library called Capybara. Capybara’s only purpose is to
+make things like testing AJAX functionality less painful. If you <em>really</em> want
+to you can write tests without using Capybara, but it will be painful.</p>
+
+    <p><img src="/assets/images/IntegrationTests.png" alt="Integration Tests Diagram" class="img-responsive" /></p>
+
+    <p><strong>What Now?</strong></p>
+
+    <p>This section introduced the concepts, but the <a href="#Integrations">unit testing</a>
+and <a href="#IntegrationTesting">integration testing</a> sections go into the details.
+We recommend you start with writing a simple unit test before working on an
+integration test.</p>
+
   </div>
   <div id="UnitTesting" class="subgroup">
 
@@ -1186,7 +1311,23 @@ of functions to make unit testing easier. Current Privly specs can be found in t
 
     <p>Specs are intended to be run independent of HTML files, meaning if the function
 you are testing interacts with the DOM you will need to create the required DOM
-elements using Javascript before the test executes.</p>
+elements using Javascript before the test executes. Similarly, tests often call other
+functions or are expected to be called by a particular function. To achieve
+proper unit isolation, you should replace functions that are not being tested
+with a shim function that specifies the expectation of the tested function.
+An example is included below:</p>
+
+    <pre><code>// We are testing the function "fu," that calls "bar"
+// and expects "bar" to return either "hello" or "world"
+it("says hello", function() {
+  bar = function(){return "hello";};
+  expect(fu()).toBe("I called a function that said 'hello'");
+});
+it("says world", function() {
+  bar = function(){return "world";};
+  expect(fu()).toBe("I called a function that said 'world'");
+});
+</code></pre>
 
     <p><strong>Unit Test Runner: Karma</strong></p>
 
@@ -1258,6 +1399,9 @@ learn about setting up this cloud infrastructure.</p>
   <div id="IntegrationTesting" class="subgroup">
 
     <h2 id="integration-testing">Integration Testing</h2>
+
+    <p>If you have not read it yet, you should first refer to the <a href="#Testing101">Testing 101</a>
+section of the docs for some important background.</p>
 
     <p>Integration tests are built around “activities,” like creating or destroying content,
 or viewing content injected into a web page. Where unit tests breaks Javascript
@@ -1339,7 +1483,7 @@ all have numerous examples of the secured variables, so you should add the
 results of the commands below to the appropriate line.
  <code>travis encrypt SAUCE_USERNAME=YOUR_USERNAME</code><br />
  <code>travis encrypt SAUCE_ACCESS_KEY=YOUR_ACCESS_KEY</code><br />
- <code>travis encrypt SAUCE_URL=YOUR_API_URL</code>  </li>
+ <code>travis encrypt SAUCE_URL=YOUR_API_URL</code></li>
       <li>Push commits to GitHub then watch it build in TravisCI!</li>
     </ol>
 
@@ -1402,10 +1546,11 @@ issues, and bigger issues that are better classified a
 
     <h2 id="coding-standards">Coding Standards</h2>
 
-    <p>We are currently using <a href="https://www.drupal.org/node/172169">Drupal’s coding standards</a> for all Javascript code.</p>
-
-    <p>You should also be aquatinted with <a href="/pages/personas">Frank Jones</a> since he will influence many of your design
-decisions.</p>
+    <ul>
+      <li>We are currently using <a href="https://www.drupal.org/node/172169">Drupal’s coding standards</a> for all Javascript code.</li>
+      <li>You should be aquatinted with <a href="/pages/personas">Frank Jones</a> since he will influence many of your design
+decisions.</li>
+    </ul>
 
   </div>
 </section>
@@ -1463,6 +1608,7 @@ decisions.</p>
       <a href="#PrivlyApplications">Privly Applications</a>
       <ul class="nav nav-stacked">
         <li><a href="#BuildSystem">Build System</a></li>
+        <li><a href="#Testing101">Testing 101</a></li>
         <li><a href="#UnitTesting">Unit Testing</a></li>
         <li><a href="#TestCoverage">Test Coverage</a></li>
         <li><a href="#ThreatModels">Threat Models</a></li>
