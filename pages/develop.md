@@ -414,6 +414,131 @@ and it will change all the apps. You can also copy an existing app, update the
 manifest.json file, and build the apps for your "new" app to automatically
 be included in the navigation.
 
+We have several
+[simpler issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22)
+whose only knowledge prerequisite is working with the build system.
+If you open a pull request for these
+[Level 1 issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22)
+you should commit changes to the templates, but not to the HTML files themselves since it is better for
+the privly-applications maintainers to run the build when they merge the changes.
+
+</div>
+<div id="Testing101" class="subgroup">
+
+## Privly Testing 101 ##
+
+Before learning the Privly testing architecture you need to know the basics of testing for software engineering.
+
+If you are already experienced in writing unit and integration tests, you can skip over the following simile.
+
+**Begin simile:** Consider a car. A car is a big system made up of smaller
+components. Before the car is manufactured each component of the car (engine,
+fuel tank, exhaust, steering wheel, gear, etc) is tested in isolation before
+plugging them together. You want to know whether pressing the accelerator will
+tell the engine to speed up, turning the steering wheel will tell the wheels to
+turn, turning the ignition will begin the ignition sequence, etc. If you test
+all these components (units) after they are combined into a whole car a failure
+in a single component will cause a cascading failure whose root cause is
+difficult to determine. By testing the components (units) in isolation, you
+build a much more robust system.
+
+But what about the car (system) as a whole? Even when individual components
+(units) work perfectly, the combination of those components could fail. This
+is why you also want to drive the whole car around the neighborhood a few times
+(integration tests) to ensure everything is working together.
+
+Privly as a car is a multi-component system whose individual functions should
+be tested with unit tests and the whole system should be tested with integration
+tests.
+
+The smallest component that deserves testing is called a unit. In the case of
+Privly, units are usually javascript functions. Unit tests are code that test
+these units. Keep in mind that Tests are nothing but code. Just say this line
+5 times to yourself: “Test code tests source code". **/End simile.**
+
+Privly has three layers that must all be tested on the unit level and as a
+whole system: The content server, the extension, and the privly-application.
+
+**Types of Tests**
+
+Unit tests: Makes sure that the individual javascript functions (units) that
+make up the privly codebase are running properly across all browsers.
+
+Integration tests: Makes sure Privly applications, extensions, and content
+servers are able to work in concert.
+
+Content server tests: Makes sure content server is working as expected. This
+is not a focus of this guide because content servers have their own commonly
+used and well documented testing infrastructure that you do not need to worry
+about.
+
+**Test Language, Test Runner, Test Syntax, and Environment**
+
+This is the most difficult aspect to understand about Privly's testing
+infrastructure since it requires understanding several layers of related
+systems. To simplify things, we don't recommend you figure out how everything
+fits together. The best way to get started is to get the existing tests
+running, then to copy and modify the existing test to cover a new case.
+Still, you need to know a few things before you get started.
+
+To run tests, you need a testing environment where the tests and the system
+as a whole can execute. Since Privly runs in web browsers and in web browser
+extensions, we have a very large number of target environments. However,
+when you are developing new tests and functionality you do **not** need to
+develop against all the potential platforms. When developing your tests will
+run in either your Chrome or your Firefox browser. To support testing on all
+the platforms and to enable testing in our Continuous Integration system,
+we also integrate tests with SauceLabs.
+
+[SauceLabs](https://saucelabs.com/opensauce/) is a browser virtualization
+service that gives you the ability to run both Unit and Integration tests
+on hundreds of different platforms. You don't need to use Sauce to run tests
+while you are developing since you can use your local browser, but you do
+need to use SauceLabs if you run tests in the continuous integration system.
+
+Your local browser or the SauceLabs browser are the environment in which
+tests run, but what are the tests written in and what drives the tests in
+the browser? The answer is different depending on whether you are talking
+about Unit or Integration tests.
+
+**Unit Test Infrastructure**
+
+Unit tests are written in JavaScript with a library called Jasmine that
+declares (expects) a unit to produce a particular outcome. When writing
+Jasmine tests you should
+[read the Jasmine](http://jasmine.github.io/2.2/introduction.html) introduction
+then copy one of the existing tests in a privly-application.
+
+But how do the Jasmine tests run in the browser? We use
+[Karma](http://karma-runner.github.io/0.12/index.html) as a "test runner" to
+connect the tests (written in Jasmine) to a set of many test iframes running in
+the browser. A brilliant part of Karma is that you can set it to monitor your
+files and re-run a test set every time the files change. Karma will change the
+way you develop in JavaScript, for the better.
+
+<img src="/assets/images/UnitTests.png" alt="Unit Tests Diagram" class="img-responsive" />
+
+**Integration Test Infrastructure**
+
+Integration tests are written in Ruby's Test::Unit -- think of this as the
+"Jasmine of Integration Tests," which will make more sense after you write
+your first Jasmine tests. These Test:Unit tests control your browser or
+SauceLabs' browser via Selenium Webdriver, which is essentially an API and
+communication protocol for "driving" a web browser with code -- think of
+this as the "Karma of Integration Tests". To make this "web driving" more
+expressive, we use a library called Capybara. Capybara's only purpose is to
+make things like testing AJAX functionality less painful. If you _really_ want
+to you can write tests without using Capybara, but it will be painful.
+
+<img src="/assets/images/IntegrationTests.png" alt="Integration Tests Diagram" class="img-responsive" />
+
+**What Now?**
+
+This section introduced the concepts, but the [unit testing](#Integrations)
+and [integration testing](#IntegrationTesting) sections go into the details.
+We recommend you start with writing a simple unit test before working on an
+integration test.
+
 </div>
 <div id="UnitTesting" class="subgroup">
 
@@ -433,7 +558,22 @@ of functions to make unit testing easier. Current Privly specs can be found in t
 
 Specs are intended to be run independent of HTML files, meaning if the function
 you are testing interacts with the DOM you will need to create the required DOM
-elements using Javascript before the test executes.
+elements using Javascript before the test executes. Similarly, tests often call other
+functions or are expected to be called by a particular function. To achieve
+proper unit isolation, you should replace functions that are not being tested
+with a shim function that specifies the expectation of the tested function.
+An example is included below:
+
+    // We are testing the function "fu," that calls "bar"
+    // and expects "bar" to return either "hello" or "world"
+    it("says hello", function() {
+      bar = function(){return "hello";};
+      expect(fu()).toBe("I called a function that said 'hello'");
+    });
+    it("says world", function() {
+      bar = function(){return "world";};
+      expect(fu()).toBe("I called a function that said 'world'");
+    });
 
 **Unit Test Runner: Karma**
 
@@ -505,6 +645,9 @@ learn about setting up this cloud infrastructure.
 <div id="IntegrationTesting" class="subgroup">
 
 ## Integration Testing ##
+
+If you have not read it yet, you should first refer to the [Testing 101](#Testing101)
+section of the docs for some important background.
 
 Integration tests are built around "activities," like creating or destroying content,
 or viewing content injected into a web page. Where unit tests breaks Javascript
