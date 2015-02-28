@@ -4,9 +4,9 @@ title: Donate
 weight: 4
 ---
 
-Privly is a <a href="https://www.privly.org/content/privly-gains-non-profit-status" target="_blank">federally recognized non-profit</a> organization. Your financial contributions are tax-deductable in the United States.
+Privly is a <a href="https://www.privly.org/content/privly-gains-non-profit-status" target="_blank">federally recognized non-profit</a> organization. Your financial contributions are tax-deductible in the United States.
 
-Your time is just as valuable as your money, if you have the skills to move us forward, please consider [volunteering your time](http://www.privly.org/content/how-get-started).
+Your time is just as valuable as your money, if you have the skills to move us forward, please consider [joining the development effort.](/pages/join.html)
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <h3>Paypal</h3>
@@ -17,8 +17,9 @@ Your time is just as valuable as your money, if you have the skills to move us f
 
 <h3>BitCoin</h3>
 <p>Donation Address: 1DSM4sFyM7m6Xs3a3hsNWfqS8pXTqYkwqx</p>
-  
-## Donors
+
+
+## Donor Roll
 
 <div class="row">
   <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
