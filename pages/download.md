@@ -42,7 +42,7 @@ The extensions are under active development. Check back later if you do not like
   </div>
 </div>
 
-**Where is my browser?** We need to bring Privly to other browsers and platforms, so if you don't see your endpoint here, please consider [helping out](/pages/develop.html).
+**Where is my browser?** We need to bring Privly to other browsers and platforms, so if you don't see your endpoint here, please consider [joining the development effort](/pages/join.html).
 
 
 
