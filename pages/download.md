@@ -3,19 +3,9 @@ layout: page
 title: Download Extension
 ---
 
-
 <div class="text-center">
  <a id="big_download_link" class="btn btn-large btn-primary" href="#" target="_blank">Download Privly</a> 
 </div>
-
-
-The extensions are under active development. Check back later if you do not like change and filing [bug reports](/pages/bug.html). We will announce developments on Privly's [Twitter account](https://twitter.com/Privly).
-
-<div style="color:#FF0000">
-  <p>
-    Read our <a href="/pages/safety.html">safety page</a> before using the extension. Until you understand the risks of modern technology you should assume your communications are public.
-  </p>
-</div>  
 
 <br/>
 
@@ -41,6 +31,8 @@ The extensions are under active development. Check back later if you do not like
      <p class="text-left">(Alpha) The Firefox extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
   </div>
 </div>
+
+The extensions are under active development so please email us [bug reports](/pages/bug.html).
 
 **Where is my browser?** We need to bring Privly to other browsers and platforms, so if you don't see your endpoint here, please consider [joining the development effort](/pages/join.html).
 
