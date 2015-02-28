@@ -13,3 +13,4 @@ cp trademark.html trademark
 cp develop.html develop
 cp safety.html safety
 cp personas.html personas
+cp join.html join
