@@ -789,9 +789,31 @@ To help new developers enter the community, we have longstanding issues annotate
 
 ## Coding Standards ##
 
+General style guidance:
+
 * We are currently using [Drupal's coding standards](https://www.drupal.org/node/172169) for all Javascript code.
 * You should be aquatinted with [Frank Jones](/pages/personas) since he will influence many of your design
 decisions.
+
+Requirements before you open a pull request:
+
+* Click test your changes (make sure code works in a browser) before opening a pull request, but feel free to open a pull request when you need help with something. Pull requests are easier to help than an uninformed statement of "X is not working!".
+* You should "lint" your JS code before submitting a pull request. [Here](http://www.jslint.com/) is an example online linting tool, but many options are available.
+* If you have your repo hooked into TravisCI, you should check the results _before_ you ask other people to review it for merge.
+* Don't introduce any code that you don't have a right to gift to the Privly Foundation's Open Source license and copyright.
+
+Requirements after you open a pull request:
+
+* You should respond to comments and work with the maintainers or other contributors to make the code appropriate for merging.
+* You should know that the build script does not fully test the pull request's commit since pull requests do not run on SauceLabs.
+
+Requirements before code is merged:
+
+* Your code should be unit tested, if appropriate for what you are submitting.
+* Your code should be integration tested, if appropriate for what you are submitting.
+* If you are having a lot of trouble with testing on Privly,
+then we can help write your tests -- but we ask you help make changes to
+your code that the tests indicate should be made.
 
 </div>
 </section>
