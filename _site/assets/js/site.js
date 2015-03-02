@@ -1,9 +1,10 @@
 (function() {
 
     /**
-     * Check if user is on download page.
+     * Check if user is on download page or home page.
      */
-    if (/pages\/download/.test(document.location.pathname)) {
+    if ( /pages\/download/.test(document.location.pathname) ||
+                        "/" === document.location.pathname   ) {
 
         /**
          * Set the big download link to the Firefox or Chrome link 
