@@ -1546,10 +1546,38 @@ issues, and bigger issues that are better classified a
 
     <h2 id="coding-standards">Coding Standards</h2>
 
+    <p>General style guidance:</p>
+
     <ul>
       <li>We are currently using <a href="https://www.drupal.org/node/172169">Drupal’s coding standards</a> for all Javascript code.</li>
       <li>You should be aquatinted with <a href="/pages/personas">Frank Jones</a> since he will influence many of your design
 decisions.</li>
+    </ul>
+
+    <p>Requirements before you open a pull request:</p>
+
+    <ul>
+      <li>Click test your changes (make sure code works in a browser) before opening a pull request, but feel free to open a pull request when you need help with something. Pull requests are easier to help than an uninformed statement of “X is not working!”.</li>
+      <li>You should “lint” your JS code before submitting a pull request. <a href="http://www.jslint.com/">Here</a> is an example online linting tool, but many options are available.</li>
+      <li>If you have your repo hooked into TravisCI, you should check the results <em>before</em> you ask other people to review it for merge.</li>
+      <li>Don’t introduce any code that you don’t have a right to gift to the Privly Foundation’s Open Source license and copyright.</li>
+    </ul>
+
+    <p>Requirements after you open a pull request:</p>
+
+    <ul>
+      <li>You should respond to comments and work with the maintainers or other contributors to make the code appropriate for merging.</li>
+      <li>You should know that the build script does not fully test the pull request’s commit since pull requests do not run on SauceLabs.</li>
+    </ul>
+
+    <p>Requirements before code is merged:</p>
+
+    <ul>
+      <li>Your code should be unit tested, if appropriate for what you are submitting.</li>
+      <li>Your code should be integration tested, if appropriate for what you are submitting.</li>
+      <li>If you are having a lot of trouble with testing on Privly,
+then we can help write your tests – but we ask you help make changes to
+your code that the tests indicate should be made.</li>
     </ul>
 
   </div>
