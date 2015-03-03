@@ -54,7 +54,7 @@ Each Privly version will be released "when it's ready."
 
 This guide has much of the documentation you'll need, but we also have documentation in three other locations (we know, that's a lot, hear us out).
 
-1. [privly.org](www.privly.org)- Privly.org is the official home of the Privly Foundation. It contains:
+1. [privly.org](https://www.privly.org)- Privly.org is the official home of the Privly Foundation. It contains:
 * Development Blog
 * Privly Foundation organization information
 
@@ -251,7 +251,7 @@ Privly is composed of three primary components:
 
 1. A set of Javascript privacy applications called "Privly Applications." [Repo](https://github.com/privly/privly-applications).
 1. A Client-Side Extension (your browser extended by Privly), which changes the websites you view to support the secure injection of Privly applications. [Chrome](https://github.com/privly/privly-chrome), [Firefox](https://github.com/privly/privly-firefox).
-2. A content server, which holds the information required by privly-applications. [Ruby on Rails](https://github.com/privly/privly-web), [Python Flask](https://github.com/privly/privly-firefox).
+2. A content server, which holds the information required by privly-applications. [Ruby on Rails](https://github.com/privly/privly-web), [Python Flask](https://github.com/privly/privly-flask).
 
 You can learn more about how these components plug together on the [development wiki](https://github.com/privly/privly-organization/wiki/System-Hierarchy).
 
