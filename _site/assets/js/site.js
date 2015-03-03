@@ -12,10 +12,10 @@
          */
         if (/firefox/i.test(navigator.userAgent)) {
             $('#big_download_link').attr('href', 
-                $('#firefox_link').attr('href'));
+              "https://addons.mozilla.org/en-US/firefox/addon/privly/");
         } else {
             $('#big_download_link').attr('href', 
-                $('#chrome_link').attr('href'));
+              "https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol");
         }
     }
 

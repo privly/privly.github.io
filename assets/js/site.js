@@ -1,9 +1,10 @@
 (function() {
 
     /**
-     * Check if user is on download page.
+     * Check if user is on download page or home page.
      */
-    if (/pages\/download/.test(document.location.pathname)) {
+    if ( /pages\/download/.test(document.location.pathname) ||
+                        "/" === document.location.pathname   ) {
 
         /**
          * Set the big download link to the Firefox or Chrome link 
@@ -11,10 +12,10 @@
          */
         if (/firefox/i.test(navigator.userAgent)) {
             $('#big_download_link').attr('href', 
-                $('#firefox_link').attr('href'));
+              "https://addons.mozilla.org/en-US/firefox/addon/privly/");
         } else {
             $('#big_download_link').attr('href', 
-                $('#chrome_link').attr('href'));
+              "https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol");
         }
     }
 
