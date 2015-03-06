@@ -217,6 +217,19 @@ In that location, you will find your Firefox profile directories, e.g. 12a3bc4d.
 1. Success! If it didn't work, see the tip from above, where the filename in your development profile folder may need to be privly@priv.ly or {ec8030f7-c20a-464f-9b0e-13a3a9e97384}.
 
 </div>
+<div id="SafariExtension" class="subgroup">
+
+### <a name="safari"></a>Safari Extension Development Installation
+
+**The safari extension is still at its initial stages of development.** 
+
+1. Get the source code from GitHub. You can download it by cloning the repository,
+`git clone --recursive git@github.com:privly/privly-safari.git`
+1. Open the directory containing the safari extension (where we clone it to) and double click on 'privly_build.safariextz'. This will start up Safari and install the extension.
+
+When you want to manage your extensions on Safari in the future, go to Preferences of Safari and select the Extensions tab. The privly extension can be seen here. We can enable/disable or even uninstall the extension from here.
+
+</div>
 <div id="TestingExtension" class="subgroup">
 
 ### <a name="test"></a>Test your Development Extension
