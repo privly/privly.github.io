@@ -534,7 +534,7 @@ to you can write tests without using Capybara, but it will be painful.
 
 **What Now?**
 
-This section introduced the concepts, but the [unit testing](#Integrations)
+This section introduced the concepts, but the [unit testing](#UnitTesting)
 and [integration testing](#IntegrationTesting) sections go into the details.
 We recommend you start with writing a simple unit test before working on an
 integration test.
