@@ -675,7 +675,7 @@ First, you should become acquainted with the constituent parts.
 
 Selenium Webdriver is an excellent testing framework for programmatically controlling
 user actions in a web browser. If you do any serious web development, you should become
-well aquatinted with Selenium for running scripts (specs) that describe the
+well acquainted with Selenium for running scripts (specs) that describe the
 expected behavior of tests.
 
 **Specs: Ruby Unit Tests and Capybara**
@@ -805,7 +805,7 @@ To help new developers enter the community, we have longstanding issues annotate
 General style guidance:
 
 * We are currently using [Drupal's coding standards](https://www.drupal.org/node/172169) for all Javascript code.
-* You should be aquatinted with [Frank Jones](/pages/personas) since he will influence many of your design
+* You should be acquainted with [Frank Jones](/pages/personas) since he will influence many of your design
 decisions.
 
 Requirements before you open a pull request:
