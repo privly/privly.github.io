@@ -41,7 +41,7 @@ Privly works within browser extensions by scanning web pages for specially forma
 * [Privly Applications](https://github.com/privly/privly-applications) - In Alpha - Under development
 * [Chrome and Opera](https://github.com/privly/privly-chrome) - In Alpha - Under development
 * [Firefox](https://github.com/privly/privly-firefox) - In Alpha - Under development
-* [Safari](https://github.com/privly/privly-safari) - Development stalled (no maintainer)
+* [Safari](https://github.com/privly/privly-safari) - In Alpha - Under development
 * [Internet Explorer](https://github.com/privly/privly-ie) - Not under development (no maintainer)
 * [Reference Implementation Content Server](https://github.com/privly/privly-web) - Not currently a focus of development since the Privly Applications repository houses most of the functionality client-side.
 
