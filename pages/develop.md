@@ -138,7 +138,7 @@ Unit tests examine a tiny part of Privly and integration tests examine the syste
 as a whole. It is important to programmatically perform all the activities supported
 by the application (creating, updating, destroying, etc) to prevent regressions.
 To achieve this level, you should
-See the [integration testing](#Testing) docs for more details.
+See the [integration testing](#IntegrationTesting) docs for more details.
 
 [**Level 4**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22): **Add continuous integration.** _([TravisCI](#TravisCI), [SauceLabs](#SauceLabs))_  
 Continuous integration runs the full suite of unit and integration tests every time
