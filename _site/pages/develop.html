@@ -754,7 +754,7 @@ If you just want to use the system, you should go to the <a href="about.html">�
     <p>This guide has much of the documentation you’ll need, but we also have documentation in three other locations (we know, that’s a lot, hear us out).</p>
 
     <ol>
-      <li><a href="www.privly.org">privly.org</a>- Privly.org is the official home of the Privly Foundation. It contains:
+      <li><a href="https://www.privly.org">privly.org</a>- Privly.org is the official home of the Privly Foundation. It contains:
         <ul>
           <li>Development Blog</li>
           <li>Privly Foundation organization information</li>
@@ -949,6 +949,21 @@ In that location, you will find your Firefox profile directories, e.g. 12a3bc4d.
     </ol>
 
   </div>
+  <div id="SafariExtension" class="subgroup">
+
+    <h3 id="a-namesafariasafari-extension-development-installation"><a name="safari"></a>Safari Extension Development Installation</h3>
+
+    <p><strong>The safari extension is still at its initial stages of development.</strong></p>
+
+    <ol>
+      <li>Get the source code from GitHub. You can download it by cloning the repository,
+<code>git clone --recursive git@github.com:privly/privly-safari.git</code></li>
+      <li>Open the directory containing the safari extension (where we clone it to) and double click on ‘privly_build.safariextz’. This will start up Safari and install the extension.</li>
+    </ol>
+
+    <p>When you want to manage your extensions on Safari in the future, go to Preferences of Safari and select the Extensions tab. The privly extension can be seen here. We can enable/disable or even uninstall the extension from here.</p>
+
+  </div>
   <div id="TestingExtension" class="subgroup">
 
     <h3 id="a-nametestatest-your-development-extension"><a name="test"></a>Test your Development Extension</h3>
@@ -984,7 +999,7 @@ In that location, you will find your Firefox profile directories, e.g. 12a3bc4d.
     <ol>
       <li>A set of Javascript privacy applications called “Privly Applications.” <a href="https://github.com/privly/privly-applications">Repo</a>.</li>
       <li>A Client-Side Extension (your browser extended by Privly), which changes the websites you view to support the secure injection of Privly applications. <a href="https://github.com/privly/privly-chrome">Chrome</a>, <a href="https://github.com/privly/privly-firefox">Firefox</a>.</li>
-      <li>A content server, which holds the information required by privly-applications. <a href="https://github.com/privly/privly-web">Ruby on Rails</a>, <a href="https://github.com/privly/privly-firefox">Python Flask</a>.</li>
+      <li>A content server, which holds the information required by privly-applications. <a href="https://github.com/privly/privly-web">Ruby on Rails</a>, <a href="https://github.com/privly/privly-flask">Python Flask</a>.</li>
     </ol>
 
     <p>You can learn more about how these components plug together on the <a href="https://github.com/privly/privly-organization/wiki/System-Hierarchy">development wiki</a>.</p>
@@ -1287,7 +1302,7 @@ to you can write tests without using Capybara, but it will be painful.</p>
 
     <p><strong>What Now?</strong></p>
 
-    <p>This section introduced the concepts, but the <a href="#Integrations">unit testing</a>
+    <p>This section introduced the concepts, but the <a href="#UnitTesting">unit testing</a>
 and <a href="#IntegrationTesting">integration testing</a> sections go into the details.
 We recommend you start with writing a simple unit test before working on an
 integration test.</p>
@@ -1416,7 +1431,7 @@ First, you should become acquainted with the constituent parts.</p>
 
     <p>Selenium Webdriver is an excellent testing framework for programmatically controlling
 user actions in a web browser. If you do any serious web development, you should become
-well aquatinted with Selenium for running scripts (specs) that describe the
+well acquainted with Selenium for running scripts (specs) that describe the
 expected behavior of tests.</p>
 
     <p><strong>Specs: Ruby Unit Tests and Capybara</strong></p>
@@ -1550,7 +1565,7 @@ issues, and bigger issues that are better classified a
 
     <ul>
       <li>We are currently using <a href="https://www.drupal.org/node/172169">Drupal’s coding standards</a> for all Javascript code.</li>
-      <li>You should be aquatinted with <a href="/pages/personas">Frank Jones</a> since he will influence many of your design
+      <li>You should be acquainted with <a href="/pages/personas">Frank Jones</a> since he will influence many of your design
 decisions.</li>
     </ul>
 
@@ -1616,6 +1631,7 @@ your code that the tests indicate should be made.</li>
         <li><a href="#Prerequisites">Prerequisites</a></li>
         <li><a href="#ChromeExtension">Chrome Extension</a></li>
         <li><a href="#FirefoxExtension">Firefox Extension</a></li>
+        <li><a href="#SafariExtension">Safari Extension</a></li>
         <li><a href="#TestingExtension">Testing the Extension</a></li>
         <li><a href="#ContentServer">Content Server Setup</a></li>
       </ul>
