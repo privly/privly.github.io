@@ -36,6 +36,7 @@ git clone --recursive https://github.com/privly/privly-flask.git > /dev/null 2>&
 if [[ $? != 0 ]];
 then
     echo -e "$error Failed to successfully clone git repo."
+    exit
 fi
 
 cd privly-flask
@@ -69,6 +70,7 @@ virtualenv env/pyvly -p $python2 > /dev/null 2>&1
 if [[ $? != 0 ]];
 then
     echo -e "$error Failed to create python virtual environment."
+    exit
 fi
 
 echo -e "$info Activating python environment..."
@@ -78,6 +80,7 @@ echo -e "$info Activating python environment..."
 if [[ $? != 0 ]];
 then
     echo -e "$error Failed to activate python virtual environment."
+    exit
 fi
 
 echo -e "$info Installing python dependencies..."
@@ -87,6 +90,7 @@ pip install -r requirements.txt > /dev/null 2>&1
 if [[ $? != 0 ]];
 then
     echo -e "$error Failed to activate python virtual environment."
+    exit
 fi
 
 echo -e "$info Copying default config..."
@@ -96,6 +100,7 @@ cp config.py.dist config.py
 if [[ $? != 0 ]];
 then
     echo -e "$error Failed to copy config file."
+    exit
 fi
 
 echo -e "$info Initializing database..."
@@ -105,6 +110,7 @@ python manage.py init_db > /dev/null 2>&1
 if [[ $? != 0 ]];
 then
     echo -e "$error Failed to intialize database."
+    exit
 fi
 
 echo -e "$info Seeding database..."
@@ -114,6 +120,7 @@ python manage.py seed_db > /dev/null 2>&1
 if [[ $? != 0 ]];
 then
     echo -e "$error Failed to seed database."
+    exit
 fi
 
 echo -e "$info Privly-Flask installed. Starting server..."
