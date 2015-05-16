@@ -802,25 +802,44 @@ To help new developers enter the community, we have longstanding issues annotate
 
 ## Coding Standards ##
 
-General style guidance:
+**General style guidance:**
 
 * We are currently using [Drupal's coding standards](https://www.drupal.org/node/172169) for all Javascript code.
 * You should be acquainted with [Frank Jones](/pages/personas) since he will influence many of your design
 decisions.
 
-Requirements before you open a pull request:
+**Workflow: Forks, Branches, Tags, Releases, and versions:**
+
+* Versions are currently written as 0.MAJOR.MINOR.
+* The remainder of these standards are summarized well by a [graphic found on Vincent Driessen's blog](http://nvie.com/posts/a-successful-git-branching-model/) and [Atlassian's Git Workflow guide](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+* Feature branches should be forked from "develop" branches (if they exist for the [specific repository](https://github.com/privly/privly-applications/tree/develop)).
+* We will not merge pull requests directly into master. Pull requests should be made to the "develop" branch, or a feature branch when appropriate.
+* We recommend you create a "feature branch" when you are developing a feature.
+
+**Names within Git for Branches, Tags, and Releases:**
+
+* **master:** The release branch for the repository. These should have explicit version numbers.
+* **release-v0.MAJOR.MINOR:** The branch we are preparing for release. If the develop branch is ready for immediate release, we will skip this step.
+* **develop:** The working branch for the repository.
+* **issue-#NUMBER:** The branch for fixing a particular issue. If it is a security related or a big UX failing, we will "hotfix" master and issue a new minor release. Otherwise the issue will be merged into "develop."
+* **feature-BRANCH-NAME:** A bigger feature that is not ready for merging into develop will be developed on a feature branch.
+* **PLATFORM-extension-master:** Sometimes it is necessary for the privly-applications repository to have different versions for different platforms. We are in the process of phasing these out, but for now they are periodically updated from master.
+* **gsoc-BRANCH-NAME:** These are branches [GSOC students](https://www.privly.org/content/2015-google-summer-code-kickoff) are working on. You can think of them as feature branches.
+* **v0.MAJOR.MINOR:** A tag for a release.
+
+**Requirements before you open a pull request:**
 
 * Click test your changes (make sure code works in a browser) before opening a pull request, but feel free to open a pull request when you need help with something. Pull requests are easier to help than an uninformed statement of "X is not working!".
 * You should "lint" your JS code before submitting a pull request. [Here](http://www.jslint.com/) is an example online linting tool, but many options are available.
-* If you have your repo hooked into TravisCI, you should check the results _before_ you ask other people to review it for merge.
+* If you have your repo [hooked into TravisCI](#TravisCI), you should check the results _before_ you ask other people to review it for merge.
 * Don't introduce any code that you don't have a right to gift to the Privly Foundation's Open Source license and copyright.
 
-Requirements after you open a pull request:
+**Requirements after you open a pull request:**
 
 * You should respond to comments and work with the maintainers or other contributors to make the code appropriate for merging.
 * You should know that the build script does not fully test the pull request's commit since pull requests do not run on SauceLabs.
 
-Requirements before code is merged:
+**Requirements before code is merged:**
 
 * Your code should be unit tested, if appropriate for what you are submitting.
 * Your code should be integration tested, if appropriate for what you are submitting.
