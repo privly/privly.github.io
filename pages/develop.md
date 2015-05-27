@@ -823,6 +823,7 @@ decisions.
 * **develop:** The working branch for the repository.
 * **issue-#NUMBER:** The branch for fixing a particular issue. If it is a security related or a big UX failing, we will "hotfix" master and issue a new minor release. Otherwise the issue will be merged into "develop."
 * **feature-BRANCH-NAME:** A bigger feature that is not ready for merging into develop will be developed on a feature branch.
+* **experimental-BRANCH-NAME:** A feature that may not ever be merged into the develop branch because it is still experimental.
 * **PLATFORM-extension-master:** Sometimes it is necessary for the privly-applications repository to have different versions for different platforms. We are in the process of phasing these out, but for now they are periodically updated from master.
 * **gsoc-BRANCH-NAME:** These are branches [GSOC students](https://www.privly.org/content/2015-google-summer-code-kickoff) are working on. You can think of them as feature branches.
 * **v0.MAJOR.MINOR:** A tag for a release.
