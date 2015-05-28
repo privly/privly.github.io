@@ -386,6 +386,49 @@ of the security properties of this approach can be [found on GitHub](http://gith
 * If someone compromises the security of the host page they have access to the decrypted content
 
 </div>
+<div id="ScriptingContextMessages" class="subgroup">
+
+### Messaging Between Scripting Contexts ###
+
+Privly's architecture provides security by isolating different scripting environments that communicate through [message passing](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage). Each message has a means of verifying the authenticity of the sender, meaning the scripting environment knows who sent the message.
+
+Each message that is currently supported is listed below with the sending party on the left and the receiving party on the right.
+
+**Extension -> Content Script**
+
+* Turn on/off iframe injection.
+
+**Host Page Scripting Environment -> Privly Application**
+
+None at this time. We plan to add support for requesting typographic changes from the Privly Application.
+
+**Content Script -> Host Page Scripting Environment**
+
+None (the content script does not communicate with the scripting environment of the host page but they both make changes to the host page's DOM).
+
+**Content Script -> Extension**
+
+None
+
+**Privly Application -> Extension**
+
+Privly applications can change the extension's options, which are stored across extension environments in a key/value store similar to localStorage. When the options change the extension wants to know about the changes so the application messages the relevant option to the extension context.
+
+* todo: SummerWish add options messages here.
+
+**Privly Application -> Content Script**
+
+Privly's architecture does not assume that the host page will perform these actions, but since we would like the host page to explicitly support Privly's iframe injection these messages are broadcast to the host page's scripting environment as well.
+
+* Resize iframe
+
+Forthcoming:
+
+* Destroy iframe
+* Hide iframe
+* Show iframe
+
+</div>
 </section>
 
 ---
