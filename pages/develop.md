@@ -396,8 +396,6 @@ Each message that is currently supported is listed below with the sending party 
 
 **Extension -> Content Script**
 
-* Turn on/off iframe injection.
-
 **Host Page Scripting Environment -> Privly Application**
 
 None at this time. We plan to add support for requesting typographic changes from the Privly Application.
@@ -408,15 +406,54 @@ None (the content script does not communicate with the scripting environment of 
 
 **Content Script -> Extension**
 
-None
+Since content scripts cannot directly access extension local storage in order to retrive or set option values, `Privly.options.*` functions are not available for content scripts. Privly options interface provides a messgae passing channel for content script to retrive or set options.
+
+* `{ ask: 'options/*' }`
+  
+  Payload: `{ ask: OPTION_INTERFACE_NAME, params: [param1, param2, ...]}`
+  Listen at: `privly-application/shared/javascripts/options.js`
+  
+  Content scripts can use this message to directly retrive option values or set option values. Option values are returned as message response payload.
+  
+  `OPTION_INTERFACE_NAME` is formatted as `options/METHOD_NAME`. The method name is the function name that you want to call.
+  
+  Example:
+  
+  - `{ ask: 'options/isPrivlyButtonEnabled' }`
+  - `{ ask: 'options/setPrivlyButtonEnabled', params: [false] }`
+  - `{ ask: 'options/isInjectionEnabled' }`
+  - `{ ask: 'options/setInjectionEnabled', params: [false] }`
+  - `{ ask: 'options/setWhitelist', params: [['facebook.com', 'twitter.com']]}`
 
 **Privly Application -> Extension**
 
 Privly applications can change the extension's options, which are stored across extension environments in a key/value store similar to localStorage. When the options change the extension wants to know about the changes so the application messages the relevant option to the extension context.
 
-* todo: SummerWish add options messages here.
+* `{ ask: 'options/changed' }`
+
+  Payload: `{ ask: 'options/changed', options: String, newValue: Any }`
+  Send at: `privly-application/shared/javascripts/options.js`
+  
+  All background scripts will receive this message after a option value is set or changed by calling option interfaces provided by `Privly.options`.
+  
+  `options`: The option interface name. It is always prefixed with `options/`. You can use exactly the same name to send request to `Privly.options` background script in order do get specific option values.
+  `newValue`: The new value of this option.
+
 
 **Privly Application -> Content Script**
+
+Content scripts can also get notified when a option value is changed.
+
+* `{ action: 'options/changed' }`
+
+  Payload: `{ action: 'options/changed', options: String, newValue: Any }`
+  Send at: `privly-application/shared/javascripts/options.js`
+  
+  All content script will receive this message after a option value is set or changed by calling option interfaces provided by `Privly.options`.
+  
+  `options`: The option interface name. It is always prefixed with `options/`. You can use exactly the same name to send request to `Privly.options` background script in order do get specific option values.
+  `newValue`: The new value of this option.
+
 
 Privly's architecture does not assume that the host page will perform these actions, but since we would like the host page to explicitly support Privly's iframe injection these messages are broadcast to the host page's scripting environment as well.
 
