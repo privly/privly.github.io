@@ -866,7 +866,7 @@ Unit tests examine a tiny part of Privly and integration tests examine the syste
 as a whole. It is important to programmatically perform all the activities supported
 by the application (creating, updating, destroying, etc) to prevent regressions.
 To achieve this level, you should
-See the <a href="#Testing">integration testing</a> docs for more details.</p>
+See the <a href="#IntegrationTesting">integration testing</a> docs for more details.</p>
 
     <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22"><strong>Level 4</strong></a>: <strong>Add continuous integration.</strong> <em>(<a href="#TravisCI">TravisCI</a>, <a href="#SauceLabs">SauceLabs</a>)</em><br />
 Continuous integration runs the full suite of unit and integration tests every time
@@ -1134,6 +1134,105 @@ of the security properties of this approach can be <a href="http://github.com/pr
     <ul>
       <li>The remote server has access to the password if the link is read without the extension</li>
       <li>If someone compromises the security of the host page they have access to the decrypted content</li>
+    </ul>
+
+  </div>
+  <div id="ScriptingContextMessages" class="subgroup">
+
+    <h3 id="messaging-between-scripting-contexts">Messaging Between Scripting Contexts</h3>
+
+    <p>Privly’s architecture provides security by isolating different scripting environments that communicate through <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">message passing</a>. Each message has a means of verifying the authenticity of the sender, meaning the scripting environment knows who sent the message. Depending on the context of the scripting environment, a non-web standard message interface specific to the platform may be used.</p>
+
+    <p>To reiterate definitions stated elsewhere, the scripting environments are:</p>
+
+    <ul>
+      <li><strong>Extension Background Script:</strong> Extension architectures typically have some form of scripting environment that is shared across all the browser’s tabs. Here we refer to this background script because the environment is operating in the background of the browser and you typically never see a rendered HTML document for the page – <a href="https://github.com/privly/privly-chrome/blob/master/background.html">even if the background page is written in HTML</a>.</li>
+      <li><strong>Content Script:</strong> The content script is a script that is loaded on top of a web page. In some cases this script is sandboxed from the scripting environment of the host page, but since this is neither a universal security property nor a particularly reliable one it is best to assume that the content script is potentially controlled by the host page. Thus no messages sent to the content script can contain privileged information.</li>
+      <li><strong>Host Page Scripting Environment:</strong> The host page’s scripting environment is considered to be the DOM of the web page or the scripting context loaded on top of that DOM.</li>
+      <li><strong>Privly Application:</strong> The browser extension Privly Application scripting environment is the scripting environment that loads in an iframe when it is injected into a Host Page. This scripting context has a src attribute in an iframe at a URL similar to “chrome://,” “chrome-extension://,” or “safari-extension.”</li>
+    </ul>
+
+    <p>Each message that is currently supported is listed below with the sending environment on the left and the receiving environment on the right.</p>
+
+    <p><strong>Extension Background Script -&gt; Content Script</strong></p>
+
+    <p>When a content script or Privly Application changes a global option, that option may be broadcast to all the content scripts and Privly Applications. The message will be received as a JSON object containing:</p>
+
+    <pre><code>{ action: 'options/changed',
+  option: optionName,
+  newValue: optionValue
+}
+</code></pre>
+
+    <p>Where the optionName is one of: “options/privlyButton”, “options/injection”, “options/whitelist/domains”, “options/whitelist/regexp”, “options/contentServer/url”, “options/glyph” and the newValue will be the corresponding JSON object.</p>
+
+    <p><strong>Host Page Scripting Environment -&gt; Privly Application</strong></p>
+
+    <p>None at this time. We plan to add support for requesting typographic changes from the Privly Application.</p>
+
+    <p><strong>Content Script -&gt; Host Page Scripting Environment</strong></p>
+
+    <p>None (the content script does not communicate with the scripting environment of the host page but they both make changes to the host page’s DOM).</p>
+
+    <p><strong>Content Script -&gt; Extension Background Script</strong></p>
+
+    <p>Since content scripts cannot directly access extension local storage in order to retrieve or set option values, <code>Privly.options.*</code> functions are not available for content scripts. Privly options interface provides a message passing channel for content script to retrieve or set options.</p>
+
+    <ul>
+      <li>
+        <p><code>{ ask: 'options/*' }</code></p>
+
+        <p>Payload: <code>{ ask: OPTION_INTERFACE_NAME, params: [param1, param2, ...]}</code>
+Listen at: <code>privly-application/shared/javascripts/options.js</code></p>
+
+        <p>Content scripts can use this message to directly retrieve option values or set option values. Option values are returned as message response payload.</p>
+
+        <p><code>OPTION_INTERFACE_NAME</code> is formatted as <code>options/METHOD_NAME</code>. The method name is the function name that you want to call.</p>
+
+        <p>Examples:</p>
+
+        <ul>
+          <li><code>{ ask: 'options/isPrivlyButtonEnabled' }</code></li>
+          <li><code>{ ask: 'options/setPrivlyButtonEnabled', params: [false] }</code></li>
+          <li><code>{ ask: 'options/isInjectionEnabled' }</code></li>
+          <li><code>{ ask: 'options/setInjectionEnabled', params: [false] }</code></li>
+          <li><code>{ ask: 'options/setWhitelist', params: [['facebook.com', 'twitter.com']]}</code></li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><strong>Privly Application -&gt; Extension Background Script</strong></p>
+
+    <p>Privly applications can change the extension’s options, which are stored across extension environments in a key/value store similar to localStorage. When the options change the extension wants to know about the changes so the application messages the relevant option to the extension context.</p>
+
+    <ul>
+      <li>
+        <p><code>{ ask: 'options/changed' }</code></p>
+
+        <p>Payload: <code>{ ask: 'options/changed', options: String, newValue: Any }</code>
+Send at: <code>privly-application/shared/javascripts/options.js</code></p>
+
+        <p>All background scripts will receive this message after a option value is set or changed by calling option interfaces provided by <code>Privly.options</code>.</p>
+
+        <p><code>options</code>: The option interface name. It is always prefixed with <code>options/</code>. You can use exactly the same name to send request to <code>Privly.options</code> background script in order do get specific option values.
+<code>newValue</code>: The new value of this option.</p>
+      </li>
+    </ul>
+
+    <p><strong>Privly Application -&gt; Content Script</strong></p>
+
+    <p>Privly’s architecture does not assume that the host page will perform these actions, but since we would like the host page to explicitly support Privly’s iframe injection these messages are broadcast to the host page’s scripting environment as well.</p>
+
+    <ul>
+      <li>Resize iframe</li>
+    </ul>
+
+    <p>Forthcoming:</p>
+
+    <ul>
+      <li>Destroy iframe</li>
+      <li>Hide iframe</li>
+      <li>Show iframe</li>
     </ul>
 
   </div>
@@ -1561,7 +1660,7 @@ issues, and bigger issues that are better classified a
 
     <h2 id="coding-standards">Coding Standards</h2>
 
-    <p>General style guidance:</p>
+    <p><strong>General style guidance:</strong></p>
 
     <ul>
       <li>We are currently using <a href="https://www.drupal.org/node/172169">Drupal’s coding standards</a> for all Javascript code.</li>
@@ -1569,23 +1668,47 @@ issues, and bigger issues that are better classified a
 decisions.</li>
     </ul>
 
-    <p>Requirements before you open a pull request:</p>
+    <p><strong>Workflow: Forks, Branches, Tags, Releases, and versions:</strong></p>
+
+    <ul>
+      <li>Versions are currently written as 0.MAJOR.MINOR.</li>
+      <li>The remainder of these standards are summarized well by a <a href="http://nvie.com/posts/a-successful-git-branching-model/">graphic found on Vincent Driessen’s blog</a> and <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Atlassian’s Git Workflow guide</a>.</li>
+      <li>Feature branches should be forked from “develop” branches (if they exist for the <a href="https://github.com/privly/privly-applications/tree/develop">specific repository</a>).</li>
+      <li>We will not merge pull requests directly into master. Pull requests should be made to the “develop” branch, or a feature branch when appropriate.</li>
+      <li>We recommend you create a “feature branch” when you are developing a feature.</li>
+    </ul>
+
+    <p><strong>Names within Git for Branches, Tags, and Releases:</strong></p>
+
+    <ul>
+      <li><strong>master:</strong> The release branch for the repository. These should have explicit version numbers.</li>
+      <li><strong>release-v0.MAJOR.MINOR:</strong> The branch we are preparing for release. If the develop branch is ready for immediate release, we will skip this step.</li>
+      <li><strong>develop:</strong> The working branch for the repository.</li>
+      <li><strong>issue-#NUMBER:</strong> The branch for fixing a particular issue. If it is a security related or a big UX failing, we will “hotfix” master and issue a new minor release. Otherwise the issue will be merged into “develop.”</li>
+      <li><strong>feature-BRANCH-NAME:</strong> A bigger feature that is not ready for merging into develop will be developed on a feature branch.</li>
+      <li><strong>experimental-BRANCH-NAME:</strong> A feature that may not ever be merged into the develop branch because it is still experimental.</li>
+      <li><strong>PLATFORM-extension-master:</strong> Sometimes it is necessary for the privly-applications repository to have different versions for different platforms. We are in the process of phasing these out, but for now they are periodically updated from master.</li>
+      <li><strong>gsoc-BRANCH-NAME:</strong> These are branches <a href="https://www.privly.org/content/2015-google-summer-code-kickoff">GSOC students</a> are working on. You can think of them as feature branches.</li>
+      <li><strong>v0.MAJOR.MINOR:</strong> A tag for a release.</li>
+    </ul>
+
+    <p><strong>Requirements before you open a pull request:</strong></p>
 
     <ul>
       <li>Click test your changes (make sure code works in a browser) before opening a pull request, but feel free to open a pull request when you need help with something. Pull requests are easier to help than an uninformed statement of “X is not working!”.</li>
       <li>You should “lint” your JS code before submitting a pull request. <a href="http://www.jslint.com/">Here</a> is an example online linting tool, but many options are available.</li>
-      <li>If you have your repo hooked into TravisCI, you should check the results <em>before</em> you ask other people to review it for merge.</li>
+      <li>If you have your repo <a href="#TravisCI">hooked into TravisCI</a>, you should check the results <em>before</em> you ask other people to review it for merge.</li>
       <li>Don’t introduce any code that you don’t have a right to gift to the Privly Foundation’s Open Source license and copyright.</li>
     </ul>
 
-    <p>Requirements after you open a pull request:</p>
+    <p><strong>Requirements after you open a pull request:</strong></p>
 
     <ul>
       <li>You should respond to comments and work with the maintainers or other contributors to make the code appropriate for merging.</li>
       <li>You should know that the build script does not fully test the pull request’s commit since pull requests do not run on SauceLabs.</li>
     </ul>
 
-    <p>Requirements before code is merged:</p>
+    <p><strong>Requirements before code is merged:</strong></p>
 
     <ul>
       <li>Your code should be unit tested, if appropriate for what you are submitting.</li>
@@ -1646,6 +1769,7 @@ your code that the tests indicate should be made.</li>
         <li><a href="#UserInterface">User Interface</a></li>
         <li><a href="#URLs">Privly URLs</a></li>
         <li><a href="#LinkBasedEncryption">Link-Based Encryption</a></li>
+        <li><a href="#ScriptingContextMessages">Messaging Between Scripting Contexts</a></li>
       </ul>
     </li>
     <li>
