@@ -390,11 +390,27 @@ of the security properties of this approach can be [found on GitHub](http://gith
 
 ### Messaging Between Scripting Contexts ###
 
-Privly's architecture provides security by isolating different scripting environments that communicate through [message passing](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage). Each message has a means of verifying the authenticity of the sender, meaning the scripting environment knows who sent the message.
+Privly's architecture provides security by isolating different scripting environments that communicate through [message passing](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage). Each message has a means of verifying the authenticity of the sender, meaning the scripting environment knows who sent the message. Depending on the context of the scripting environment, a non-web standard message interface specific to the platform may be used.
 
-Each message that is currently supported is listed below with the sending party on the left and the receiving party on the right.
+To reiterate definitions stated elsewhere, the scripting environments are:
 
-**Extension -> Content Script**
+* **Extension Background Script:** Extension architectures typically have some form of scripting environment that is shared across all the browser's tabs. Here we refer to this background script because the environment is operating in the background of the browser and you typically never see a rendered HTML document for the page -- [even if the background page is written in HTML](https://github.com/privly/privly-chrome/blob/master/background.html).
+* **Content Script:** The content script is a script that is loaded on top of a web page. In some cases this script is sandboxed from the scripting environment of the host page, but since this is neither a universal security property nor a particularly reliable one it is best to assume that the content script is potentially controlled by the host page. Thus no messages sent to the content script can contain privileged information.
+* **Host Page Scripting Environment:** The host page's scripting environment is considered to be the DOM of the web page or the scripting context loaded on top of that DOM.
+* **Privly Application:** The browser extension Privly Application scripting environment is the scripting environment that loads in an iframe when it is injected into a Host Page. This scripting context has a src attribute in an iframe at a URL similar to "chrome://," "chrome-extension://," or "safari-extension."
+
+Each message that is currently supported is listed below with the sending environment on the left and the receiving environment on the right.
+
+**Extension Background Script -> Content Script**
+
+When a content script or Privly Application changes a global option, that option may be broadcast to all the content scripts and Privly Applications. The message will be received as a JSON object containing:
+
+    { action: 'options/changed',
+      option: optionName,
+      newValue: optionValue
+    }
+
+Where the optionName is one of: "options/privlyButton", "options/injection", "options/whitelist/domains", "options/whitelist/regexp", "options/contentServer/url", "options/glyph" and the newValue will be the corresponding JSON object.
 
 **Host Page Scripting Environment -> Privly Application**
 
@@ -404,20 +420,20 @@ None at this time. We plan to add support for requesting typographic changes fro
 
 None (the content script does not communicate with the scripting environment of the host page but they both make changes to the host page's DOM).
 
-**Content Script -> Extension**
+**Content Script -> Extension Background Script**
 
-Since content scripts cannot directly access extension local storage in order to retrive or set option values, `Privly.options.*` functions are not available for content scripts. Privly options interface provides a messgae passing channel for content script to retrive or set options.
+Since content scripts cannot directly access extension local storage in order to retrieve or set option values, `Privly.options.*` functions are not available for content scripts. Privly options interface provides a message passing channel for content script to retrieve or set options.
 
 * `{ ask: 'options/*' }`
   
   Payload: `{ ask: OPTION_INTERFACE_NAME, params: [param1, param2, ...]}`
   Listen at: `privly-application/shared/javascripts/options.js`
   
-  Content scripts can use this message to directly retrive option values or set option values. Option values are returned as message response payload.
+  Content scripts can use this message to directly retrieve option values or set option values. Option values are returned as message response payload.
   
   `OPTION_INTERFACE_NAME` is formatted as `options/METHOD_NAME`. The method name is the function name that you want to call.
   
-  Example:
+  Examples:
   
   - `{ ask: 'options/isPrivlyButtonEnabled' }`
   - `{ ask: 'options/setPrivlyButtonEnabled', params: [false] }`
@@ -425,7 +441,7 @@ Since content scripts cannot directly access extension local storage in order to
   - `{ ask: 'options/setInjectionEnabled', params: [false] }`
   - `{ ask: 'options/setWhitelist', params: [['facebook.com', 'twitter.com']]}`
 
-**Privly Application -> Extension**
+**Privly Application -> Extension Background Script**
 
 Privly applications can change the extension's options, which are stored across extension environments in a key/value store similar to localStorage. When the options change the extension wants to know about the changes so the application messages the relevant option to the extension context.
 
@@ -439,21 +455,7 @@ Privly applications can change the extension's options, which are stored across 
   `options`: The option interface name. It is always prefixed with `options/`. You can use exactly the same name to send request to `Privly.options` background script in order do get specific option values.
   `newValue`: The new value of this option.
 
-
 **Privly Application -> Content Script**
-
-Content scripts can also get notified when a option value is changed.
-
-* `{ action: 'options/changed' }`
-
-  Payload: `{ action: 'options/changed', options: String, newValue: Any }`
-  Send at: `privly-application/shared/javascripts/options.js`
-  
-  All content script will receive this message after a option value is set or changed by calling option interfaces provided by `Privly.options`.
-  
-  `options`: The option interface name. It is always prefixed with `options/`. You can use exactly the same name to send request to `Privly.options` background script in order do get specific option values.
-  `newValue`: The new value of this option.
-
 
 Privly's architecture does not assume that the host page will perform these actions, but since we would like the host page to explicitly support Privly's iframe injection these messages are broadcast to the host page's scripting environment as well.
 
