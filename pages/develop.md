@@ -201,6 +201,8 @@ use the `--recursive` option. Otherwise you will not get all the required module
 
 ### <a name="firefox"></a>Firefox Extension Development Installation
 
+#### XUL Extension ####
+
 Adding a development extension to Firefox is more complex than adding one to
 Chrome. You must add the extension to a Firefox "profile."
 
@@ -215,6 +217,27 @@ In that location, you will find your Firefox profile directories, e.g. 12a3bc4d.
 1. Open Firefox.
 1. You should see a dialog asking to confirm the Privly extension installation. 
 1. Success! If it didn't work, see the tip from above, where the filename in your development profile folder may need to be privly@priv.ly or {ec8030f7-c20a-464f-9b0e-13a3a9e97384}.
+
+#### Jetpack Extension ####
+
+**This extension is not yet packaged.**
+
+To develop this add-on, you will need:
+* Firefox version >= 38.0
+* jpm
+
+For jpm installation, follow the instructions as mentioned [here](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation).
+Firefox v38.0 and greater can be found [here](http://ftp.mozilla.org/pub/firefox/releases/).
+
+1) Get the [source code](https://github.com/privly/privly-jetpack) from GitHub. You can download it by cloning the repository,
+`git clone --recursive https://github.com/privly/privly-jetpack.git`.
+2) Build [Privly Applications](https://priv.ly/pages/develop.html#PrivlyApplications)
+3) In the cloned repository, run `jpm run -b /path/to/firefox/browser` to start the browser with the extension installed. You can find the browser path by running `which firefox`.
+4) You can also install the xpi file in your Firefox browser --
+  * Generate the xpi file by running `jpm xpi`.
+  * Open the [Add-ons Manager](about:addons) in the browser.
+  * Click on the tools icon on the top right.
+  * Select "Install Add-on From File" and provide the link to the generated xpi file.
 
 </div>
 <div id="SafariExtension" class="subgroup">
@@ -486,7 +509,7 @@ and issue `git submodule init` then `git submodule update`.
 The paths are:
 
 * privly-chrome: /privly-applications
-* privly-firefox: /chrome/content/privly-applications
+* privly-firefox or privly-jetpack: /chrome/content/privly-applications
 * privly-web: /public/apps
 
 ## Build System
