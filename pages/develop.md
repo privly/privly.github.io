@@ -201,20 +201,26 @@ use the `--recursive` option. Otherwise you will not get all the required module
 
 ### <a name="firefox"></a>Firefox Extension Development Installation
 
-Adding a development extension to Firefox is more complex than adding one to
-Chrome. You must add the extension to a Firefox "profile."
+*Note - We have migrated the Firefox extension from XUL to Jetpack. The XUL extension is now deprecated. These instructions are for the newer Jetpack architecture.*
 
-1. Clone the Git Repository, `git clone --recursive https://github.com/privly/privly-firefox.git`
-1. In your terminal, find your Firefox profile directory.  
-[Windows](http://support.mozilla.org/en-US/questions/941548),  
-Mac: `cd ~/Library/Application\ Support/Firefox/profiles/`  
-Linux:  `cd ~/.mozilla/`  
-In that location, you will find your Firefox profile directories, e.g. 12a3bc4d.dev., change directories to your profile folder, for example `cd 12a3bc4d.dev`
-1. Create a file to include a pointer to your code. For this, you need the path of where you cloned the Git Repository for the extension. Use vim (or your preferred editor) to create a filename with privly@priv.ly. On some systems (no, we're not sure which ones) this won't work and your filename will need to be {ec8030f7-c20a-464f-9b0e-13a3a9e97384}.
-1. Type in the path your newly cloned git repository from earlier, e.g. C:\path\to\extension\privly-firefox\ (Windows) or /path/to/extension/privly-firefox/ (Linux, Mac), and save the file. 
-1. Open Firefox.
-1. You should see a dialog asking to confirm the Privly extension installation. 
-1. Success! If it didn't work, see the tip from above, where the filename in your development profile folder may need to be privly@priv.ly or {ec8030f7-c20a-464f-9b0e-13a3a9e97384}.
+**This extension is not yet packaged.**
+
+To develop this add-on, you will need:
+* Firefox version >= 38.0
+* jpm
+
+For jpm installation, follow the instructions as mentioned [here](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation).
+Firefox v38.0 and greater can be found [here](http://ftp.mozilla.org/pub/firefox/releases/).
+
+1) Get the [source code](https://github.com/privly/privly-jetpack) from GitHub. You can download it by cloning the repository,
+`git clone --recursive https://github.com/privly/privly-jetpack.git`.
+2) Build [Privly Applications](#PrivlyApplications).
+3) In the cloned repository, run `jpm run -b /path/to/firefox/browser` to start the browser with the extension installed. You can find the browser path by running `which firefox`.
+4) You can also install the xpi file in your Firefox browser --
+  * Generate the xpi file by running `jpm xpi`.
+  * Open the [Add-ons Manager](about:addons) in the browser.
+  * Click on the tools icon on the top right.
+  * Select "Install Add-on From File" and provide the link to the generated xpi file.
 
 </div>
 <div id="SafariExtension" class="subgroup">
@@ -486,7 +492,7 @@ and issue `git submodule init` then `git submodule update`.
 The paths are:
 
 * privly-chrome: /privly-applications
-* privly-firefox: /chrome/content/privly-applications
+* privly-firefox or privly-jetpack: /chrome/content/privly-applications
 * privly-web: /public/apps
 
 ## Build System
