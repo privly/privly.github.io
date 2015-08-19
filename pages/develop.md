@@ -489,6 +489,102 @@ The paths are:
 * privly-firefox: /chrome/content/privly-applications
 * privly-web: /public/apps
 
+## MVC architecture
+
+Since Privly Applications are scoped to data and not layout, thus we developed an architecture similiar to MVC for a Privly Application. In such MVC architecture, `model` is the fundamental part of a Privly Application, which handles tasks related to data transformations, such as encrypting plain text for creating a Privly content. In order to display the user interface, a Privly application should also provide some HTML pages, which is called `view`s. Notice that, these pages are usually generated from extending existing base templates (called `prototype view`) in order to share similiar user interfaces between different Privly Applications for the same kind of operations. Finally, `controller` scripts of Privly Applications just connects the `view` and the `model`.
+
+Still confusing? First let's review different use cases of a Privly application. Generally, a Privly application can have three use cases:
+
+1. show
+   
+   When the link is embedded into a host page (or accessed directly), the application will be embedded to the host page to present the content of the link. This is `show`.
+
+2. new
+   
+   When the user clicks `new` button in a browser action button, or in a context menu, or in the Privly navigation bar, we should also serve application to the user, allowing creating related content. In this case, it is `new`.
+   
+   About editing an existing content, it should be categorized to `new`. However due to historical design issues, currently it is still charged by `show`.
+
+3. seamless
+   
+   Seamless is a new method of creating content. For the case of `new`, the users are creating content in a saparated, standalone window and the content is created when users click 'Save' button. However in `seamless` case, the users are creating content seamlessly in the host page. Besides, the content is created once users enable seamless-posting and will be frequently updated or finally deleted.
+
+   In short, in `seamless` case the user is going to create the content via Privly Applications just inside the host page.
+
+Now let's see what are the MVC of a Privly Application.
+
+### View
+
+The view layer is the user interface layer. Currently we have
+three view prototypes: show, new and seamless. As you can
+see, these three view prototypes provide templates for the 
+three use cases metioned above. We offer templates for Application
+developers to accelerate the development. Those templates are
+flexable and they are free to be inherited, extended or overridden.
+For example, our `show` view prototype provides a textarea for users
+to input contents. However you can override related part of the
+template to allow users dragging image into it.
+
+Notice that, if your Application supports `seamless` view, it should
+also provides a `seamless_ttlselect` view, which is used to display
+seconds_until_burn menu for users. If you don't want to change
+menu styles or change menu item orders, using our default prototype
+code is enough for your custom Application.
+
+### Model
+
+The model layer handles basic tasks such as:
+
+- How should the user inputted content in the view layer be
+  transformed into a Privly json object? This task is used
+  in publishing or editing the content.
+
+  Example:
+  
+  - Plainpost App: no transformations are made.
+  - Message App: the transformation is encryption.
+  - Image App (not exist yet): the transformation is
+  image binary serialization and encryption.
+
+- How should we transform a Privly json object to the content
+  that the view layer can present? This task is just a reserve
+  circumstance of the above task. It is used in viewing the
+  content (`show` case).
+
+  For example, for the Message App, the transformation is decryption
+  according to the encryption key attached in the link.
+
+- What are the `seconds_until_burn` options for this App? An
+  Application can assign its own seconds_until_burn (aka. TTL, Time
+  To Live) options.
+
+You are free and welcomed to implement your own
+functions or interfaces in the model. Those interfaces
+may be useful in the controller layer.
+
+NOTICE: generally all interfaces of the model
+layer should be async by returning a Promise which will later
+be resolved. The async feature of a model doesn't have much
+effect in current Privly Applications like Message and Plainpost,
+however it does bring more flexibility to developers.
+
+### Controller
+
+Controller layer connects model layer and view layer. It can
+offer extra actions for every view layer events. For example
+in Message App, when a new link is created, we have to concat
+the encryption key after the link. Another example is, when
+we are presenting the content of a Message App, we should do a
+Markdown rendering. This kind of task should also be completed
+in the controller layer.
+
+In the Privly Application, you needn't explicitly connects
+all interface between the view and the model. You can just pass the
+model to the view and tthe view will call related interface
+itself! When developing a controller, you only need to write
+initialization code and event handlers if you want to change the
+default process or work flow of a prototype view.
+
 ## Build System
 
 Privly abstains from using any server-side templating of applications because this
