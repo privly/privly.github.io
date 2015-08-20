@@ -386,6 +386,88 @@ of the security properties of this approach can be [found on GitHub](http://gith
 * If someone compromises the security of the host page they have access to the decrypted content
 
 </div>
+<div id="ScriptingContextMessages" class="subgroup">
+
+### Messaging Between Scripting Contexts ###
+
+Privly's architecture provides security by isolating different scripting environments that communicate through [message passing](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage). Each message has a means of verifying the authenticity of the sender, meaning the scripting environment knows who sent the message. Depending on the context of the scripting environment, a non-web standard message interface specific to the platform may be used.
+
+To reiterate definitions stated elsewhere, the scripting environments are:
+
+* **Extension Background Script:** Extension architectures typically have some form of scripting environment that is shared across all the browser's tabs. Here we refer to this background script because the environment is operating in the background of the browser and you typically never see a rendered HTML document for the page -- [even if the background page is written in HTML](https://github.com/privly/privly-chrome/blob/master/background.html).
+* **Content Script:** The content script is a script that is loaded on top of a web page. In some cases this script is sandboxed from the scripting environment of the host page, but since this is neither a universal security property nor a particularly reliable one it is best to assume that the content script is potentially controlled by the host page. Thus no messages sent to the content script can contain privileged information.
+* **Host Page Scripting Environment:** The host page's scripting environment is considered to be the DOM of the web page or the scripting context loaded on top of that DOM.
+* **Privly Application:** The browser extension Privly Application scripting environment is the scripting environment that loads in an iframe when it is injected into a Host Page. This scripting context has a src attribute in an iframe at a URL similar to "chrome://," "chrome-extension://," or "safari-extension."
+
+Each message that is currently supported is listed below with the sending environment on the left and the receiving environment on the right.
+
+**Extension Background Script -> Content Script**
+
+When a content script or Privly Application changes a global option, that option may be broadcast to all the content scripts and Privly Applications. The message will be received as a JSON object containing:
+
+    { action: 'options/changed',
+      option: optionName,
+      newValue: optionValue
+    }
+
+Where the optionName is one of: "options/privlyButton", "options/injection", "options/whitelist/domains", "options/whitelist/regexp", "options/contentServer/url", "options/glyph" and the newValue will be the corresponding JSON object.
+
+**Host Page Scripting Environment -> Privly Application**
+
+None at this time. We plan to add support for requesting typographic changes from the Privly Application.
+
+**Content Script -> Host Page Scripting Environment**
+
+None (the content script does not communicate with the scripting environment of the host page but they both make changes to the host page's DOM).
+
+**Content Script -> Extension Background Script**
+
+Since content scripts cannot directly access extension local storage in order to retrieve or set option values, `Privly.options.*` functions are not available for content scripts. Privly options interface provides a message passing channel for content script to retrieve or set options.
+
+* `{ ask: 'options/*' }`
+  
+  Payload: `{ ask: OPTION_INTERFACE_NAME, params: [param1, param2, ...]}`
+  Listen at: `privly-application/shared/javascripts/options.js`
+  
+  Content scripts can use this message to directly retrieve option values or set option values. Option values are returned as message response payload.
+  
+  `OPTION_INTERFACE_NAME` is formatted as `options/METHOD_NAME`. The method name is the function name that you want to call.
+  
+  Examples:
+  
+  - `{ ask: 'options/isPrivlyButtonEnabled' }`
+  - `{ ask: 'options/setPrivlyButtonEnabled', params: [false] }`
+  - `{ ask: 'options/isInjectionEnabled' }`
+  - `{ ask: 'options/setInjectionEnabled', params: [false] }`
+  - `{ ask: 'options/setWhitelist', params: [['facebook.com', 'twitter.com']]}`
+
+**Privly Application -> Extension Background Script**
+
+Privly applications can change the extension's options, which are stored across extension environments in a key/value store similar to localStorage. When the options change the extension wants to know about the changes so the application messages the relevant option to the extension context.
+
+* `{ ask: 'options/changed' }`
+
+  Payload: `{ ask: 'options/changed', options: String, newValue: Any }`
+  Send at: `privly-application/shared/javascripts/options.js`
+  
+  All background scripts will receive this message after a option value is set or changed by calling option interfaces provided by `Privly.options`.
+  
+  `options`: The option interface name. It is always prefixed with `options/`. You can use exactly the same name to send request to `Privly.options` background script in order do get specific option values.
+  `newValue`: The new value of this option.
+
+**Privly Application -> Content Script**
+
+Privly's architecture does not assume that the host page will perform these actions, but since we would like the host page to explicitly support Privly's iframe injection these messages are broadcast to the host page's scripting environment as well.
+
+* Resize iframe
+
+Forthcoming:
+
+* Destroy iframe
+* Hide iframe
+* Show iframe
+
+</div>
 </section>
 
 ---
@@ -404,104 +486,106 @@ and issue `git submodule init` then `git submodule update`.
 The paths are:
 
 * privly-chrome: /privly-applications
-* privly-firefox: /chrome/content/privly-applications
+* privly-jetpack and privly-firefox: /chrome/content/privly-applications
 * privly-web: /public/apps
 
-## MVC architecture
+## Privly Applications Architectural Pattern: MVC
 
-Since Privly Applications are scoped to data and not layout, thus we developed an architecture similiar to MVC for a Privly Application. In such MVC architecture, `model` is the fundamental part of a Privly Application, which handles tasks related to data transformations, such as encrypting plain text for creating a Privly content. In order to display the user interface, a Privly application should also provide some HTML pages, which is called `view`s. Notice that, these pages are usually generated from extending existing base templates (called `prototype view`) in order to share similiar user interfaces between different Privly Applications for the same kind of operations. Finally, `controller` scripts of Privly Applications just connects the `view` and the `model`.
+Model-View-Controller (MVC) is a common design pattern throughout web development. In the Ruby on Rails world, the "model" refers to the
+data, the "view" refers to the templating and layout, and the controller forms a layer in between that manages authentication, authorization and other tasks.
+The MVC pattern of Privly Applications is similarly inspired, but since the perspective of the pattern shifted to the client our realization of MVC
+will feel different to experienced developers.
 
-Still confusing? First let's review different use cases of a Privly application. Generally, a Privly application can have three use cases:
+Definitions:
 
-1. show
+* The `model` handles tasks related to data transformations, such as encrypting plain text for creating a Privly content.
+* The `view` is the user interface shown as HTML pages in the browser. Whereas typical web development will render the HTML from templates when the content is requested, we render the HTML pages before packaging them into the extensions. By building the HTML before the request, we can reduce the trust we place in the remote server. These pages are usually generated from extending existing base templates (called a `prototype view`) in order to share similar user interfaces between different Privly Applications for the same kind of operations.
+* The `controller` scripts of Privly Applications connect the `view` and the `model`.
+
+Still confused? First let's review different use cases of a Privly application. Generally, a Privly application has three use cases:
+
+1. **show** When the link is injected into a host page as an iframe or accessed directly. Since the user will often edit existing content when they are viewing it, we consider the `show` use case to be the same as the `edit` use case.
+2. **new** When the user is creating a new link that will be introduced into the host page.
+3. **seamless**
    
-   When the link is embedded into a host page (or accessed directly), the application will be embedded to the host page to present the content of the link. This is `show`.
+   Seamless is a new method of creating content. When creating standard `new` content, the users are creating content in a separate, standalone window and the content is created when users click 'Save' button. However when creating content seamlessly, the users are creating content without leaving the context of the host page. Here we place a link into the host page's form element and continually update the content associated with the link with an iframe overlaid on top of the form element.
 
-2. new
-   
-   When the user clicks `new` button in a browser action button, or in a context menu, or in the Privly navigation bar, we should also serve application to the user, allowing creating related content. In this case, it is `new`.
-   
-   About editing an existing content, it should be categorized to `new`. However due to historical design issues, currently it is still charged by `show`.
-
-3. seamless
-   
-   Seamless is a new method of creating content. For the case of `new`, the users are creating content in a saparated, standalone window and the content is created when users click 'Save' button. However in `seamless` case, the users are creating content seamlessly in the host page. Besides, the content is created once users enable seamless-posting and will be frequently updated or finally deleted.
-
-   In short, in `seamless` case the user is going to create the content via Privly Applications just inside the host page.
-
-Now let's see what are the MVC of a Privly Application.
+Each of these use cases invoke the MVC pattern. We detail how in the following sections.
 
 ### View
 
 The view layer is the user interface layer. Currently we have
-three view prototypes: show, new and seamless. As you can
+three view prototypes: show, new, and seamless. As you can
 see, these three view prototypes provide templates for the 
-three use cases metioned above. We offer templates for Application
-developers to accelerate the development. Those templates are
-flexable and they are free to be inherited, extended or overridden.
+three use cases mentioned above. We offer
+[templates](https://github.com/privly/privly-applications/tree/master/templates)
+for application
+developers to accelerate development. Those templates
+can be inherited, extended or overridden.
 For example, our `show` view prototype provides a textarea for users
-to input contents. However you can override related part of the
-template to allow users dragging image into it.
+to input contents. However you can override the textarea with a drag/drop
+landing area.
 
-Notice that, if your Application supports `seamless` view, it should
-also provides a `seamless_ttlselect` view, which is used to display
-seconds_until_burn menu for users. If you don't want to change
+Note that if your Application supports `seamless` view, it can
+also provide a `seamless_ttlselect` view, which is used to display
+a timed destruction menu for users. If you don't want to change
 menu styles or change menu item orders, using our default prototype
 code is enough for your custom Application.
 
 ### Model
 
-The model layer handles basic tasks such as:
+The model layer handles data transformations such as:
 
 - How should the user inputted content in the view layer be
-  transformed into a Privly json object? This task is used
-  in publishing or editing the content.
+  transformed into a Privly JSON object? This task is used
+  in creating or updating the content.
 
   Example:
   
-  - Plainpost App: no transformations are made.
+  - PlainPost App: no transformations are made.
   - Message App: the transformation is encryption.
-  - Image App (not exist yet): the transformation is
-  image binary serialization and encryption.
+  - Image App (under development): the transformation is
+  image serialization and encryption.
 
-- How should we transform a Privly json object to the content
-  that the view layer can present? This task is just a reserve
-  circumstance of the above task. It is used in viewing the
+- How should we transform a Privly JSON object to the content
+  that the view layer can present? This task is just a reverse
+  of the above task. It is used in viewing the
   content (`show` case).
 
-  For example, for the Message App, the transformation is decryption
+  For example, in the Message App, the transformation is decryption
   according to the encryption key attached in the link.
 
 - What are the `seconds_until_burn` options for this App? An
-  Application can assign its own seconds_until_burn (aka. TTL, Time
+  Application can assign its own `seconds_until_burn` (aka. TTL, Time
   To Live) options.
 
 You are free and welcomed to implement your own
 functions or interfaces in the model. Those interfaces
 may be useful in the controller layer.
 
-NOTICE: generally all interfaces of the model
+Note: generally all interfaces of the model
 layer should be async by returning a Promise which will later
 be resolved. The async feature of a model doesn't have much
-effect in current Privly Applications like Message and Plainpost,
+effect in current Privly Applications like Message and PlainPost,
 however it does bring more flexibility to developers.
 
 ### Controller
 
-Controller layer connects model layer and view layer. It can
-offer extra actions for every view layer events. For example
-in Message App, when a new link is created, we have to concat
-the encryption key after the link. Another example is, when
-we are presenting the content of a Message App, we should do a
+The controller layer connects the model layer and view layer. It can
+offer extra actions for view layer events. For example
+in the Message app, when a new link is created, we have to concatenate
+the encryption key after the link. Another example is when
+we are presenting the content of a Message app, we should do a
 Markdown rendering. This kind of task should also be completed
 in the controller layer.
 
-In the Privly Application, you needn't explicitly connects
-all interface between the view and the model. You can just pass the
-model to the view and tthe view will call related interface
-itself! When developing a controller, you only need to write
-initialization code and event handlers if you want to change the
-default process or work flow of a prototype view.
+### Why All this MVC Complexity?
+
+There are many possible use cases for Privly applications. Separating the Model,
+View, and Controller allows for different apps to share the same code and reduce the
+"attack surface" of the architecture. It also means your applications will
+benefit from the collective intelligence and auditing of the entire community.
+The more code you can re-use, the more secure your users will be.
 
 ## Build System
 
@@ -919,6 +1003,7 @@ decisions.
 * **develop:** The working branch for the repository.
 * **issue-#NUMBER:** The branch for fixing a particular issue. If it is a security related or a big UX failing, we will "hotfix" master and issue a new minor release. Otherwise the issue will be merged into "develop."
 * **feature-BRANCH-NAME:** A bigger feature that is not ready for merging into develop will be developed on a feature branch.
+* **experimental-BRANCH-NAME:** A feature that may not ever be merged into the develop branch because it is still experimental.
 * **PLATFORM-extension-master:** Sometimes it is necessary for the privly-applications repository to have different versions for different platforms. We are in the process of phasing these out, but for now they are periodically updated from master.
 * **gsoc-BRANCH-NAME:** These are branches [GSOC students](https://www.privly.org/content/2015-google-summer-code-kickoff) are working on. You can think of them as feature branches.
 * **v0.MAJOR.MINOR:** A tag for a release.
