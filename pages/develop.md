@@ -473,8 +473,6 @@ Forthcoming:
 ---
 
 <section id="PrivlyApplications" class="group">
-<div id="BuildSystem" class="subgroup">
-
 # Privly Applications #
 
 Privly Applications are included in your browser extension or content server as a
@@ -489,6 +487,7 @@ The paths are:
 * privly-jetpack and privly-firefox: /chrome/content/privly-applications
 * privly-web: /public/apps
 
+<div id="MVCarchitecture" class="subgroup">
 ## Privly Applications Architectural Pattern: MVC
 
 Model-View-Controller (MVC) is a common design pattern throughout web development. In the Ruby on Rails world, the "model" refers to the
@@ -587,6 +586,8 @@ View, and Controller allows for different apps to share the same code and reduce
 benefit from the collective intelligence and auditing of the entire community.
 The more code you can re-use, the more secure your users will be.
 
+</div>
+<div id="BuildSystem" class="subgroup">
 ## Build System
 
 Privly abstains from using any server-side templating of applications because this
