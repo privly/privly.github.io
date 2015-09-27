@@ -841,7 +841,7 @@ each of your comments, so don’t be shy!</p>
 
     <p>To help new developers enter the community, we have issues annotated [Level 0], <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22">Level 1</a>, <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22">Level 2</a>, <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22">Level 3</a>, and <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22">Level 4</a>.</p>
 
-    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+0%22"><strong>Level 0</strong></a>: <strong>Improve programatic code quality.</strong> <em>(<a href="#Setup">Setup</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+0%22"><strong>Level 0</strong></a>: <strong>Improve programatic code quality.</strong> <em>(<a href="#Setup">Setup</a>)</em>
 <a href="https://codeclimate.com/github/privly/privly-applications">CodeClimate</a>
 gives reports on code quality that
 highlight simplistic issues across the whole code base. We recommend cloning the
@@ -850,36 +850,36 @@ and improving the code based on the recommendations found
 <a href="https://codeclimate.com/github/privly/privly-applications">on code climate</a>.
 Then open a pull request! Don’t be afraid to submit a small pull request.</p>
 
-    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22"><strong>Level 1</strong></a>: <strong>Run the Privly-Applications build system.</strong> <em>(<a href="#BuildSystem">Build System</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22"><strong>Level 1</strong></a>: <strong>Run the Privly-Applications build system.</strong> <em>(<a href="#BuildSystem">Build System</a>)</em>
 Privly packages multiple Javascript applications into a bundle of privacy applications.
 Understanding this <a href="#BuildSystem">build system</a> will allow you to make changes across
 all applications. A good starting point is to change the text in the footer to be
 more visually appealing. See the <a href="#BuildSystem">build system</a> docs for more details.</p>
 
-    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22"><strong>Level 2</strong></a>: <strong>Unit testing.</strong> <em>(Javascript, <a href="#UnitTesting">Jasmine, Karma</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22"><strong>Level 2</strong></a>: <strong>Unit testing.</strong> <em>(Javascript, <a href="#UnitTesting">Jasmine, Karma</a>)</em>
 Privacy software requires strong test coverage to guard the security of the
 applications. To complete this level we recommend adding test coverage to one of the
 existing specs. See the <a href="#UnitTesting">unit testing</a> docs for more details.</p>
 
-    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22"><strong>Level 3</strong></a>: <strong>Integration testing.</strong> <em>(<a href="#IntegrationTesting">Selenium</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22"><strong>Level 3</strong></a>: <strong>Integration testing.</strong> <em>(<a href="#IntegrationTesting">Selenium</a>)</em>
 Unit tests examine a tiny part of Privly and integration tests examine the system
 as a whole. It is important to programmatically perform all the activities supported
 by the application (creating, updating, destroying, etc) to prevent regressions.
 To achieve this level, you should
 See the <a href="#IntegrationTesting">integration testing</a> docs for more details.</p>
 
-    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22"><strong>Level 4</strong></a>: <strong>Add continuous integration.</strong> <em>(<a href="#TravisCI">TravisCI</a>, <a href="#SauceLabs">SauceLabs</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22"><strong>Level 4</strong></a>: <strong>Add continuous integration.</strong> <em>(<a href="#TravisCI">TravisCI</a>, <a href="#SauceLabs">SauceLabs</a>)</em>
 Continuous integration runs the full suite of unit and integration tests every time
 you push commits to GitHub. Setting up Continuous Integration for your fork
 requires a few additions to the .travis.yml file that is shared by all the forks.
 See the <a href="#TravisCI">continuous integration</a> docs for more details.</p>
 
-    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22"><strong>Project</strong></a>: <strong>Application Project:</strong> Make a new Privly App. <em>(Everything Related to Apps)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22"><strong>Project</strong></a>: <strong>Application Project:</strong> Make a new Privly App. <em>(Everything Related to Apps)</em>
 At this point you have all the infrastructure in place to develop a new Privly App.
 Copy an existing application to a new directory, edit the manifest.json to reference the
 proper paths, and get experimenting!</p>
 
-    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22"><strong>Project</strong></a>: <strong>User Experience Project:</strong> Hack on content scripts. <em>(<a href="#ContentScripts">Content Scripts</a>)</em><br />
+    <p><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Project%22"><strong>Project</strong></a>: <strong>User Experience Project:</strong> Hack on content scripts. <em>(<a href="#ContentScripts">Content Scripts</a>)</em>
 Browser extensions interface the privly-applications to the context of arbitrary social networks. This
 level of development invites you to make improvements to the User Experience of the content scripts or
 the options presented by the privly-applications repository itself. The core of the content scripts can
@@ -931,22 +931,26 @@ use the <code>--recursive</code> option. Otherwise you will not get all the requ
 
     <h3 id="a-namefirefoxafirefox-extension-development-installation"><a name="firefox"></a>Firefox Extension Development Installation</h3>
 
-    <p>Adding a development extension to Firefox is more complex than adding one to
-Chrome. You must add the extension to a Firefox “profile.”</p>
+    <p><em>Note - We have migrated the Firefox extension from XUL to Jetpack. The XUL extension is now deprecated. These instructions are for the newer Jetpack architecture.</em></p>
 
-    <ol>
-      <li>Clone the Git Repository, <code>git clone --recursive https://github.com/privly/privly-firefox.git</code></li>
-      <li>In your terminal, find your Firefox profile directory.<br />
-<a href="http://support.mozilla.org/en-US/questions/941548">Windows</a>,<br />
-Mac: <code>cd ~/Library/Application\ Support/Firefox/profiles/</code><br />
-Linux:  <code>cd ~/.mozilla/</code><br />
-In that location, you will find your Firefox profile directories, e.g. 12a3bc4d.dev., change directories to your profile folder, for example <code>cd 12a3bc4d.dev</code></li>
-      <li>Create a file to include a pointer to your code. For this, you need the path of where you cloned the Git Repository for the extension. Use vim (or your preferred editor) to create a filename with privly@priv.ly. On some systems (no, we’re not sure which ones) this won’t work and your filename will need to be {ec8030f7-c20a-464f-9b0e-13a3a9e97384}.</li>
-      <li>Type in the path your newly cloned git repository from earlier, e.g. C:\path\to\extension\privly-firefox\ (Windows) or /path/to/extension/privly-firefox/ (Linux, Mac), and save the file.</li>
-      <li>Open Firefox.</li>
-      <li>You should see a dialog asking to confirm the Privly extension installation.</li>
-      <li>Success! If it didn’t work, see the tip from above, where the filename in your development profile folder may need to be privly@priv.ly or {ec8030f7-c20a-464f-9b0e-13a3a9e97384}.</li>
-    </ol>
+    <p><strong>This extension is not yet packaged.</strong></p>
+
+    <p>To develop this add-on, you will need:
+* Firefox version &gt;= 38.0
+* jpm</p>
+
+    <p>For jpm installation, follow the instructions as mentioned <a href="https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation">here</a>.
+Firefox v38.0 and greater can be found <a href="http://ftp.mozilla.org/pub/firefox/releases/">here</a>.</p>
+
+    <p>1) Get the <a href="https://github.com/privly/privly-jetpack">source code</a> from GitHub. You can download it by cloning the repository,
+<code>git clone --recursive https://github.com/privly/privly-jetpack.git</code>.
+2) Build <a href="#PrivlyApplications">Privly Applications</a>.
+3) In the cloned repository, run <code>jpm run -b /path/to/firefox/browser</code> to start the browser with the extension installed. You can find the browser path by running <code>which firefox</code>.
+4) You can also install the xpi file in your Firefox browser –
+  * Generate the xpi file by running <code>jpm xpi</code>.
+  * Open the <a href="about:addons">Add-ons Manager</a> in the browser.
+  * Click on the tools icon on the top right.
+  * Select “Install Add-on From File” and provide the link to the generated xpi file.</p>
 
   </div>
   <div id="SafariExtension" class="subgroup">
@@ -1241,24 +1245,137 @@ Send at: <code>privly-application/shared/javascripts/options.js</code></p>
 <hr />
 
 <section id="PrivlyApplications" class="group">
-  <div id="BuildSystem" class="subgroup">
+  <h1 id="privly-applications">Privly Applications</h1>
 
-    <h1 id="privly-applications">Privly Applications</h1>
-
-    <p>Privly Applications are included in your browser extension or content server as a
+  <p>Privly Applications are included in your browser extension or content server as a
 git module. This means if you used the <code>--recursive</code> option when you cloned the extension
 you have the Privly Apps automatically. If you don’t see files in the directories
 listed below, you should open the terminal in your privly-applications directory
 and issue <code>git submodule init</code> then <code>git submodule update</code>.</p>
 
-    <p>The paths are:</p>
+  <p>The paths are:</p>
+
+  <ul>
+    <li>privly-chrome: /privly-applications</li>
+    <li>privly-jetpack and privly-firefox: /chrome/content/privly-applications</li>
+    <li>privly-web: /public/apps</li>
+  </ul>
+
+  <div id="MVCarchitecture" class="subgroup">
+    <h2 id="privly-applications-architectural-pattern-mvc">Privly Applications Architectural Pattern: MVC</h2>
+
+    <p>Model-View-Controller (MVC) is a common design pattern throughout web development. In the Ruby on Rails world, the “model” refers to the
+data, the “view” refers to the templating and layout, and the controller forms a layer in between that manages authentication, authorization and other tasks.
+The MVC pattern of Privly Applications is similarly inspired, but since the perspective of the pattern shifted to the client our realization of MVC
+will feel different to experienced developers.</p>
+
+    <p>Definitions:</p>
 
     <ul>
-      <li>privly-chrome: /privly-applications</li>
-      <li>privly-firefox: /chrome/content/privly-applications</li>
-      <li>privly-web: /public/apps</li>
+      <li>The <code>model</code> handles tasks related to data transformations, such as encrypting plain text for creating a Privly content.</li>
+      <li>The <code>view</code> is the user interface shown as HTML pages in the browser. Whereas typical web development will render the HTML from templates when the content is requested, we render the HTML pages before packaging them into the extensions. By building the HTML before the request, we can reduce the trust we place in the remote server. These pages are usually generated from extending existing base templates (called a <code>prototype view</code>) in order to share similar user interfaces between different Privly Applications for the same kind of operations.</li>
+      <li>The <code>controller</code> scripts of Privly Applications connect the <code>view</code> and the <code>model</code>.</li>
     </ul>
 
+    <p>Still confused? First let’s review different use cases of a Privly application. Generally, a Privly application has three use cases:</p>
+
+    <ol>
+      <li><strong>show</strong> When the link is injected into a host page as an iframe or accessed directly. Since the user will often edit existing content when they are viewing it, we consider the <code>show</code> use case to be the same as the <code>edit</code> use case.</li>
+      <li><strong>new</strong> When the user is creating a new link that will be introduced into the host page.</li>
+      <li>
+        <p><strong>seamless</strong></p>
+
+        <p>Seamless is a new method of creating content. When creating standard <code>new</code> content, the users are creating content in a separate, standalone window and the content is created when users click ‘Save’ button. However when creating content seamlessly, the users are creating content without leaving the context of the host page. Here we place a link into the host page’s form element and continually update the content associated with the link with an iframe overlaid on top of the form element.</p>
+      </li>
+    </ol>
+
+    <p>Each of these use cases invoke the MVC pattern. We detail how in the following sections.</p>
+
+    <h3 id="view">View</h3>
+
+    <p>The view layer is the user interface layer. Currently we have
+three view prototypes: show, new, and seamless. As you can
+see, these three view prototypes provide templates for the
+three use cases mentioned above. We offer
+<a href="https://github.com/privly/privly-applications/tree/master/templates">templates</a>
+for application
+developers to accelerate development. Those templates
+can be inherited, extended or overridden.
+For example, our <code>show</code> view prototype provides a textarea for users
+to input contents. However you can override the textarea with a drag/drop
+landing area.</p>
+
+    <p>Note that if your Application supports <code>seamless</code> view, it can
+also provide a <code>seamless_ttlselect</code> view, which is used to display
+a timed destruction menu for users. If you don’t want to change
+menu styles or change menu item orders, using our default prototype
+code is enough for your custom Application.</p>
+
+    <h3 id="model">Model</h3>
+
+    <p>The model layer handles data transformations such as:</p>
+
+    <ul>
+      <li>
+        <p>How should the user inputted content in the view layer be
+transformed into a Privly JSON object? This task is used
+in creating or updating the content.</p>
+
+        <p>Example:</p>
+
+        <ul>
+          <li>PlainPost App: no transformations are made.</li>
+          <li>Message App: the transformation is encryption.</li>
+          <li>Image App (under development): the transformation is
+image serialization and encryption.</li>
+        </ul>
+      </li>
+      <li>
+        <p>How should we transform a Privly JSON object to the content
+that the view layer can present? This task is just a reverse
+of the above task. It is used in viewing the
+content (<code>show</code> case).</p>
+
+        <p>For example, in the Message App, the transformation is decryption
+according to the encryption key attached in the link.</p>
+      </li>
+      <li>
+        <p>What are the <code>seconds_until_burn</code> options for this App? An
+Application can assign its own <code>seconds_until_burn</code> (aka. TTL, Time
+To Live) options.</p>
+      </li>
+    </ul>
+
+    <p>You are free and welcomed to implement your own
+functions or interfaces in the model. Those interfaces
+may be useful in the controller layer.</p>
+
+    <p>Note: generally all interfaces of the model
+layer should be async by returning a Promise which will later
+be resolved. The async feature of a model doesn’t have much
+effect in current Privly Applications like Message and PlainPost,
+however it does bring more flexibility to developers.</p>
+
+    <h3 id="controller">Controller</h3>
+
+    <p>The controller layer connects the model layer and view layer. It can
+offer extra actions for view layer events. For example
+in the Message app, when a new link is created, we have to concatenate
+the encryption key after the link. Another example is when
+we are presenting the content of a Message app, we should do a
+Markdown rendering. This kind of task should also be completed
+in the controller layer.</p>
+
+    <h3 id="why-all-this-mvc-complexity">Why All this MVC Complexity?</h3>
+
+    <p>There are many possible use cases for Privly applications. Separating the Model,
+View, and Controller allows for different apps to share the same code and reduce the
+“attack surface” of the architecture. It also means your applications will
+benefit from the collective intelligence and auditing of the entire community.
+The more code you can re-use, the more secure your users will be.</p>
+
+  </div>
+  <div id="BuildSystem" class="subgroup">
     <h2 id="build-system">Build System</h2>
 
     <p>Privly abstains from using any server-side templating of applications because this
@@ -1595,8 +1712,8 @@ of your Privly forks.</li>
 to include your secure environment variables. The current .travis.yml files
 all have numerous examples of the secured variables, so you should add the
 results of the commands below to the appropriate line.
- <code>travis encrypt SAUCE_USERNAME=YOUR_USERNAME</code><br />
- <code>travis encrypt SAUCE_ACCESS_KEY=YOUR_ACCESS_KEY</code><br />
+ <code>travis encrypt SAUCE_USERNAME=YOUR_USERNAME</code>
+ <code>travis encrypt SAUCE_ACCESS_KEY=YOUR_ACCESS_KEY</code>
  <code>travis encrypt SAUCE_URL=YOUR_API_URL</code></li>
       <li>Push commits to GitHub then watch it build in TravisCI!</li>
     </ol>
@@ -1775,6 +1892,7 @@ your code that the tests indicate should be made.</li>
     <li>
       <a href="#PrivlyApplications">Privly Applications</a>
       <ul class="nav nav-stacked">
+        <li><a href="#MVCarchitecture">MVC</a></li>
         <li><a href="#BuildSystem">Build System</a></li>
         <li><a href="#Testing101">Testing 101</a></li>
         <li><a href="#UnitTesting">Unit Testing</a></li>
