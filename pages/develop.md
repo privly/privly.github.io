@@ -41,7 +41,7 @@ Privly works within browser extensions by scanning web pages for specially forma
 * [Privly Applications](https://github.com/privly/privly-applications) - In Alpha - Under development
 * [Chrome and Opera](https://github.com/privly/privly-chrome) - In Alpha - Under development
 * [Firefox](https://github.com/privly/privly-firefox) - In Alpha - Under development
-* [Safari](https://github.com/privly/privly-safari) - Development stalled (no maintainer)
+* [Safari](https://github.com/privly/privly-safari) - In Pre-alpha - Under development
 * [Internet Explorer](https://github.com/privly/privly-ie) - Not under development (no maintainer)
 * [Reference Implementation Content Server](https://github.com/privly/privly-web) - Not currently a focus of development since the Privly Applications repository houses most of the functionality client-side.
 
@@ -229,9 +229,14 @@ Firefox v38.0 and greater can be found [here](http://ftp.mozilla.org/pub/firefox
 
 **The safari extension is still at its initial stages of development.**
 
+Before you can build and install the extension, you need a developer certificate. For more information, see [Safari Extension Certificates](https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/ExtensionsOverview/ExtensionsOverview.html#//apple_ref/doc/uid/TP40009977-CH15-SW26).
+
 1. Get the source code from GitHub. You can download it by cloning the repository,
 `git clone --recursive git@github.com:privly/privly-safari.git`
-1. Open the directory containing the safari extension (where we clone it to) and double click on 'privly_build.safariextz'. This will start up Safari and install the extension.
+2. Open Safari and choose "Show Extension Builder" from the Develop menu.
+3. Click the "+" button and choose "Add Extension...".
+4. Select the directory containing the safari extension (where you just cloned it to).
+5. Click "Install".
 
 When you want to manage your extensions on Safari in the future, go to Preferences of Safari and select the Extensions tab. The privly extension can be seen here. We can enable/disable or even uninstall the extension from here.
 
