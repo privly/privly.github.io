@@ -739,7 +739,7 @@ If you just want to use the system, you should go to the <a href="about.html">�
       <li><a href="https://github.com/privly/privly-applications">Privly Applications</a> - In Alpha - Under development</li>
       <li><a href="https://github.com/privly/privly-chrome">Chrome and Opera</a> - In Alpha - Under development</li>
       <li><a href="https://github.com/privly/privly-firefox">Firefox</a> - In Alpha - Under development</li>
-      <li><a href="https://github.com/privly/privly-safari">Safari</a> - Development stalled (no maintainer)</li>
+      <li><a href="https://github.com/privly/privly-safari">Safari</a> - In Pre-alpha - Under development</li>
       <li><a href="https://github.com/privly/privly-ie">Internet Explorer</a> - Not under development (no maintainer)</li>
       <li><a href="https://github.com/privly/privly-web">Reference Implementation Content Server</a> - Not currently a focus of development since the Privly Applications repository houses most of the functionality client-side.</li>
     </ul>
@@ -959,10 +959,15 @@ Firefox v38.0 and greater can be found <a href="http://ftp.mozilla.org/pub/firef
 
     <p><strong>The safari extension is still at its initial stages of development.</strong></p>
 
+    <p>Before you can build and install the extension, you need a developer certificate. For more information, see <a href="https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/ExtensionsOverview/ExtensionsOverview.html#//apple_ref/doc/uid/TP40009977-CH15-SW26">Safari Extension Certificates</a>.</p>
+
     <ol>
       <li>Get the source code from GitHub. You can download it by cloning the repository,
 <code>git clone --recursive git@github.com:privly/privly-safari.git</code></li>
-      <li>Open the directory containing the safari extension (where we clone it to) and double click on ‘privly_build.safariextz’. This will start up Safari and install the extension.</li>
+      <li>Open Safari and choose “Show Extension Builder” from the Develop menu.</li>
+      <li>Click the “+” button and choose “Add Extension…”.</li>
+      <li>Select the directory containing the safari extension (where you just cloned it to).</li>
+      <li>Click “Install”.</li>
     </ol>
 
     <p>When you want to manage your extensions on Safari in the future, go to Preferences of Safari and select the Extensions tab. The privly extension can be seen here. We can enable/disable or even uninstall the extension from here.</p>
