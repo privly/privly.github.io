@@ -232,7 +232,7 @@ Firefox v38.0 and greater can be found [here](http://ftp.mozilla.org/pub/firefox
 Before you can build and install the extension, you need a developer certificate. For more information, see [Safari Extension Certificates](https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/ExtensionsOverview/ExtensionsOverview.html#//apple_ref/doc/uid/TP40009977-CH15-SW26).
 
 1. Get the source code from GitHub. You can download it by cloning the repository,
-`git clone --recursive git@github.com:privly/privly-safari.git`
+`git clone --recursive https://github.com/privly/privly-safari.git`
 2. Open Safari and choose "Show Extension Builder" from the Develop menu.
 3. Click the "+" button and choose "Add Extension...".
 4. Select the directory containing the safari extension (where you just cloned it to).
