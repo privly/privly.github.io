@@ -614,6 +614,8 @@ directory and issue:
 
 > `python build.py --platform=chrome`
 
+Note: Use Python 2.X
+
 The apps will then be built for the Chrome extension. Now you can change a template
 and it will change all the apps. You can also copy an existing app, update the
 manifest.json file, and build the apps for your "new" app to automatically
