@@ -111,7 +111,7 @@ Privly has many differences from the typical web development approach.
 Each of these levels have open issues on GitHub for you to comment on. Someone will answer
 each of your comments, so don't be shy!
 
-To help new developers enter the community, we have issues annotated [Level 0], [Level 1](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22), [Level 2](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22), [Level 3](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22), and [Level 4](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22).
+To help new developers enter the community, we have issues annotated [Level 0](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+0%22), [Level 1](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+1%22), [Level 2](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+2%22), [Level 3](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+3%22), and [Level 4](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+4%22).
 
 [**Level 0**](https://github.com/issues?q=is%3Aopen+is%3Aissue+user%3Aprivly+label%3A%22Level+0%22): **Improve programatic code quality.** _([Setup](#Setup))_
 [CodeClimate](https://codeclimate.com/github/privly/privly-applications)
@@ -235,7 +235,7 @@ Before you can build and install the extension, you need a developer certificate
 `git clone --recursive git@github.com:privly/privly-safari.git`
 2. Open Safari and choose "Show Extension Builder" from the Develop menu.
 3. Click the "+" button and choose "Add Extension...".
-4. Select the directory containing the safari extension (where you just cloned it to).
+4. Select the directory called "privly.safariextension" containing the safari extension inside the directory you just cloned.
 5. Click "Install".
 
 When you want to manage your extensions on Safari in the future, go to Preferences of Safari and select the Extensions tab. The privly extension can be seen here. We can enable/disable or even uninstall the extension from here.
