@@ -190,11 +190,10 @@ use the `--recursive` option. Otherwise you will not get all the required module
 
 1. Get the source code from GitHub. You can download it by cloning the repository,
 `git clone --recursive git@github.com:privly/privly-chrome.git`.
-2. Open Chrome and click the wrench icon (or go to Preferences).
-3. Select Extensions
-4. Check "Developer Mode" box if unchecked.
-5. Click "Load Unpacked Extension..."
-6. Select the directory containing the chrome extension (where you just cloned it to).
+2. Open Chrome and enter "chrome://extensions/" (without the qoutes). Alternatively, you can click on the 'customize' icon (the 3-lined icon) on top right hand side > More Tools > Extensions
+3. Check "Developer Mode" box if unchecked.
+4. Click "Load Unpacked Extension..."
+5. Select the directory containing the chrome extension (where you just cloned it to). 
 
 </div>
 <div id="FirefoxExtension" class="subgroup">
