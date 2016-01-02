@@ -188,12 +188,11 @@ use the `--recursive` option. Otherwise you will not get all the required module
 
 ### <a name="chrome"></a>Chrome Extension Development Installation
 
-1. Get the source code from GitHub. You can download it by cloning the repository,
-`git clone --recursive git@github.com:privly/privly-chrome.git`.
-2. Open Chrome and enter "chrome://extensions/" (without the qoutes). Alternatively, you can click on the 'customize' icon (the 3-lined icon) on top right hand side > More Tools > Extensions
+1. Get the source code from GitHub. You can download it by cloning the repository, `git clone --recursive https://github.com/privly/privly-chrome.git`.
+2. Open Chrome and enter "chrome://extensions/" into the address bar (without the quotes). Alternatively, you can click on the 'customize' icon (the 3-lined icon) on top right hand side > More Tools > Extensions
 3. Check "Developer Mode" box if unchecked.
 4. Click "Load Unpacked Extension..."
-5. Select the directory containing the chrome extension (where you just cloned it to). 
+5. Select the directory containing the chrome extension (where you just cloned it to).
 
 </div>
 <div id="FirefoxExtension" class="subgroup">
@@ -231,7 +230,7 @@ Firefox v38.0 and greater can be found [here](http://ftp.mozilla.org/pub/firefox
 Before you can build and install the extension, you need a developer certificate. For more information, see [Safari Extension Certificates](https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/ExtensionsOverview/ExtensionsOverview.html#//apple_ref/doc/uid/TP40009977-CH15-SW26).
 
 1. Get the source code from GitHub. You can download it by cloning the repository,
-`git clone --recursive git@github.com:privly/privly-safari.git`
+`git clone --recursive https://github.com/privly/privly-safari.git`
 2. Open Safari and choose "Show Extension Builder" from the Develop menu.
 3. Click the "+" button and choose "Add Extension...".
 4. Select the directory called "privly.safariextension" containing the safari extension inside the directory you just cloned.
