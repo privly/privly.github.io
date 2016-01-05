@@ -15,34 +15,42 @@ title: Download Extension
       <img src="/assets/images/chrome_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
     </a>
-    <br/>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
     <a href="https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol" target="_blank">Chrome Extension</a>
     <br/>
     <p class="text-left">(Alpha) The Chrome extension supports viewing Privly links, and uploading new content directly to any content server.</p>
   </div>
+</div>
+<hr>
+<div class="row">
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/" id="firefox_link" class="privly-browser-combo" target="_blank">
       <img src="/assets/images/firefox_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
     </a>
-    <br/>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/" target="_blank">Firefox Extension</a>
     <br/>
      <p class="text-left">(Alpha) The Firefox extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
   </div>
 </div>
+<hr>
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
     <a href="https://safari-extensions.apple.com/details/?id=com.privly.privly-NW49B9S472" id="safari_link" class="privly-browser-combo" target="_blank">
       <img src="/assets/images/safari_logo_150.png" class="browser-icon" />
       <img src="/assets/images/icons/icon_96.png" class="privly-icon" />
     </a>
-    <br/>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
     <a href="https://safari-extensions.apple.com/details/?id=com.privly.privly-NW49B9S472" target="_blank">Safari Extension</a>
     <br/>
     <p class="text-left">(Pre-alpha) The Safari extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
   </div>
 </div>
+<hr>
 
 The extensions are under active development so please email us [bug reports](/pages/bug.html).
 
