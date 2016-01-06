@@ -19,7 +19,11 @@ title: Download Extension
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
     <a href="https://chrome.google.com/webstore/detail/pkokikcdapfpkkkjpdaamjanniaempol" target="_blank">Chrome Extension</a>
     <br/>
-    <p class="text-left">(Alpha) The Chrome extension supports viewing Privly links, and uploading new content directly to any content server.</p>
+    <p class="text-left">
+      The Chrome extension allows you to post and view
+      encrypted content on social media without
+      leaving the social media website.
+    </p>
   </div>
 </div>
 <hr>
@@ -33,7 +37,13 @@ title: Download Extension
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
      <a href="https://addons.mozilla.org/en-US/firefox/addon/privly/" target="_blank">Firefox Extension</a>
     <br/>
-     <p class="text-left">(Alpha) The Firefox extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
+     <p class="text-left">
+       The Firefox extension allows you to view
+       encrypted content on social media without
+       leaving the social media website.
+       It currently does not support the same level of
+       functionality as the Chrome Extension.
+     </p>
   </div>
 </div>
 <hr>
@@ -47,7 +57,12 @@ title: Download Extension
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
     <a href="https://safari-extensions.apple.com/details/?id=com.privly.privly-NW49B9S472" target="_blank">Safari Extension</a>
     <br/>
-    <p class="text-left">(Pre-alpha) The Safari extension supports viewing Privly links, and uploading new content directly to the Privly servers. It currently does not support the same level of security as the Chrome Extension.</p>
+    <p class="text-left">
+      The Firefox extension allows you to view
+      encrypted content on social media without
+      leaving the social media website. Due to a bug in Safari,
+      not every website will work with this extension.
+    </p>
   </div>
 </div>
 <hr>
