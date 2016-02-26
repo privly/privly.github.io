@@ -996,9 +996,12 @@ To help new developers enter the community, we have longstanding issues annotate
 
 **General style guidance:**
 
-* We are currently using [Drupal's coding standards](https://www.drupal.org/node/172169) for all Javascript code.
+* Most important rule: Don't use tabs for whitespace.
+* The style guides below were adopted in 2016. If a file violates the style guide, you can optionally update the file in a separate pull request. If you don't want to update the code for the style guide, then you should use a style consistent with the current file.
+* For JavaScript, the following coding standards should be used (in order of precedence): [jQuery](https://contribute.jquery.org/style-guide/js/), [AirBnB](https://github.com/airbnb/javascript). When programmatically linting your code, [JSHint](http://jshint.com/) takes precedence over [JSLint](http://jslint.com/).
+* For CSS and HTML, use [MDO's standard](http://codeguide.co/)
 * You should be acquainted with [Frank Jones](/pages/personas) since he will influence many of your design
-decisions.
+decisions. In short: design for non-sophisticated users.
 
 **Workflow: Forks, Branches, Tags, Releases, and versions:**
 
