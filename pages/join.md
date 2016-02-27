@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Join
+title: Join Us
 sub_title: Open Source
 ---
 
