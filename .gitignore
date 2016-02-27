@@ -10,3 +10,5 @@ Thumbs.db
 .rvmrc
 
 *.swp
+.ruby-gemset
+.ruby-version
