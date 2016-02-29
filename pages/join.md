@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <i class="fa fa-github"></i> Open Source
+title: Join Us
 sub_title: Open Source
 ---
 
