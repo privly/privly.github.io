@@ -21,31 +21,28 @@ _**Maintainers:**_
 [Sean McGregor](https://github.com/smcgregor/): [Chrome](https://github.com/privly/privly-chrome), [Firefox](https://github.com/privly/privly-firefox), [Content Server](https://github.com/privly/privly-web), [Test Cases](https://github.com/privly/privly-test), [Privly Applications](https://github.com/privly/privly-applications)  
 [Daniel Reichert](https://github.com/irdan): [Privly Applications](https://github.com/privly/privly-applications)  
 [Shivam Verma](https://github.com/vshivam): [Android](https://github.com/privly/privly-android)  
-[Garrett Seward](https://github.com/spectralsun): [Priv.ly](https://github.com/privly/privly.github.io), [Privly-Flask](https://github.com/privly/privly-flask)  
-[Hery Ratsimihah](https://github.com/hery): [iOS](https://github.com/privly/privly-ios)  
-
-_**Contributors:**_  
-
-[Vlad Fulgeanu](https://github.com/fullvlad)  
-[Trevor Bramwell](https://github.com/bramwelt)  
-[Gitanshu Sardana](https://github.com/gitanshu)  
-[Jen Davidson](https://github.com/jewifer)  
-[Balaji Athreya](https://github.com/balajiathreya)  
-[Sanchit Karve](https://github.com/born2c0de)  
-[Metla Ivan](https://github.com/metlaivan)  
-[Bhavul Gauri](https://github.com/bhavul)  
-[Hanno Wagner](http://de.linkedin.com/pub/hanno-wagner/6/33/305)  
-[Tyler Dugoni](http://www.linkedin.com/profile/view?id=204119935)  
-Kendall Bailey  
-Mikky Cecil  
-[changjo512](https://github.com/changjo512)  
+[Garrett Seward](https://github.com/spectralsun): [Privly-Flask](https://github.com/privly/privly-flask)  
 
 _**Past Contributors:**_  
-[Swetal Patel](http://www.linkedin.com/in/teamswet)  
+[Jen Davidson](https://github.com/jewifer)  
+[Swetal Patel](http://swetal.com)  
+[Vlad Fulgeanu](https://github.com/fullvlad)  
+[Trevor Bramwell](https://github.com/bramwelt)  
+[Balaji Athreya](https://github.com/balajiathreya)  
+[Sanchit Karve](https://github.com/born2c0de)  
+[Bhavul Gauri](https://github.com/bhavul)  
+[Hanno Wagner](http://de.linkedin.com/pub/hanno-wagner/6/33/305)  
+[changjo512](https://github.com/changjo512)  
 [Jesse Hostetler](https://github.com/jhostetler)  
 [Jesse Markowitz](https://github.com/JesseMarkowitz)  
+[Hery Ratsimihah](https://github.com/hery)  
+[Gitanshu Sardana](https://github.com/gitanshu)  
 [Geoffrey Corey](https://github.com/stumped2)  
+[Metla Ivan](https://github.com/metlaivan)  
 [Quazi Marufur Rahman](https://github.com/qmaruf)  
+Kendall Bailey  
+Mikky Cecil  
+[Tyler Dugoni](http://www.linkedin.com/profile/view?id=204119935)  
 [Ravneet Singh](https://github.com/dreamrulez07)  
 [Jason Jacob](https://github.com/jayco)  
 [Jesse Pollak](https://github.com/jessepollak)  
