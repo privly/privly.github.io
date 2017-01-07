@@ -1785,9 +1785,12 @@ issues, and bigger issues that are better classified a
     <p><strong>General style guidance:</strong></p>
 
     <ul>
-      <li>We are currently using <a href="https://www.drupal.org/node/172169">Drupal’s coding standards</a> for all Javascript code.</li>
+      <li>Most important rule: Don’t use tabs for whitespace.</li>
+      <li>The style guides below were adopted in 2016. If a file violates the style guide, you can optionally update the file in a separate pull request. If you don’t want to update the code for the style guide, then you should use a style consistent with the current file.</li>
+      <li>For JavaScript, the following coding standards should be used (in order of precedence): <a href="https://contribute.jquery.org/style-guide/js/">jQuery</a>, <a href="https://github.com/airbnb/javascript">AirBnB</a>. When programmatically linting your code, <a href="http://jshint.com/">JSHint</a> takes precedence over <a href="http://jslint.com/">JSLint</a>.</li>
+      <li>For CSS and HTML, use <a href="http://codeguide.co/">MDO’s standard</a></li>
       <li>You should be acquainted with <a href="/pages/personas">Frank Jones</a> since he will influence many of your design
-decisions.</li>
+decisions. In short: design for non-sophisticated users.</li>
     </ul>
 
     <p><strong>Workflow: Forks, Branches, Tags, Releases, and versions:</strong></p>
@@ -2466,7 +2469,7 @@ your code that the tests indicate should be made.</li>
         
         </p>
         <p class="text-center">
-          &copy; 2016 Privly Foundation
+          &copy; 2017 Privly Foundation
         </p>
       </footer>
 
