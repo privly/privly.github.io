@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <i class="fa fa-github"></i> Open Source
+title: Open Source
 sub_title: Open Source
 ---
 
