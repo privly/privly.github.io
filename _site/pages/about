@@ -694,7 +694,14 @@
     <div class="container-narrow">
 
       <div class="content">
-        
+
+
+<div class="jumbotron">
+  <h1>End of Life</h1>
+  <p>The Priv.ly project is shut down. A full-post mortem celebrating successess, and lamenting failures is given on the <a href="/">front page</a>.</p>
+</div>
+
+	
 <div class="page-header">
   <h1>About </h1>
 </div>
