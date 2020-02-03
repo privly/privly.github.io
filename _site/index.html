@@ -696,25 +696,163 @@
       <div class="content">
         
 <div class="jumbotron">
-  <h1>Change the Way Your Browser Works</h1>
-  <p class="lead"></p>
-  <div class="text-center">
-   <a id="big_download_link" class="btn btn-large btn-primary" href="/pages/download.html">Download Privly</a>
-  </div>
+  <h1>End of Life</h1>
+  <p>The Priv.ly project is shut down. A full-post mortem celebrating successess, and lamenting failures is given below.</p>
 </div>
 
 <hr>
 
 <div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-    <h2>Companies See Links</h2>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h2 id="privlypostmortemthedeathofaflossproject">Privly Postmortem: The Death of a FLOSS Project</h2>
+
+<p>Internet users are routinely surveilled as they share their lives on the web. With strong incentives to compromise user privacy for profit, solutions require either new public policy, or technical advances that render surveillance impractical. Since users select technology on the capabilities provided rather than abstract notions of privacy, technological solutions must either work in the background, or provide more socially relevant functionality. Providing "inattentive" and "functional" privacy was a motivation behind the Privly Foundation developing the Privly Project.</p>
+
+<p>In building Privly we had many successes, but also faced many challenges. You should read on if you are interested in building a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS</a> startup. This blog informs the next generation looking to improve the world through code.</p>
+
+<h1 id="successes">Successes</h1>
+
+<p>The "Privly Project" is a collection of <a href="https://github.com/privly">browser extensions, content servers, and cryptographic applications</a> for layering usable cryptography onto any website. The extensions work by scanning for specially formatted URLs and injecting the associated cryptography applications into the page, which then decrypts the content for seamless viewing within the website. The picture below gives one early demonstration of the platform.</p>
+
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+    <h3>Companies See Links</h3>
     <img src="/assets/images/before.png" class="img-responsive center-block" />
   </div>
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-    <h2>You See Content</h2>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+    <h3>You See Content</h3>
     <img src="/assets/images/after2.png" class="img-responsive center-block" />
   </div>
 </div>
+  
+<p>In developing the Privly Project, we overcame many organizational and technical challenges. Among them are the following.</p>
+
+<ol>
+  <li><strong>Architecture:</strong> The architecture we built offers strong UX and content privacy on an <a href="http://radar.oreilly.com/2013/07/securing-user-content-in-the-javascriptable-web.html">extensible platform</a>. The key point to the approach is that the cryptographic code is pre-shipped to the user's browser. When the user encounters a Privly link, the browser doesn't need to trust any remote server to decrypt the content. <em>The cool part:</em> The system is so extensible that the GIF below is an information visualization coded up during an airport layover. The visualization is viewed within gmail, but since the visualization is in a Privly app, its data won't get stored by Google. Another application shows viewing a decrypted image inside the gchat box. These are two rich media examples, but we also produced Privly apps with a variety of security and privacy properties. These included apps building on PGP, AES, and others.
+
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+    <h3>Encrypted Visualization</h3>
+    <p class="text-left">The visualization below was built on the Privly application stack during the coarse of an airport layover. The data associated with the app is encrypted and displayed in such a manner that Google cannot see what is being displayed inside gmail. The app demonstrates both the extensibility of the Privly Project, and the ease at which such functionality may be developed.</p>
+    <img src="/assets/images/Visualization_email_zerobin.gif" class="img-responsive center-block" />
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+    <h3>Encrypted Image Message</h3>
+    <img src="/assets/images/LincolnGChat.png" class="img-responsive center-block" />
+  </div>
+</div>
+    
+
+  </li>
+
+  <li><p><strong>Posting Content:</strong> The most important design target for the Privly Project is to make the extension nearly invisible to the user. This required an easy means of posting encrypted content. The image below shows a user typing content into a protected form element layered on top of an unprotected text area. Underneath the protected form area the extension has inserted the specially formatted Privly URL and will submit that content when the user submits the form element.</p>
+
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+    <h3>Seamless Posting</h3>
+    <img src="/assets/images/Posting.png" style="max-width:60%" class="img-responsive center-block" />
+  </div>
+</div>
+  
+
+  </li>
+
+
+  <li><p><strong>Testing System:</strong> When we started the Privly Project, programmatically testing browser extensions was a mess. Pushing code could potentially break the integration of websites with our many combinations of browser extensions, browsers, cryptography applications, and operating systems. We solved the problem within our continuous integration system by encoding the browser extension and Privly apps before sending them to a browser virtualization environment. It is very cool.</p>
+
+    <h3 class="text-center">Comprehensive Testing System</h3>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+	We divided the platform into three components that each had extensive continuous integration testing.
+	First we tested all the Javascript applications across all supported platforms by loading the
+	apps as the top level application. The next layer of testing was for the browser extensions,
+	which injects the Javascript applications into the context of web pages. For these tests
+	we captured a set of evolving link contexts representative of the links that should
+	be injected, and those that should not be injected (e.g., duplicative preview areas added by the host page).
+	Finally, we tested the content server that serviced the link contents with their cipher text.
+	<br>
+	<br>
+	The screen capture on the left shows the build status across these testing levels. As browser
+	infrastructure continued to shift under the functionality we implemented, rarely could
+	we keep all these builds simultanously in the green.
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+	<img src="/assets/images/Builds.png" style="max-width:60%" class="img-responsive center-block" />
+      </div>
+    </div>
+
+  </li>
+
+
+  <li><p><strong>Google Summer of Code:</strong> Over the course of three Google Summers of Code (GSoC), the Privly Foundation mentored 10 students working on seamless posting, mobile versions, new extension platforms, and more. These students helped to build core technology on the Privly stack and ensured the Privly runtime would work across the increasingly diverse web environment. We also supervised grade school aged children during a Google Code In so that many students got their first open source development experience with the Privly Project.</p>
+
+    <div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+    <img src="/assets/images/GSOC.png" style="max-width:60%" class="img-responsive center-block" />
+  </div>
+</div>
+
+  </li>
+
+
+  <li><p><strong>Identity System:</strong> One of the most interesting advancements we made belongs in both the success and the failure columns. A challenge in developing secure communication systems is that cryptographic identity is difficult to establish. The only piece of cryptographic material that users are accustomed to protecting (albeit with mixed results) is their password. We built on top of the password authentication system "Mozilla Persona" in such a way that users automatically get key signing statements for their personal email address whenever they sign in to their Privly server. Effectively, we grafted public key cryptography as a sideload on a web authentication service. Users would log in via Mozilla Persona, then the browser extensions would post a Persona-signed public key to a keyserver. The only failure with the system was organizational, and we will return to it in the next section.</p>
+
+    <div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+    <img src="/assets/images/persona-logo-wordmark.png" style="max-width:60%" class="img-responsive center-block" />
+  </div>
+</div>
+  </li>
+
+  <li><p><strong>Non-profit Incorporation:</strong> When incorporating the Privly Foundation, we considered for-profit, not-for-profit, and hybrid organizational structures. Each have their advantages and disadvantages. In discussion with angel investors and venture capitalists during the launch of the Privly Project, it was clear that the cultural distance between those with the money and our potential user base was too large. It was non-profit or no project. In the subsequent months, we filed our incorporation documents and non-profit determination evidence with the IRS. After several rounds of sending in documents (nearly 300 pages in all), we received our non-profit determination after an audio conference with our IRS examiner. We cannot emphasize enough that new open source organizations should only form when they are forced to. It can be an immense effort, particularly when measured by the effort required for joining one of the pre-existing umbrella organizations.</p>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+	<img src="/assets/images/irs.png" style="max-width:60%" class="img-responsive center-block" />
+      </div>
+    </div>
+
+
+  </li>
+
+<li><p><strong>TA3M:</strong> Thanks to the continuing efforts of Chris Bushick in Portland, the monthly meetup group we started around privacy, censorship, security, and other electronic issues continues to thrive in the Portland area.</p></li>
+</ol>
+
+<h1 id="challengesandfailures">Challenges and Failures</h1>
+
+<p>Now for the hard, but ultimately more useful part of this post mortem. We hope members of the open source development community will learn from these hard won lessons, including,</p>
+
+<ol>
+<li><p><strong>Users don't understand electronic privacy:</strong> This one cannot be overstated. We knew this would be a problem when publishing the system, but when we ran user studies to see how real people behaved with Privly, we found many people assumed the system provided privacy properties that are not technically feasible. In many instances, user behavior would change in such a way that their communications became less private. Our only way of reconciling this is to make the system disappear completely from the browser UI (think of it like installing an ad blocker on grandma's computer), but if your users don't understand what is happening, then your users have little reason or capacity to promote the spread of your software. When the benefit produced by the system is abstract (i.e., "privacy"), and technically complex (i.e., "cryptographic"), users lack the incentives to adopt and understand the technology.</p></li>
+
+<li><p><strong>Connections with Browser Vendors:</strong> Browser architectures have changed substantially during the development of the Privly Project. In one extreme case, we re-implemented the entire Firefox extension in their newer stable extension framework, only to have the framework deprecated right when we were delivering it. This could have been avoided if our team were more tightly integrated with the browser vendors. The original goal of the Privly Project was to establish the standard by which browser vendors would be guided, but we lost sight of that goal in service of delivering a product.</p></li>
+
+<li><p><strong>Identity Infrastructure:</strong> Our identity infrastructure (see above for more details) worked with in-place identity infrastructure developed by Mozilla, but Mozilla never acknowledged our use case. Right when we finished development of our proof-of-concept and emailed the Mozilla devs, Mozilla killed the Persona project. We were too clever by half.</p></li>
+
+<li><p><strong>Edward Snowden:</strong> This posed an interesting "problem" for us. The increased attention brought to state surveillance resulted in corporate resistance -- including the implementation of <a href="https://www.engadget.com/2016/10/04/facebook-messenger-now-lets-you-toggle-end-to-end-encryption/">End-to-End encryption on sites like Facebook</a>! However, the newfound religion of the tech giants further eroded our user base. Why should users install a cryptography browser extension to protect Facebook messages if those messages can be encrypted on the platform without an extension?</p></li>
+
+<li><p><strong>Ethical rollout:</strong> The most challenging aspect of developing privacy software is getting adequate code review from third parties such that you can reasonably expect the software to be secure. Pro-bono code reviews are typically reserved for projects that have users, but without code review it is unethical to ask people to use the software. This paradox stalled our ability to gain traction in the wider community.</p></li>
+
+<li><p><strong>Cat and Mouse with Facebook, et al.:</strong> Interfacing Privly with most websites was easy, but several websites proved to be incredibly painful. The Privly Project is unwitting participants in a war between the social networks and marketers (i.e., spammers) that scrape content from sites by looking like humans. The Privly Project developed many approaches that would later be used by spammers to mimic humans interfacing with the social networks. The big social networks would then break Privly Project integration when blocking the spammers. This took an immense amount of hacking effort to keep up with.</p></li>
+
+<li><p><strong>Contributor Churn:</strong> Defining a new category of software means there are no pre-existing contributors that can apply the experience they gather in their day job to a fun non-work project. As a result, we needed to train most of our contributors before they could effectively advance our codebase. The problem is that the contributors frequently get pulled into high paying work for security, systems administration, etc., that leave little time for outside hacking.</p></li>
+</ol>
+
+<h1 id="whatsnext">What's Next?</h1>
+
+<p><strong>Privly Foundation:</strong> The Foundation was incorporated as a non-profit for privacy education, which means all funds held by the organization are dedicated to this purpose. Due to the generous support of Rackspace, Google, and others, the Privly Foundation still has $12,000 to advance privacy education. The Privly Foundation has never paid its leadership or contributors salary, thus this money will be redirected to two non-profit organizations active in the privacy space. First, as an organization whose mission and impact most closely aligns with that of the Privly Foundation, the Electronic Frontier Foundation (EFF), will receive half the remaining funds. Second, the Open Source Lab (OSL) at Oregon State University will receive the remaining half of the funds to support its efforts in growing the open source development community.</p>
+
+<p><strong>Privly Project Servers:</strong> The Privly content servers have been shut down and will be destroyed within the next year. If anyone is negatively impacted by the shutdown, we encourage them to reach out and we will evaluate developing a migration pathway. We never reached a "beta" product, so we don't expect people to be adversely affected by the shutdown.</p>
+
+<p><strong>Maintainers:</strong> Privly Project maintainers are now distributed among several startups, non-profits, and Fortune 100 companies. Many continue development activities aligned with advancing the social good.</p>
+
+<h1 id="acknowledgements">Acknowledgements</h1>
+
+<p>At this point I (Sean) would like to thank many people for their help in the Privly effort. First and foremost, the guidance of Carlos Jensen and Leslie Hawthorn greatly shortened the list of challenges and failures contained within this post. Next, the contributions of numerous students associated with the OSU Open Source Lab greatly advanced both the community infrastructure of the project, and several features developed over the lifetime of the project. Additionally, there are many people whom I plan on thanking individually out of respect for their privacy.</p>
+</div>
+</div>
+
+<hr>
 
 <div class="row marketing">
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
